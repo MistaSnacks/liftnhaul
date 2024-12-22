@@ -24,6 +24,7 @@ import KitsapCounty from "./pages/resources/service-areas/KitsapCounty";
 import MovingToTacoma from "./pages/blog/MovingToTacoma";
 import TacomaNeighborhoods from "./pages/blog/TacomaNeighborhoods";
 import MovingTipsBlog from "./pages/blog/MovingTips";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => (
               <Route path="/resources/service-areas/king-county" element={<KingCounty />} />
               <Route path="/resources/service-areas/thurston-county" element={<ThurstonCounty />} />
               <Route path="/resources/service-areas/kitsap-county" element={<KitsapCounty />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/blog/moving-to-tacoma-guide" element={<MovingToTacoma />} />
               <Route path="/blog/best-tacoma-neighborhoods" element={<TacomaNeighborhoods />} />
               <Route path="/blog/moving-tips-and-tricks" element={<MovingTipsBlog />} />
