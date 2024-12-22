@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
-import { Box, Package, Truck, CheckCircle, Archive } from "lucide-react";
+import { Box, Package, Truck, CheckCircle } from "lucide-react";
 
 const PackingGuide = () => {
   return (
@@ -123,32 +123,6 @@ const PackingGuide = () => {
                 alt="Person organizing moving boxes"
                 className="rounded-lg shadow-lg w-full h-48 object-cover"
               />
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* New Storage Solutions Section */}
-        <Card className="mb-8">
-          <CardContent className="pt-6">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-              <Archive className="mr-2 text-primary" />
-              Storage Solutions
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <img
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-                alt="Storage solutions for moving"
-                className="rounded-lg shadow-lg w-full h-48 object-cover"
-              />
-              <div>
-                <h3 className="text-xl font-medium mb-3">Temporary Storage Tips</h3>
-                <ul className="list-disc pl-6 space-y-3 text-gray-700">
-                  <li>Consider climate-controlled units for sensitive items</li>
-                  <li>Create an inventory system for stored items</li>
-                  <li>Stack boxes strategically for easy access</li>
-                  <li>Leave walkways between stacked items</li>
-                </ul>
-              </div>
             </div>
           </CardContent>
         </Card>
