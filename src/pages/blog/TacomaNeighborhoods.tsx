@@ -1,8 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const TacomaNeighborhoods = () => {
+  const navigate = useNavigate();
+
+  const handleQuoteClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="min-h-screen pt-24 pb-16">
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,9 +91,9 @@ const TacomaNeighborhoods = () => {
                 neighborhood. Our team knows the area well and can provide valuable
                 insights about each neighborhood while ensuring a smooth move.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
                 <Phone className="mr-2 h-4 w-4" />
-                Contact Us Today
+                Get a Free Quote
               </Button>
             </CardContent>
           </Card>

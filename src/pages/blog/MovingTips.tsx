@@ -1,8 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const MovingTips = () => {
+  const navigate = useNavigate();
+
+  const handleQuoteClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="min-h-screen pt-24 pb-16">
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,23 +70,23 @@ const MovingTips = () => {
             rooms and hallways for the moving team.
           </p>
 
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle>Need Professional Moving Help?</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                Let our experienced team handle your move with care. We offer full-service
-                moving solutions including packing, transportation, and unpacking.
-                Our professional movers are trained to handle all types of items
-                with expertise and care.
-              </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                <Phone className="mr-2 h-4 w-4" />
-                Schedule Your Move
-              </Button>
-            </CardContent>
-          </Card>
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Need Professional Moving Help?</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="mb-4">
+            Let our experienced team handle your move with care. We offer full-service
+            moving solutions including packing, transportation, and unpacking.
+            Our professional movers are trained to handle all types of items
+            with expertise and care.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
+            <Phone className="mr-2 h-4 w-4" />
+            Schedule Your Move
+          </Button>
+        </CardContent>
+      </Card>
 
           <h2 className="text-2xl font-bold mb-4">After the Move</h2>
           <p className="mb-6">
