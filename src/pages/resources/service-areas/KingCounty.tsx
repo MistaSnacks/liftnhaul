@@ -36,32 +36,32 @@ const KingCounty = () => {
               <li>Kirkland</li>
             </ul>
 
-          <h2 className="text-2xl font-semibold mb-4">Specialized King County Moving Services</h2>
-          <p className="mb-6">
-            We offer tailored moving solutions that address the specific needs of King County residents and businesses. Our team is experienced in handling moves of all sizes, from studio apartments to large family homes and commercial properties.
-          </p>
+            <h2 className="text-2xl font-semibold mb-4">Specialized King County Moving Services</h2>
+            <p className="mb-6">
+              We offer tailored moving solutions that address the specific needs of King County residents and businesses. Our team is experienced in handling moves of all sizes, from studio apartments to large family homes and commercial properties.
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Urban Moving Expertise</h2>
-          <p className="mb-6">
-            Moving in urban areas like Seattle and Bellevue requires special consideration for parking, building regulations, and time constraints. Our team is well-versed in navigating these challenges, ensuring a smooth moving experience even in busy urban environments.
-          </p>
+            <h2 className="text-2xl font-semibold mb-4">Urban Moving Expertise</h2>
+            <p className="mb-6">
+              Moving in urban areas like Seattle and Bellevue requires special consideration for parking, building regulations, and time constraints. Our team is well-versed in navigating these challenges, ensuring a smooth moving experience even in busy urban environments.
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Our King County Services Include</h2>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Residential moving services</li>
-            <li>Commercial and office relocations</li>
-            <li>High-rise apartment moving</li>
-            <li>Professional packing and unpacking</li>
-            <li>Secure storage solutions</li>
-            <li>Specialty item transportation</li>
-            <li>Same-day moving services</li>
-          </ul>
+            <h2 className="text-2xl font-semibold mb-4">Our King County Services Include</h2>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Residential moving services</li>
+              <li>Commercial and office relocations</li>
+              <li>High-rise apartment moving</li>
+              <li>Professional packing and unpacking</li>
+              <li>Secure storage solutions</li>
+              <li>Specialty item transportation</li>
+              <li>Same-day moving services</li>
+            </ul>
           </div>
 
           <div className="space-y-6">
             <img
-              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-              alt="Seattle skyline"
+              src="/lovable-uploads/be984819-5b89-4169-a886-620a3dde6bcf.png"
+              alt="Seattle skyline with Space Needle and downtown buildings"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
