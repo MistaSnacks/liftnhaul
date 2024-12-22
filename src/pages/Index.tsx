@@ -6,8 +6,15 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary to-primary/90 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary to-primary/90 text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1517022812141-23620dba5c23"
+            alt="Moving background"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8 animate-fadeIn">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Professional Moving Services in Tacoma
@@ -43,27 +50,38 @@ const Index = () => {
                 icon: Truck,
                 title: "Local Moving",
                 description: "Professional moving services in Tacoma and Pierce County area",
+                image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3"
               },
               {
                 icon: Package,
                 title: "Packing Services",
                 description: "Expert packing and unpacking for a stress-free move",
+                image: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2"
               },
               {
                 icon: Clock,
                 title: "Same Day Service",
                 description: "Quick and efficient moving solutions when you need them",
+                image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302"
               },
               {
                 icon: Shield,
                 title: "Licensed & Insured",
                 description: "Your belongings are protected throughout the move",
+                image: "https://images.unsplash.com/photo-1438565434616-3ef039228b15"
               },
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden group"
               >
+                <div className="h-40 mb-4 overflow-hidden rounded-lg">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
@@ -74,8 +92,15 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 bg-primary relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
+            alt="Moving CTA background"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl font-bold text-white mb-8">
             Ready to Make Your Move?
           </h2>
