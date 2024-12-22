@@ -27,9 +27,7 @@ const ResourcesMenu = () => {
 
   return (
     <NavigationMenuItem>
-      <Link to="/resources">
-        <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
-      </Link>
+      <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[400px] gap-3 p-4">
           {resourcePages.map((resource) => (

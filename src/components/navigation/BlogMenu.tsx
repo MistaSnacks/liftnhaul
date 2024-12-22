@@ -27,9 +27,7 @@ const BlogMenu = () => {
 
   return (
     <NavigationMenuItem>
-      <Link to="/blog">
-        <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
-      </Link>
+      <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[400px] gap-3 p-4">
           {blogPosts.map((post) => (
