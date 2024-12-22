@@ -23,6 +23,26 @@ const BlogMenu = () => {
       path: "/blog/moving-tips-and-tricks",
       description: "Expert advice for a smooth and stress-free move",
     },
+    {
+      title: "Living in Olympia: A Comprehensive Guide",
+      path: "/blog/living-in-olympia-guide",
+      description: "Discover life in Washington's capital city",
+    },
+    {
+      title: "Port Orchard: Your Ultimate Guide",
+      path: "/blog/port-orchard-living-guide",
+      description: "Everything about living in Port Orchard, WA",
+    },
+    {
+      title: "Seattle Living Guide",
+      path: "/blog/seattle-living-guide",
+      description: "Navigate life in the Emerald City",
+    },
+    {
+      title: "Bellevue: A Modern Living Guide",
+      path: "/blog/bellevue-living-guide",
+      description: "Explore life in the heart of the Eastside",
+    },
   ];
 
   return (
