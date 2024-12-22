@@ -24,8 +24,8 @@ const TacomaNeighborhoods = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1469041797191-50ace28483c3"
-            alt="Tacoma neighborhood"
+            src="/lovable-uploads/47be9504-23a0-448a-953d-f4138d94615d.png"
+            alt="Point Ruston waterfront featuring modern luxury apartments, family-friendly bike rentals, and vibrant community spaces with colorful banners and recreational activities"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
@@ -62,6 +62,16 @@ const TacomaNeighborhoods = () => {
             restaurants, and shops, plus a weekly farmers market. The area is
             particularly popular with families due to its excellent schools and
             safe, community-oriented atmosphere.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">Point Ruston</h2>
+          <p className="mb-6">
+            Point Ruston is Tacoma's premier waterfront neighborhood, offering a modern, resort-style living experience. This vibrant community features luxury apartments, waterfront dining, shopping, and entertainment options. The Waterwalk at Point Ruston is a scenic 1-mile paved pathway perfect for walking, biking, or rollerblading while enjoying stunning views of Commencement Bay and the Olympic Mountains. The area also includes a state-of-the-art movie theater, seasonal farmers market, and various community events throughout the year.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">University Place</h2>
+          <p className="mb-6">
+            University Place, often called "UP" by locals, is a sophisticated suburban neighborhood known for its excellent schools, manicured streets, and world-class Chambers Bay Golf Course - home of the 2015 U.S. Open. The area offers a mix of upscale homes, modern apartments, and beautiful parks with stunning Puget Sound views. Residents enjoy access to the scenic Grandview Drive, numerous recreational facilities, and a developing town center with local shops and restaurants. The neighborhood is perfect for families and professionals seeking a quieter, more upscale living environment while maintaining easy access to Tacoma's urban amenities.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">Old Town</h2>
