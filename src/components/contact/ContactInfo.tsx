@@ -1,9 +1,4 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
 
 const ContactInfo = () => {
   return (
@@ -18,85 +13,37 @@ const ContactInfo = () => {
       </div>
 
       <div className="space-y-6">
-        <HoverCard>
-          <HoverCardTrigger asChild>
-            <div className="flex items-start space-x-4 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
-              <MapPin className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold">Location</h3>
-                <p className="text-gray-600">Tacoma, WA 98445</p>
-              </div>
-            </div>
-          </HoverCardTrigger>
-          <HoverCardContent className="w-80">
-            <div className="space-y-2">
-              <h4 className="font-semibold">Service Area</h4>
-              <p className="text-sm text-gray-600">
-                We serve the greater Tacoma area and Pierce County. Our central location allows us to efficiently reach customers throughout the region.
-              </p>
-            </div>
-          </HoverCardContent>
-        </HoverCard>
+        <div className="flex items-start space-x-4">
+          <MapPin className="w-6 h-6 text-primary mt-1" />
+          <div>
+            <h3 className="font-semibold">Location</h3>
+            <p className="text-gray-600">Tacoma, WA 98445</p>
+          </div>
+        </div>
 
-        <HoverCard>
-          <HoverCardTrigger asChild>
-            <div className="flex items-start space-x-4 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
-              <Phone className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">(253) 300-0156</p>
-              </div>
-            </div>
-          </HoverCardTrigger>
-          <HoverCardContent className="w-80">
-            <div className="space-y-2">
-              <h4 className="font-semibold">Call Us</h4>
-              <p className="text-sm text-gray-600">
-                Our friendly team is ready to assist you with any questions about our moving services. We aim to respond promptly to all inquiries.
-              </p>
-            </div>
-          </HoverCardContent>
-        </HoverCard>
+        <div className="flex items-start space-x-4">
+          <Phone className="w-6 h-6 text-primary mt-1" />
+          <div>
+            <h3 className="font-semibold">Phone</h3>
+            <p className="text-gray-600">(253) 655-7973</p>
+          </div>
+        </div>
 
-        <HoverCard>
-          <HoverCardTrigger asChild>
-            <div className="flex items-start space-x-4 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
-              <Mail className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-600">info@liftnhaul.com</p>
-              </div>
-            </div>
-          </HoverCardTrigger>
-          <HoverCardContent className="w-80">
-            <div className="space-y-2">
-              <h4 className="font-semibold">Email Us</h4>
-              <p className="text-sm text-gray-600">
-                Send us an email for quotes, scheduling, or any other inquiries. We typically respond within 24 hours during business days.
-              </p>
-            </div>
-          </HoverCardContent>
-        </HoverCard>
+        <div className="flex items-start space-x-4">
+          <Mail className="w-6 h-6 text-primary mt-1" />
+          <div>
+            <h3 className="font-semibold">Email</h3>
+            <p className="text-gray-600">info@liftnhaul.com</p>
+          </div>
+        </div>
 
-        <HoverCard>
-          <HoverCardTrigger asChild>
-            <div className="flex items-start space-x-4 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
-              <Clock className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold">Hours</h3>
-                <p className="text-gray-600">Monday - Sunday: 9:00 AM - 5:00 PM</p>
-              </div>
-            </div>
-          </HoverCardTrigger>
-          <HoverCardContent className="w-80">
-            <div className="space-y-2">
-              <h4 className="font-semibold">Business Hours</h4>
-              <p className="text-sm text-gray-600">
-                We operate seven days a week to accommodate your schedule. Special arrangements can be made for moves outside regular business hours.
-              </p>
-            </div>
-          </HoverCardContent>
-        </HoverCard>
+        <div className="flex items-start space-x-4">
+          <Clock className="w-6 h-6 text-primary mt-1" />
+          <div>
+            <h3 className="font-semibold">Hours</h3>
+            <p className="text-gray-600">Monday - Sunday: 7:00 AM - 8:00 PM</p>
+          </div>
+        </div>
       </div>
     </div>
   );
