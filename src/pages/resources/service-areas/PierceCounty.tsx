@@ -16,44 +16,59 @@ const PierceCounty = () => {
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
-        <h1 className="text-4xl font-bold text-primary mb-8">Moving Services in Pierce County</h1>
-        
-        <div className="prose max-w-none">
-          <p className="text-lg mb-6">
-            As Pierce County's premier moving company, LiftNHaul provides comprehensive moving services throughout Tacoma, Puyallup, Lakewood, and surrounding communities. Our deep understanding of the local area enables us to deliver efficient and reliable moving solutions tailored to the unique needs of Pierce County residents.
-          </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="prose max-w-none text-left">
+            <h1 className="text-4xl font-bold text-primary mb-8">Moving Services in Pierce County</h1>
+            
+            <p className="text-lg mb-6">
+              As Pierce County's premier moving company, LiftNHaul provides comprehensive moving services throughout Tacoma, Puyallup, Lakewood, and surrounding communities. Our deep understanding of the local area enables us to deliver efficient and reliable moving solutions tailored to the unique needs of Pierce County residents.
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Areas We Serve in Pierce County</h2>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Tacoma - Including North End, South End, and Downtown</li>
-            <li>Puyallup - Including South Hill and Downtown</li>
-            <li>Lakewood - Including Tillicum and American Lake</li>
-            <li>University Place</li>
-            <li>Gig Harbor</li>
-            <li>Bonney Lake</li>
-            <li>Sumner</li>
-            <li>Spanaway</li>
-          </ul>
+            <h2 className="text-2xl font-semibold mb-4">Areas We Serve in Pierce County</h2>
+            <p className="mb-6">
+              Tacoma - Including North End, South End, and Downtown<br />
+              Puyallup - Including South Hill and Downtown<br />
+              Lakewood - Including Tillicum and American Lake<br />
+              University Place<br />
+              Gig Harbor<br />
+              Bonney Lake<br />
+              Sumner<br />
+              Spanaway
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Why Choose Us for Your Pierce County Move?</h2>
-          <p className="mb-6">
-            Our experienced team understands the unique challenges of moving within Pierce County, from navigating downtown Tacoma's historic districts to managing moves in rapidly growing areas like South Hill. We provide personalized service that ensures your belongings are handled with care while maintaining efficient timelines.
-          </p>
+            <h2 className="text-2xl font-semibold mb-4">Why Choose Us for Your Pierce County Move?</h2>
+            <p className="mb-6">
+              Our experienced team understands the unique challenges of moving within Pierce County, from navigating downtown Tacoma's historic districts to managing moves in rapidly growing areas like South Hill. We provide personalized service that ensures your belongings are handled with care while maintaining efficient timelines.
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Local Expertise</h2>
-          <p className="mb-6">
-            With years of experience serving Pierce County, we're familiar with local regulations, building requirements, and the most efficient routes throughout the area. This local knowledge helps us provide seamless moving services while avoiding common pitfalls that can delay your move.
-          </p>
+            <h2 className="text-2xl font-semibold mb-4">Local Expertise</h2>
+            <p className="mb-6">
+              With years of experience serving Pierce County, we're familiar with local regulations, building requirements, and the most efficient routes throughout the area. This local knowledge helps us provide seamless moving services while avoiding common pitfalls that can delay your move.
+            </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Comprehensive Moving Services</h2>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Local residential moves within Pierce County</li>
-            <li>Commercial and office relocations</li>
-            <li>Apartment and condominium moves</li>
-            <li>Professional packing and unpacking services</li>
-            <li>Secure storage solutions</li>
-            <li>Specialty item moving (pianos, antiques, artwork)</li>
-          </ul>
+            <h2 className="text-2xl font-semibold mb-4">Comprehensive Moving Services</h2>
+            <p className="mb-6">
+              Local residential moves within Pierce County<br />
+              Commercial and office relocations<br />
+              Apartment and condominium moves<br />
+              Professional packing and unpacking services<br />
+              Secure storage solutions<br />
+              Specialty item moving (pianos, antiques, artwork)
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <img
+              src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+              alt="Pierce County landscape"
+              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1426604966848-d7adac402bff"
+              alt="Pierce County nature"
+              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </>
