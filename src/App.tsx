@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import MovingToTacoma from "./pages/blog/MovingToTacoma";
+import TacomaNeighborhoods from "./pages/blog/TacomaNeighborhoods";
+import MovingTips from "./pages/blog/MovingTips";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,9 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/blog/moving-to-tacoma-guide" element={<MovingToTacoma />} />
+              <Route path="/blog/best-tacoma-neighborhoods" element={<TacomaNeighborhoods />} />
+              <Route path="/blog/moving-tips-and-tricks" element={<MovingTips />} />
             </Routes>
           </main>
           <Footer />

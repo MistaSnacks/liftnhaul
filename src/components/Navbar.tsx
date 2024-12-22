@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +18,25 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Resources", path: "/resources" },
-    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+  ];
+
+  const blogPosts = [
+    {
+      title: "Moving to Tacoma: Your Complete Guide",
+      path: "/blog/moving-to-tacoma-guide",
+      description: "Everything you need to know about relocating to Tacoma, WA",
+    },
+    {
+      title: "Best Neighborhoods in Tacoma",
+      path: "/blog/best-tacoma-neighborhoods",
+      description: "Discover the unique character of Tacoma's top neighborhoods",
+    },
+    {
+      title: "Moving Tips & Tricks",
+      path: "/blog/moving-tips-and-tricks",
+      description: "Expert advice for a smooth and stress-free move",
+    },
   ];
 
   return (
@@ -35,6 +60,34 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4">
+                      {blogPosts.map((post) => (
+                        <li key={post.path}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to={post.path}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                {post.title}
+                              </div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {post.description}
+                              </p>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <Button className="bg-primary hover:bg-primary/90">
               <Phone className="mr-2 h-4 w-4" />
               (253) 555-0123
@@ -66,6 +119,20 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              {/* Mobile Blog Links */}
+              <div className="px-3 py-2">
+                <div className="text-base font-medium text-gray-700">Blog</div>
+                {blogPosts.map((post) => (
+                  <Link
+                    key={post.path}
+                    to={post.path}
+                    className="block px-3 py-2 text-sm text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {post.title}
+                  </Link>
+                ))}
+              </div>
               <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
                 <Phone className="mr-2 h-4 w-4" />
                 (253) 555-0123
