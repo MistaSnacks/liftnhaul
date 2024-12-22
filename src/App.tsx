@@ -14,7 +14,7 @@ import MovingTips from "./pages/resources/MovingTips";
 import PackingGuide from "./pages/resources/PackingGuide";
 import MovingToTacoma from "./pages/blog/MovingToTacoma";
 import TacomaNeighborhoods from "./pages/blog/TacomaNeighborhoods";
-import MovingTips from "./pages/blog/MovingTips";
+import MovingTipsBlog from "./pages/blog/MovingTipsBlog";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +37,7 @@ const App = () => (
               <Route path="/resources/packing-guide" element={<PackingGuide />} />
               <Route path="/blog/moving-to-tacoma-guide" element={<MovingToTacoma />} />
               <Route path="/blog/best-tacoma-neighborhoods" element={<TacomaNeighborhoods />} />
-              <Route path="/blog/moving-tips-and-tricks" element={<MovingTips />} />
+              <Route path="/blog/moving-tips-and-tricks" element={<MovingTipsBlog />} />
             </Routes>
           </main>
           <Footer />
