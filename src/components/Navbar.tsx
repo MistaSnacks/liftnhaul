@@ -88,10 +88,12 @@ const Navbar = () => {
                 <BlogMenu />
               </NavigationMenuList>
             </NavigationMenu>
-            <Button className="bg-primary hover:bg-primary/90">
-              <Phone className="mr-2 h-4 w-4" />
-              (253) 300-0156
-            </Button>
+            <a href="tel:+12533000156">
+              <Button className="bg-primary hover:bg-primary/90">
+                <Phone className="mr-2 h-4 w-4" />
+                (253) 300-0156
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Navigation Button */}

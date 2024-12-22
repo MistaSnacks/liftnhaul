@@ -34,25 +34,29 @@ const ContactInfo = () => {
           </div>
         </Card>
 
-        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
-          <div className="flex items-start space-x-4">
-            <Phone className="w-6 h-6 text-primary mt-1" />
-            <div>
-              <h3 className="font-semibold">Phone</h3>
-              <p className="text-gray-600">(253) 300-0156</p>
+        <a href="tel:+12533000156" className="block">
+          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+            <div className="flex items-start space-x-4">
+              <Phone className="w-6 h-6 text-primary mt-1" />
+              <div>
+                <h3 className="font-semibold">Phone</h3>
+                <p className="text-gray-600">(253) 300-0156</p>
+              </div>
             </div>
-          </div>
-        </Card>
+          </Card>
+        </a>
 
-        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
-          <div className="flex items-start space-x-4">
-            <Mail className="w-6 h-6 text-primary mt-1" />
-            <div>
-              <h3 className="font-semibold">Email</h3>
-              <p className="text-gray-600">info@liftnhaul.com</p>
+        <a href="mailto:info@liftnhaul.com" className="block">
+          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+            <div className="flex items-start space-x-4">
+              <Mail className="w-6 h-6 text-primary mt-1" />
+              <div>
+                <h3 className="font-semibold">Email</h3>
+                <p className="text-gray-600">info@liftnhaul.com</p>
+              </div>
             </div>
-          </div>
-        </Card>
+          </Card>
+        </a>
 
         <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
           <div className="flex items-start space-x-4">
