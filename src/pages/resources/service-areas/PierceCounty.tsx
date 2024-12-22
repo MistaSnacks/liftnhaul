@@ -60,12 +60,12 @@ const PierceCounty = () => {
           <div className="space-y-6">
             <img
               src="/lovable-uploads/c35016d1-350c-441e-89bb-b88afd43d6c7.png"
-              alt="Tacoma waterfront at sunset with marina and city skyline"
+              alt="Scenic Tacoma waterfront at sunset featuring Commencement Bay marina with Mount Rainier backdrop"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
               src="https://images.unsplash.com/photo-1426604966848-d7adac402bff"
-              alt="Pierce County nature"
+              alt="Pierce County natural landscape showcasing evergreen forests and mountain views"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>

@@ -60,12 +60,12 @@ const ThurstonCounty = () => {
           <div className="space-y-6">
             <img
               src="/lovable-uploads/d854d334-cecc-4759-a38e-e7c325286122.png"
-              alt="Olympia waterfront with port and marina at sunset"
+              alt="Olympia waterfront at golden hour showcasing port facilities and pleasure craft marina"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
               src="/lovable-uploads/b22970d2-7bef-4c43-91a3-d1934d24aac7.png"
-              alt="Olympic Mountains view through evergreen trees"
+              alt="Majestic Olympic Mountains vista through evergreen forest canopy in Thurston County"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>

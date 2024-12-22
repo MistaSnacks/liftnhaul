@@ -61,12 +61,12 @@ const KitsapCounty = () => {
           <div className="space-y-6">
             <img
               src="/lovable-uploads/ca3bb3b2-7239-4a85-b213-5397bf7641b5.png"
-              alt="Waterfront buildings and marina in Kitsap County"
+              alt="Picturesque Kitsap County waterfront featuring historic buildings and bustling marina with Olympic Mountains backdrop"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
               src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
-              alt="Kitsap County landscape"
+              alt="Serene Kitsap Peninsula landscape with Puget Sound waters and forested shoreline"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>

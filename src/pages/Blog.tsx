@@ -9,42 +9,49 @@ const Blog = () => {
       path: "/blog/moving-to-tacoma-guide",
       description: "Everything you need to know about relocating to Tacoma, WA",
       image: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad",
+      alt: "Scenic view of Tacoma's iconic skyline with Mount Rainier in the background"
     },
     {
       title: "Best Neighborhoods in Tacoma",
       path: "/blog/best-tacoma-neighborhoods",
       description: "Discover the unique character of Tacoma's top neighborhoods",
       image: "https://images.unsplash.com/photo-1460317442991-0ec209397118",
+      alt: "Tree-lined residential street in North Tacoma featuring historic craftsman homes"
     },
     {
       title: "Moving Tips & Tricks",
       path: "/blog/moving-tips-and-tricks",
       description: "Expert advice for a smooth and stress-free move",
       image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+      alt: "Professional movers carefully packing and organizing moving boxes"
     },
     {
       title: "Living in Olympia: A Comprehensive Guide",
       path: "/blog/living-in-olympia-guide",
       description: "Discover life in Washington's capital city",
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      alt: "Washington State Capitol building in Olympia with blooming cherry blossoms"
     },
     {
       title: "Port Orchard: Your Ultimate Guide",
       path: "/blog/port-orchard-living-guide",
       description: "Everything about living in Port Orchard, WA",
       image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3",
+      alt: "Port Orchard waterfront marina with boats and Olympic Mountains view"
     },
     {
       title: "Seattle Living Guide",
       path: "/blog/seattle-living-guide",
       description: "Navigate life in the Emerald City",
       image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
+      alt: "Seattle skyline featuring Space Needle and downtown buildings at sunset"
     },
     {
       title: "Bellevue: A Modern Living Guide",
       path: "/blog/bellevue-living-guide",
       description: "Explore life in the heart of the Eastside",
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+      alt: "Downtown Bellevue skyline with modern high-rise buildings and Lake Washington"
     },
   ];
 
@@ -62,7 +69,7 @@ const Blog = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-            alt="Moving services"
+            alt="Professional moving company truck and team providing expert moving services in Tacoma"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -83,7 +90,7 @@ const Blog = () => {
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <img
                   src={post.image}
-                  alt={post.title}
+                  alt={post.alt}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
                 <CardContent className="p-4">

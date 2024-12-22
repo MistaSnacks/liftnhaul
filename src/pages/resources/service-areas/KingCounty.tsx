@@ -61,12 +61,12 @@ const KingCounty = () => {
           <div className="space-y-6">
             <img
               src="/lovable-uploads/04dffb87-16a4-4fa0-afc5-479ac4deb54b.png"
-              alt="Seattle skyline featuring Space Needle and downtown buildings"
+              alt="Iconic Seattle skyline at dusk featuring Space Needle and downtown skyscrapers with Elliott Bay"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
               src="/lovable-uploads/46dac536-d0a0-4fe7-a8ef-7d3a9530bd42.png"
-              alt="Seattle skyline with Space Needle and Mount Rainier in the background"
+              alt="Seattle cityscape with Space Needle and Mount Rainier majestic snow-capped peak in background"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
