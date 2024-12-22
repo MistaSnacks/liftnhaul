@@ -14,7 +14,6 @@ import LocalMoving from "./pages/services/LocalMoving";
 import PackingServices from "./pages/services/PackingServices";
 import ApartmentMoving from "./pages/services/ApartmentMoving";
 import LongDistanceMoving from "./pages/services/LongDistanceMoving";
-import Calculator from "./pages/resources/Calculator";
 import MovingTips from "./pages/resources/MovingTips";
 import PackingGuide from "./pages/resources/PackingGuide";
 import ServiceAreas from "./pages/resources/ServiceAreas";
@@ -47,7 +46,6 @@ const App = () => (
               <Route path="/services/apartment-moving" element={<ApartmentMoving />} />
               <Route path="/services/long-distance-moving" element={<LongDistanceMoving />} />
               <Route path="/resources" element={<Resources />} />
-              <Route path="/resources/calculator" element={<Calculator />} />
               <Route path="/resources/moving-tips" element={<MovingTips />} />
               <Route path="/resources/packing-guide" element={<PackingGuide />} />
               <Route path="/resources/service-areas" element={<ServiceAreas />} />
