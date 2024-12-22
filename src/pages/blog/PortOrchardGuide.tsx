@@ -17,11 +17,11 @@ const PortOrchardGuide = () => {
         <title>Port Orchard: Your Ultimate Moving Guide | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Everything you need to know about moving to Port Orchard, WA. Discover neighborhoods, lifestyle, and what makes this waterfront city special." 
+          content="Complete guide to moving to Port Orchard, WA. Discover neighborhoods, lifestyle, and everything you need to know about this charming waterfront community." 
         />
         <meta 
           name="keywords" 
-          content="Port Orchard WA, moving to Port Orchard, Port Orchard neighborhoods, Kitsap Peninsula, waterfront living, Seattle commute" 
+          content="Port Orchard WA, moving to Port Orchard, Kitsap Peninsula, waterfront living, Port Orchard neighborhoods, Washington state living" 
         />
       </Helmet>
 
@@ -37,37 +37,32 @@ const PortOrchardGuide = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1504893524553-b855bce32c67"
+            src="https://images.unsplash.com/photo-1527576539890-dfa815648363"
             alt="Port Orchard waterfront"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
           <p className="text-lg mb-6">
-            Port Orchard, the charming county seat of Kitsap County, offers a perfect blend of small-town atmosphere and modern amenities. Situated on the Sinclair Inlet with stunning views of the Olympic Mountains, this waterfront community provides an excellent quality of life for residents seeking a more relaxed pace while maintaining easy access to major urban centers.
+            Port Orchard, nestled on the Kitsap Peninsula, offers a perfect blend of small-town charm and maritime beauty. This comprehensive guide will help you understand what makes Port Orchard special and what to expect when moving to this picturesque waterfront community.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Location and Accessibility</h2>
+          <h2 className="text-2xl font-bold mb-4">Why Choose Port Orchard?</h2>
           <p className="mb-6">
-            One of Port Orchard's major advantages is its strategic location on the Kitsap Peninsula. The city offers convenient access to Seattle via the Southworth Ferry, making it an attractive option for commuters. Additionally, the proximity to major military installations, including Naval Base Kitsap, makes it a popular choice for military families and defense contractors.
+            Port Orchard combines affordable living with stunning waterfront views and easy access to both Seattle and Tacoma via the ferry system. The city's strong sense of community, growing downtown area, and proximity to outdoor recreation make it an attractive option for families and professionals seeking a quieter pace of life while maintaining connections to urban amenities.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Housing Market Overview</h2>
+          <h2 className="text-2xl font-bold mb-4">Port Orchard Neighborhoods</h2>
           <p className="mb-6">
-            Port Orchard's housing market offers diverse options at more affordable prices compared to Seattle and its immediate suburbs. From waterfront properties with stunning views to cozy inland neighborhoods, the city provides various housing styles to suit different preferences and budgets. New developments continue to add modern housing options while maintaining the city's character.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Notable Neighborhoods</h2>
-          <p className="mb-6">
-            The city features several distinct neighborhoods, each with its own character. Downtown Port Orchard offers historic charm and waterfront views, while neighborhoods like McCormick Woods provide newer homes in a planned community setting. The Manchester area combines water views with a village atmosphere, and Sidney offers a mix of housing options with easy access to amenities.
+            Port Orchard offers diverse neighborhoods to suit different lifestyles. Downtown provides waterfront living and easy access to shops and restaurants. McCormick Woods features upscale homes and a golf course community. The Manchester area offers water views and beach access, while South Kitsap provides more rural settings with larger lots.
           </p>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Moving to Port Orchard?</CardTitle>
+              <CardTitle>Ready to Move to Port Orchard?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                Our team specializes in moves to and from Port Orchard. Let us help make your relocation smooth and stress-free with our local expertise and professional service.
+                Our experienced team can help make your move to Port Orchard seamless. We understand the unique aspects of relocating to the Kitsap Peninsula and can provide valuable insights for your move.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
                 <Phone className="mr-2 h-4 w-4" />
@@ -76,29 +71,34 @@ const PortOrchardGuide = () => {
             </CardContent>
           </Card>
 
-          <h2 className="text-2xl font-bold mb-4">Education and Schools</h2>
+          <h2 className="text-2xl font-bold mb-4">Housing Market</h2>
           <p className="mb-6">
-            The South Kitsap School District serves Port Orchard with several well-regarded schools. South Kitsap High School is known for its comprehensive programs, including strong STEM offerings and vocational education. The area also provides easy access to Olympic College's Bremerton campus for higher education opportunities.
+            Port Orchard's housing market offers more affordable options compared to Seattle and its immediate suburbs. From waterfront condos to suburban homes and rural properties, the market provides diverse options for different budgets. The city's growth and development plans suggest continued appreciation potential.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Local Economy and Employment</h2>
+          <h2 className="text-2xl font-bold mb-4">Employment Opportunities</h2>
           <p className="mb-6">
-            Port Orchard's economy benefits from its proximity to major employers in the region. Naval Base Kitsap provides significant employment opportunities, while the Puget Sound Naval Shipyard offers civilian positions. The city also supports a growing small business sector, particularly in the downtown area, and its location allows for commuting to Bremerton, Tacoma, or Seattle for additional employment options.
+            The Puget Sound Naval Shipyard in nearby Bremerton is a major employer. Healthcare, education, and retail sectors also provide significant employment. Many residents commute to Seattle or Tacoma via ferry, enjoying the best of both worlds with lower living costs and access to major job markets.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Lifestyle and Recreation</h2>
+          <h2 className="text-2xl font-bold mb-4">Transportation</h2>
           <p className="mb-6">
-            The city offers numerous recreational opportunities, from waterfront activities to parks and trails. The Port Orchard Marina and waterfront pathway provide spaces for walking, fishing, and enjoying marine activities. Local parks like South Kitsap Regional Park offer extensive trails and facilities for outdoor recreation. The downtown area features unique shops, restaurants, and regular community events that contribute to the city's small-town charm.
+            Port Orchard's transportation system includes Kitsap Transit buses and foot ferries to Bremerton. The Seattle-Bremerton ferry provides a scenic commute option to Seattle. Highway 16 connects to Tacoma, while local roads are well-maintained and typically less congested than urban areas.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Community and Culture</h2>
+          <h2 className="text-2xl font-bold mb-4">Culture and Entertainment</h2>
           <p className="mb-6">
-            Port Orchard maintains a strong sense of community through various events and activities throughout the year. The Fathoms O' Fun Festival, farmers market, and regular downtown events bring residents together and celebrate local culture. The city's historic downtown area hosts art galleries, boutiques, and restaurants that contribute to its cultural vibrancy.
+            The city offers a growing arts scene, waterfront festivals, and community events throughout the year. The historic downtown features unique shops, restaurants, and antique stores. Outdoor enthusiasts enjoy nearby parks, beaches, and water activities. The proximity to Olympic National Park provides additional recreation opportunities.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">Education</h2>
+          <p className="mb-6">
+            South Kitsap School District serves Port Orchard with several well-regarded schools. The district emphasizes technology integration and offers various programs. Olympic College's nearby presence provides higher education opportunities. Several private schools in the area offer additional educational options.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">Planning Your Move</h2>
           <p className="mb-6">
-            When planning your move to Port Orchard, consider factors like commute options if you'll be working in another city, and familiarize yourself with the ferry schedules if you'll be using them regularly. Research different neighborhoods to find the one that best matches your lifestyle and needs. Our team can provide valuable insights about specific areas and help ensure a smooth relocation process.
+            When planning your Port Orchard move, consider the ferry schedules and local traffic patterns. Summer months provide the best moving conditions. Research neighborhoods thoroughly, considering commute options and lifestyle preferences. Our team can provide specific insights about different areas and help coordinate your move effectively.
           </p>
         </div>
       </article>

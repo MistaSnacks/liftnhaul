@@ -17,11 +17,11 @@ const LivingInOlympia = () => {
         <title>Living in Olympia: A Comprehensive Guide | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Discover everything you need to know about living in Olympia, Washington's capital city. From neighborhoods to lifestyle, culture, and more." 
+          content="Discover everything about living in Olympia, WA. From neighborhoods to lifestyle, culture, and essential tips for new residents." 
         />
         <meta 
           name="keywords" 
-          content="Olympia WA, living in Olympia, move to Olympia, Olympia neighborhoods, Olympia culture, Washington state capital" 
+          content="Olympia WA, living in Olympia, Olympia neighborhoods, Washington state capital, Olympia culture, Olympia jobs, Pacific Northwest living" 
         />
       </Helmet>
 
@@ -37,42 +37,32 @@ const LivingInOlympia = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
-            alt="Olympia Washington scenic view"
+            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+            alt="Olympia Washington State Capitol"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
           <p className="text-lg mb-6">
-            Olympia, Washington's capital city, offers a unique blend of government activity, cultural richness, and natural beauty. As the seat of state government and a vibrant community in its own right, Olympia presents an attractive option for those seeking a balance between urban amenities and natural surroundings. This comprehensive guide will help you understand what makes Olympia special and what to expect when moving to this historic city.
+            Olympia, Washington's capital city, offers a unique blend of government activity, cultural richness, and natural beauty. This comprehensive guide will help you understand what makes Olympia special and what to expect when moving to this historic Pacific Northwest city.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">Why Choose Olympia?</h2>
           <p className="mb-6">
-            Olympia stands out for its strong sense of community, environmental consciousness, and rich cultural scene. The city's location at the southern tip of Puget Sound provides stunning waterfront views and outdoor recreation opportunities, while its position as the state capital ensures a stable economy and diverse employment options. With a population of around 55,000 residents, Olympia maintains a smaller-city feel while offering many big-city amenities.
+            As the state capital, Olympia provides stable government employment opportunities while maintaining a smaller-city feel. The city's commitment to environmental sustainability, thriving arts scene, and proximity to both the Puget Sound and Olympic National Park make it an attractive destination for those seeking a balance between urban amenities and natural beauty.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Location and Climate</h2>
+          <h2 className="text-2xl font-bold mb-4">Olympia Neighborhoods</h2>
           <p className="mb-6">
-            Situated at the southern end of Puget Sound, Olympia enjoys a strategic location with easy access to both Seattle and Portland. The city experiences a typical Pacific Northwest climate, with mild winters and warm summers. While the region does see significant rainfall, this contributes to the lush greenery that makes the area so beautiful. The city's position between the Cascade Mountains and the Olympic Peninsula provides numerous opportunities for outdoor adventures.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Housing Market</h2>
-          <p className="mb-6">
-            Olympia's housing market offers more affordable options compared to larger Pacific Northwest cities like Seattle and Portland. The city features a mix of historic homes, modern developments, and waterfront properties. Popular neighborhoods include the South Capitol area, known for its historic homes and proximity to the capitol campus, and the West Side, which offers a mix of housing options and easy access to shopping and dining.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Employment Opportunities</h2>
-          <p className="mb-6">
-            As the state capital, government employment is a significant sector in Olympia. However, the city's economy is diverse, with growing healthcare, education, and technology sectors. Major employers include the State of Washington, Providence St. Peter Hospital, and The Evergreen State College. The city's strategic location also makes it possible to commute to Tacoma or even Seattle for additional employment opportunities.
+            Each Olympia neighborhood has its own character. The South Capitol neighborhood showcases historic homes and tree-lined streets, while downtown offers urban living with access to government offices, restaurants, and shops. The Eastside provides family-friendly communities, and the Westside features excellent schools and shopping districts. The Boston Harbor area offers waterfront living with stunning views of Puget Sound.
           </p>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Ready to Move to Olympia?</CardTitle>
+              <CardTitle>Planning Your Olympia Move?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                Let our experienced team help you with your relocation to Olympia. We understand the local area and can ensure a smooth transition to your new home.
+                Let our experienced team help make your move to Olympia smooth and stress-free. We understand the unique aspects of relocating to the state capital and can provide valuable insights for your move.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
                 <Phone className="mr-2 h-4 w-4" />
@@ -81,24 +71,34 @@ const LivingInOlympia = () => {
             </CardContent>
           </Card>
 
+          <h2 className="text-2xl font-bold mb-4">Housing Market</h2>
+          <p className="mb-6">
+            Olympia's housing market offers more affordable options compared to larger Pacific Northwest cities. From historic homes in established neighborhoods to modern apartments downtown, the market provides diverse options for different budgets and preferences. The city's steady government employment base helps maintain stable property values.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">Employment Opportunities</h2>
+          <p className="mb-6">
+            While state government is the largest employer, Olympia's economy is diversifying. Healthcare, education, and technology sectors are growing. The city also supports a vibrant small business community and creative enterprises. The presence of The Evergreen State College and South Puget Sound Community College contributes to educational and cultural opportunities.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">Transportation</h2>
+          <p className="mb-6">
+            Olympia offers multiple transportation options, including an extensive bus system and bike-friendly infrastructure. The city's location provides easy access to I-5, connecting residents to Seattle and Portland. Commuting within the city is relatively easy, with most destinations reachable within 15-20 minutes.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4">Culture and Entertainment</h2>
+          <p className="mb-6">
+            The city boasts a rich cultural scene with the Washington Center for the Performing Arts, Hands On Children's Museum, and numerous galleries. The Olympia Farmers Market, one of the state's largest, operates year-round. Outdoor enthusiasts enjoy easy access to Priest Point Park, Watershed Park, and nearby state parks.
+          </p>
+
           <h2 className="text-2xl font-bold mb-4">Education</h2>
           <p className="mb-6">
-            Olympia boasts excellent educational options at all levels. The Olympia School District is well-regarded, and the city is home to The Evergreen State College, known for its innovative approach to liberal arts education. South Puget Sound Community College provides additional higher education opportunities and workforce training programs.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Culture and Recreation</h2>
-          <p className="mb-6">
-            The city's cultural scene is vibrant and diverse, featuring numerous theaters, galleries, and museums. The Hands On Children's Museum, State Capital Museum, and Washington Center for the Performing Arts are popular attractions. Olympia's commitment to the arts is evident in its numerous festivals, including the Procession of the Species and Capital City Pride.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Outdoor Activities</h2>
-          <p className="mb-6">
-            Outdoor enthusiasts will find plenty to love about Olympia. The city maintains numerous parks and trails, including Priest Point Park and the Woodland Trail. The nearby Nisqually National Wildlife Refuge offers excellent bird watching opportunities, while the Olympic National Park and Mount Rainier are within easy driving distance for weekend adventures.
+            Olympia School District is known for its strong academic programs and community involvement. The presence of The Evergreen State College provides unique educational opportunities and contributes to the city's progressive atmosphere. Several private schools offer additional educational options.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">Planning Your Move</h2>
           <p className="mb-6">
-            When planning your move to Olympia, consider the city's seasonal weather patterns and try to schedule your move during the drier summer months if possible. Research different neighborhoods to find the one that best suits your lifestyle and needs. Our team can provide valuable insights about specific areas and help ensure a smooth relocation process.
+            When planning your Olympia move, consider the city's rainy climate and plan accordingly. Summer months (July-September) offer the best moving conditions. Research neighborhoods thoroughly, considering commute times and lifestyle preferences. Our team can provide specific insights about different areas and help coordinate your move effectively.
           </p>
         </div>
       </article>
