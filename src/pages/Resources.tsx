@@ -1,24 +1,24 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Truck, Package, MapPin } from "lucide-react";
+import { Truck, Package, Calculator, MapPin } from "lucide-react";
 
 const Resources = () => {
   return (
     <>
       <Helmet>
         <title>Moving Resources & Tips | LiftNHaul</title>
-        <meta name="description" content="Comprehensive moving resources, packing guides, and service area information to help make your relocation smooth and stress-free." />
-        <meta name="keywords" content="moving resources, moving tips, packing guide, service areas, relocation help" />
+        <meta name="description" content="Comprehensive moving resources, packing guides, and moving cost calculator to help make your relocation smooth and stress-free." />
+        <meta name="keywords" content="moving resources, moving tips, packing guide, moving calculator, relocation help" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
         <h1 className="text-4xl font-bold text-primary mb-8">Moving Resources</h1>
         <p className="text-lg text-gray-700 mb-8">
-          Everything you need for a successful move, from packing tips to service area information.
+          Everything you need for a successful move, from packing tips to cost calculations.
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Link to="/resources/moving-tips">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
@@ -45,6 +45,19 @@ const Resources = () => {
             </Card>
           </Link>
 
+          <Link to="/resources/calculator">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Calculator className="w-8 h-8 text-primary mb-2" />
+                <CardTitle>Moving Calculator</CardTitle>
+                <CardDescription>Estimate your moving costs</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Calculate approximate moving costs based on distance, home size, and services needed.</p>
+              </CardContent>
+            </Card>
+          </Link>
+
           <Link to="/resources/service-areas">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
@@ -57,51 +70,6 @@ const Resources = () => {
               </CardContent>
             </Card>
           </Link>
-        </div>
-
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-primary mb-6">Our Service Areas</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            We provide professional moving services throughout Western Washington, serving these major counties:
-          </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/resources/service-areas/pierce-county">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle>Pierce County</CardTitle>
-                  <CardDescription>Tacoma, Puyallup, Lakewood</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
-
-            <Link to="/resources/service-areas/king-county">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle>King County</CardTitle>
-                  <CardDescription>Seattle, Bellevue, Kent</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
-
-            <Link to="/resources/service-areas/thurston-county">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle>Thurston County</CardTitle>
-                  <CardDescription>Olympia, Lacey, Tumwater</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
-
-            <Link to="/resources/service-areas/kitsap-county">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle>Kitsap County</CardTitle>
-                  <CardDescription>Bremerton, Port Orchard, Poulsbo</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
-          </div>
         </div>
       </div>
     </>
