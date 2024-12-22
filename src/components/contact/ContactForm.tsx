@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -20,6 +21,9 @@ const formSchema = z.object({
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const [webhookUrl, setWebhookUrl] = useState(""); // Add your N8N webhook URL here
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,7 +38,28 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setIsSubmitting(true);
     try {
+      // Send data to N8N webhook
+      if (webhookUrl) {
+        const response = await fetch(webhookUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...values,
+            timestamp: new Date().toISOString(),
+            source: window.location.href,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to submit form to webhook');
+        }
+      }
+
+      // Prepare email content as backup
       const emailContent = `
         Name: ${values.name}
         Email: ${values.email}
@@ -45,6 +70,7 @@ const ContactForm = () => {
         Message: ${values.message}
       `;
 
+      // Open email client as backup
       window.location.href = `mailto:info@liftnhaul.com?subject=Moving Quote Request&body=${encodeURIComponent(emailContent)}`;
       
       toast({
@@ -55,15 +81,38 @@ const ContactForm = () => {
       
       form.reset();
     } catch (error) {
-      console.error('Error sending form:', error);
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was an error submitting your request. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
+
+  // ... keep existing code (form JSX structure)
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-6">Get Your Free Quote</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          {/* Add webhook URL input for testing/setup */}
+          {process.env.NODE_ENV === 'development' && (
+            <FormItem>
+              <FormLabel>N8N Webhook URL (Development Only)</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your N8N webhook URL"
+                  value={webhookUrl}
+                  onChange={(e) => setWebhookUrl(e.target.value)}
+                />
+              </FormControl>
+            </FormItem>
+          )}
+
           <FormField
             control={form.control}
             name="name"
@@ -196,7 +245,13 @@ const ContactForm = () => {
             )}
           />
 
-          <Button type="submit" className="w-full">Get Free Quote</Button>
+          <Button 
+            type="submit" 
+            className="w-full"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Submitting..." : "Get Free Quote"}
+          </Button>
         </form>
       </Form>
     </div>
