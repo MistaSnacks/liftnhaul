@@ -24,8 +24,8 @@ const MovingToTacoma = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
-            alt="Tacoma skyline"
+            src="/lovable-uploads/47c8688d-a2e1-4523-936f-a77517aa47d1.png"
+            alt="Tacoma waterfront at sunset with marina and city skyline"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
@@ -45,14 +45,14 @@ const MovingToTacoma = () => {
             an excellent choice for both families and young professionals.
           </p>
 
-          <ul className="list-disc pl-6 mb-6">
-            <li>More affordable housing market than Seattle</li>
-            <li>Rich cultural scene and historic architecture</li>
-            <li>Beautiful waterfront and outdoor recreation opportunities</li>
-            <li>Growing job market across various sectors</li>
-            <li>Strong sense of community and neighborhood pride</li>
-            <li>Excellent educational institutions</li>
-          </ul>
+          <p className="mb-6">
+            More affordable housing market than Seattle •
+            Rich cultural scene and historic architecture •
+            Beautiful waterfront and outdoor recreation opportunities •
+            Growing job market across various sectors •
+            Strong sense of community and neighborhood pride •
+            Excellent educational institutions
+          </p>
 
           <h2 className="text-2xl font-bold mb-4">Housing Market Overview</h2>
           <p className="mb-6">
