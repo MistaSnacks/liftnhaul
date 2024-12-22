@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -33,9 +33,9 @@ const Navbar = () => {
       description: "Learn how to pack efficiently and safely",
     },
     {
-      title: "Moving Calculator",
-      path: "/resources/calculator",
-      description: "Calculate your moving costs",
+      title: "Service Areas",
+      path: "/resources/service-areas",
+      description: "Areas we serve in Western Washington",
     },
   ];
 
