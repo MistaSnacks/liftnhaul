@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Truck, Package, Clock, Shield } from "lucide-react";
+import { Truck, Package, Home, Box } from "lucide-react";
 
 const Index = () => {
   return (
