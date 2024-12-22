@@ -35,19 +35,32 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <div className="min-h-screen">
       <Helmet>
         <title>Moving Services in Tacoma | LiftNHaul</title>
         <meta name="description" content="Comprehensive moving services in Tacoma including local moving, packing, apartment moving, and long distance relocations. Professional and reliable moving solutions." />
         <meta name="keywords" content="moving services, Tacoma movers, local moving, packing services, apartment moving, long distance moving" />
       </Helmet>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h1>
-          <p className="text-xl text-gray-600">Comprehensive moving solutions tailored to your needs</p>
+      <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+            alt="Moving services"
+            className="w-full h-full object-cover opacity-20"
+          />
         </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-4 animate-fadeIn">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              Comprehensive moving solutions tailored to your needs
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;

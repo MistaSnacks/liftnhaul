@@ -6,15 +6,20 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <div className="relative h-[300px] bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&q=80")' }}>
-        <div className="absolute inset-0 bg-primary/70">
-          <div className="container mx-auto px-4 h-full flex items-center">
-            <div className="text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-              <p className="text-lg md:text-xl max-w-2xl">
-                Get in touch with Pierce County's trusted moving experts. We're here to make your move stress-free.
-              </p>
-            </div>
+      <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+            alt="Contact us"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-4 animate-fadeIn">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              Get in touch with Pierce County's trusted moving experts. We're here to make your move stress-free.
+            </p>
           </div>
         </div>
       </div>

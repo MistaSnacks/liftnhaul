@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="pt-32 pb-16 bg-gradient-to-br from-primary to-primary/90 text-white relative overflow-hidden">
+    <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1517022812141-23620dba5c23"
-          alt="Moving background"
+          src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+          alt="Professional moving services"
           className="w-full h-full object-cover opacity-20"
         />
       </div>

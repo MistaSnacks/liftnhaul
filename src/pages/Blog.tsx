@@ -39,34 +39,43 @@ const Blog = () => {
         />
       </Helmet>
       
-      <div className="container mx-auto px-4 py-8 mt-24">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-primary mb-4">Moving & Relocation Blog</h1>
-          <p className="text-lg text-gray-700 mb-8">
-            Expert insights and local knowledge to help you navigate your move.
-          </p>
+      <div className="min-h-screen">
+        <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+              alt="Moving blog"
+              className="w-full h-full object-cover opacity-20"
+            />
+          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center space-y-4 animate-fadeIn">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Moving & Relocation Blog</h1>
+              <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+                Expert insights and local knowledge to help you navigate your move.
+              </p>
+            </div>
+          </div>
+        </div>
 
-          <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-            alt="Moving and relocation resources"
-            className="w-full h-[400px] object-cover rounded-lg mb-12"
-          />
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
-              <Link key={post.title} to={post.path}>
-                <Card className="h-full hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <File className="w-8 h-8 text-primary mb-2" />
-                    <CardTitle>{post.title}</CardTitle>
-                    <CardDescription>{post.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">{post.content}</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {blogPosts.map((post) => (
+                <Link key={post.title} to={post.path}>
+                  <Card className="h-full hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <File className="w-8 h-8 text-primary mb-2" />
+                      <CardTitle>{post.title}</CardTitle>
+                      <CardDescription>{post.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600">{post.content}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
