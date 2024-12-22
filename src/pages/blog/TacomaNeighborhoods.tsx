@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { SiteAnalyzer } from "@/components/SiteAnalyzer";
 
 const TacomaNeighborhoods = () => {
   const navigate = useNavigate();
@@ -108,6 +109,7 @@ const TacomaNeighborhoods = () => {
           </p>
         </div>
       </article>
+      <SiteAnalyzer />
     </div>
   );
 };
