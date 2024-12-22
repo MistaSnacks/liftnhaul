@@ -1,34 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { EditableContent } from "@/components/EditableContent";
-import { EditableImage } from "@/components/EditableImage";
 
 const About = () => {
   return (
     <div className="min-h-screen">
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <EditableImage
+          <img
             src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
             alt="Family owned moving company in Tacoma"
-            imageKey="about-hero-bg"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-4 animate-fadeIn">
-            <EditableContent
-              content="Tacoma's Trusted Family-Owned Moving Company"
-              contentKey="about-hero-title"
-              className="text-4xl md:text-5xl font-bold leading-tight"
-              as="h1"
-            />
-            <EditableContent
-              content="Serving Pierce County families and businesses since 2010 with professional, reliable moving services"
-              contentKey="about-hero-subtitle"
-              className="text-xl text-gray-200 max-w-3xl mx-auto"
-              as="p"
-            />
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Tacoma's Trusted Family-Owned Moving Company
+            </h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              Serving Pierce County families and businesses since 2010 with professional, reliable moving services
+            </p>
           </div>
         </div>
       </section>
@@ -38,32 +29,18 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <EditableContent
-                content="Our Story"
-                contentKey="about-story-title"
-                className="text-3xl font-bold text-gray-900"
-                as="h2"
-              />
-              <EditableContent
-                content="Founded in 2010 by the Johnson family, LiftNHaul has grown from a single truck operation to Tacoma's premier moving service. As a family-owned business, we understand the importance of treating your belongings with the same care we would give our own."
-                contentKey="about-story-p1"
-                className="text-lg text-gray-600"
-                as="p"
-                multiline
-              />
-              <EditableContent
-                content="Our deep roots in Pierce County have helped us build lasting relationships with our community, earning us a reputation for reliability, professionalism, and exceptional customer service."
-                contentKey="about-story-p2"
-                className="text-lg text-gray-600"
-                as="p"
-                multiline
-              />
+              <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
+              <p className="text-lg text-gray-600">
+                Founded in 2010 by the Johnson family, LiftNHaul has grown from a single truck operation to Tacoma's premier moving service. As a family-owned business, we understand the importance of treating your belongings with the same care we would give our own.
+              </p>
+              <p className="text-lg text-gray-600">
+                Our deep roots in Pierce County have helped us build lasting relationships with our community, earning us a reputation for reliability, professionalism, and exceptional customer service.
+              </p>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <EditableImage
+              <img
                 src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135"
                 alt="Family owned moving company team"
-                imageKey="about-story-image"
                 className="w-full h-full object-cover"
               />
             </div>
