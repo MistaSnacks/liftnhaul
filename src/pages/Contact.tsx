@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-              <textarea id="message" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" rows="4"></textarea>
+              <textarea id="message" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" rows={4}></textarea>
             </div>
             <Button type="submit" className="w-full bg-secondary text-black hover:bg-secondary/90">Send Message</Button>
           </form>
