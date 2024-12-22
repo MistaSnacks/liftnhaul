@@ -17,8 +17,25 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
+  ];
+
+  const resourcePages = [
+    {
+      title: "Moving Tips",
+      path: "/resources/moving-tips",
+      description: "Expert advice for a successful move",
+    },
+    {
+      title: "Packing Guide",
+      path: "/resources/packing-guide",
+      description: "Learn how to pack efficiently and safely",
+    },
+    {
+      title: "Moving Calculator",
+      path: "/resources/calculator",
+      description: "Calculate your moving costs",
+    },
   ];
 
   const blogPosts = [
@@ -62,6 +79,30 @@ const Navbar = () => {
             ))}
             <NavigationMenu>
               <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4">
+                      {resourcePages.map((resource) => (
+                        <li key={resource.path}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to={resource.path}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                {resource.title}
+                              </div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {resource.description}
+                              </p>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -119,6 +160,20 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              {/* Mobile Resources Links */}
+              <div className="px-3 py-2">
+                <div className="text-base font-medium text-gray-700">Resources</div>
+                {resourcePages.map((resource) => (
+                  <Link
+                    key={resource.path}
+                    to={resource.path}
+                    className="block px-3 py-2 text-sm text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {resource.title}
+                  </Link>
+                ))}
+              </div>
               {/* Mobile Blog Links */}
               <div className="px-3 py-2">
                 <div className="text-base font-medium text-gray-700">Blog</div>
