@@ -22,6 +22,30 @@ const Blog = () => {
       path: "/blog/moving-tips-and-tricks",
       description: "Expert advice for a smooth and stress-free move",
       content: "Professional insights and practical tips to make your moving experience easier and more organized."
+    },
+    {
+      title: "Living in Olympia: A Comprehensive Guide",
+      path: "/blog/living-in-olympia",
+      description: "Discover life in Washington's capital city",
+      content: "Everything you need to know about moving to and living in Olympia, Washington's historic capital."
+    },
+    {
+      title: "Port Orchard: Your Ultimate Moving Guide",
+      path: "/blog/port-orchard-guide",
+      description: "Everything about moving to Port Orchard, WA",
+      content: "A complete guide to relocating to Port Orchard, featuring local insights and essential information."
+    },
+    {
+      title: "Seattle Living: What to Know Before Moving",
+      path: "/blog/seattle-living-guide",
+      description: "Essential tips for relocating to Seattle",
+      content: "Your comprehensive guide to moving to Seattle, from neighborhoods to lifestyle and culture."
+    },
+    {
+      title: "Moving to Bellevue: A Complete Guide",
+      path: "/blog/bellevue-guide",
+      description: "Your comprehensive guide to life in Bellevue",
+      content: "Everything you need to know about relocating to Bellevue, Washington's tech hub."
     }
   ];
 
@@ -35,7 +59,7 @@ const Blog = () => {
         />
         <meta 
           name="keywords" 
-          content="moving blog, relocation tips, Tacoma neighborhoods, moving advice, Pacific Northwest living" 
+          content="moving blog, relocation tips, Tacoma neighborhoods, moving advice, Pacific Northwest living, Seattle moving, Olympia relocation, Bellevue guide" 
         />
       </Helmet>
       
@@ -58,24 +82,23 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {blogPosts.map((post) => (
-                <Link key={post.title} to={post.path}>
-                  <Card className="h-full hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <File className="w-8 h-8 text-primary mb-2" />
-                      <CardTitle>{post.title}</CardTitle>
-                      <CardDescription>{post.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600">{post.content}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogPosts.map((post) => (
+              <Link key={post.title} to={post.path}>
+                <Card className="h-full hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <File className="w-8 h-8 text-primary mb-2" />
+                    <CardTitle>{post.title}</CardTitle>
+                    <CardDescription>{post.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600">{post.content}</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
