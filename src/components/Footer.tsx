@@ -57,7 +57,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <MapPin className="h-5 w-5 mr-2" />
-                Tacoma, WA 98402
+                Tacoma, WA 98445
               </li>
               <li className="flex items-center text-gray-400">
                 <Phone className="h-5 w-5 mr-2" />
