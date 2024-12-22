@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - Matched to Home page styling */}
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-            alt="Family owned moving company in Tacoma"
+            src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
+            alt="Professional moving services - LiftNHaul moving truck being loaded"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center space-y-4 animate-fadeIn">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <div className="text-center space-y-8 animate-fadeIn">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Tacoma's Trusted Family-Owned Moving Company
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
               Serving Pierce County families and businesses since 2010 with professional, reliable moving services
             </p>
           </div>
