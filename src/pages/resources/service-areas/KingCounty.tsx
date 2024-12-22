@@ -60,8 +60,8 @@ const KingCounty = () => {
 
           <div className="space-y-6">
             <img
-              src="/lovable-uploads/be984819-5b89-4169-a886-620a3dde6bcf.png"
-              alt="Seattle skyline with Space Needle and downtown buildings"
+              src="/lovable-uploads/87e45b38-8754-4b91-9119-dd5421d552b6.png"
+              alt="Seattle skyline featuring the Space Needle and Mount Rainier"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
