@@ -46,7 +46,7 @@ const Resources = () => {
         <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+              src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
               alt="Moving resources"
               className="w-full h-full object-cover opacity-20"
             />

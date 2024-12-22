@@ -4,12 +4,11 @@ import Map from "@/components/Map";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen pt-20">
-      {/* Hero Section */}
+    <div className="min-h-screen">
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+            src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
             alt="Contact us"
             className="w-full h-full object-cover opacity-20"
           />
@@ -30,7 +29,6 @@ const Contact = () => {
           <ContactForm />
         </div>
 
-        {/* Map Section */}
         <div className="mt-12">
           <h2 className="text-3xl font-bold mb-6">Service Area</h2>
           <p className="text-gray-600 mb-8">

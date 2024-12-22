@@ -49,7 +49,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <div className="min-h-screen">
       <Helmet>
         <title>Moving & Relocation Blog | LiftNHaul</title>
         <meta
@@ -58,8 +58,25 @@ const Blog = () => {
         />
       </Helmet>
 
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Moving & Relocation Blog</h1>
+      <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
+            alt="Moving services"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-4 animate-fadeIn">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Moving & Relocation Blog</h1>
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              Expert moving tips, city guides, and relocation advice to make your move easier.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((post) => (
             <Link key={post.path} to={post.path}>
