@@ -61,7 +61,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0 flex items-center gap-2">
+              <img 
+                src="http://liftnhaul.com/wp-content/uploads/2024/10/cropped-logo1-1-3.webp" 
+                alt="LiftNHaul Logo" 
+                className="h-12 w-auto"
+              />
               <h1 className="text-2xl font-bold text-primary">LiftNHaul</h1>
             </Link>
           </div>
@@ -131,7 +136,7 @@ const Navbar = () => {
             </NavigationMenu>
             <Button className="bg-primary hover:bg-primary/90">
               <Phone className="mr-2 h-4 w-4" />
-              (253) 555-0123
+              (253) 300-0156
             </Button>
           </div>
 
@@ -190,7 +195,7 @@ const Navbar = () => {
               </div>
               <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
                 <Phone className="mr-2 h-4 w-4" />
-                (253) 555-0123
+                (253) 300-0156
               </Button>
             </div>
           </div>
