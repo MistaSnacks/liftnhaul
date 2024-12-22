@@ -24,9 +24,9 @@ const ContactInfo = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer min-h-[120px] flex items-center">
           <div className="flex items-start space-x-4">
-            <MapPin className="w-6 h-6 text-primary mt-1" />
+            <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold">Location</h3>
               <p className="text-gray-600">Tacoma, WA 98445</p>
@@ -35,9 +35,9 @@ const ContactInfo = () => {
         </Card>
 
         <a href="tel:+12533000156" className="block">
-          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer min-h-[120px] flex items-center">
             <div className="flex items-start space-x-4">
-              <Phone className="w-6 h-6 text-primary mt-1" />
+              <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Phone</h3>
                 <p className="text-gray-600">(253) 300-0156</p>
@@ -47,9 +47,9 @@ const ContactInfo = () => {
         </a>
 
         <a href="mailto:info@liftnhaul.com" className="block">
-          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+          <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer min-h-[120px] flex items-center">
             <div className="flex items-start space-x-4">
-              <Mail className="w-6 h-6 text-primary mt-1" />
+              <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Email</h3>
                 <p className="text-gray-600">info@liftnhaul.com</p>
@@ -58,9 +58,9 @@ const ContactInfo = () => {
           </Card>
         </a>
 
-        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer">
+        <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer min-h-[120px] flex items-center">
           <div className="flex items-start space-x-4">
-            <Clock className="w-6 h-6 text-primary mt-1" />
+            <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold">Hours</h3>
               <p className="text-gray-600">Monday - Sunday: 9:00 AM - 5:00 PM</p>
