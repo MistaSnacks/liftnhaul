@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Resources from "./pages/Resources";
+import Sitemap from "./pages/Sitemap";
 import LocalMoving from "./pages/services/LocalMoving";
 import LongDistanceMoving from "./pages/services/LongDistanceMoving";
 import PackingServices from "./pages/services/PackingServices";
@@ -43,69 +44,25 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/resources" element={<Resources />} />
-            <Route
-              path="/services/local-moving"
-              element={<LocalMoving />}
-            />
-            <Route
-              path="/services/long-distance-moving"
-              element={<LongDistanceMoving />}
-            />
-            <Route
-              path="/services/packing-services"
-              element={<PackingServices />}
-            />
-            <Route
-              path="/services/apartment-moving"
-              element={<ApartmentMoving />}
-            />
-            <Route
-              path="/blog/moving-tips-and-tricks"
-              element={<MovingTips />}
-            />
-            <Route
-              path="/blog/moving-to-tacoma-guide"
-              element={<MovingToTacoma />}
-            />
-            <Route
-              path="/blog/best-tacoma-neighborhoods"
-              element={<TacomaNeighborhoods />}
-            />
-            <Route
-              path="/blog/seattle-living-guide"
-              element={<SeattleGuide />}
-            />
-            <Route
-              path="/blog/bellevue-living-guide"
-              element={<BellevueGuide />}
-            />
-            <Route
-              path="/blog/living-in-olympia-guide"
-              element={<OlympiaGuide />}
-            />
-            <Route
-              path="/blog/port-orchard-living-guide"
-              element={<PortOrchardGuide />}
-            />
+            <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="/services/local-moving" element={<LocalMoving />} />
+            <Route path="/services/long-distance-moving" element={<LongDistanceMoving />} />
+            <Route path="/services/packing-services" element={<PackingServices />} />
+            <Route path="/services/apartment-moving" element={<ApartmentMoving />} />
+            <Route path="/blog/moving-tips-and-tricks" element={<MovingTips />} />
+            <Route path="/blog/moving-to-tacoma-guide" element={<MovingToTacoma />} />
+            <Route path="/blog/best-tacoma-neighborhoods" element={<TacomaNeighborhoods />} />
+            <Route path="/blog/seattle-living-guide" element={<SeattleGuide />} />
+            <Route path="/blog/bellevue-living-guide" element={<BellevueGuide />} />
+            <Route path="/blog/living-in-olympia-guide" element={<OlympiaGuide />} />
+            <Route path="/blog/port-orchard-living-guide" element={<PortOrchardGuide />} />
             <Route path="/resources/service-areas" element={<ServiceAreas />} />
             <Route path="/resources/moving-tips" element={<MovingTipsResource />} />
             <Route path="/resources/packing-guide" element={<PackingGuide />} />
-            <Route
-              path="/resources/service-areas/king-county"
-              element={<KingCounty />}
-            />
-            <Route
-              path="/resources/service-areas/pierce-county"
-              element={<PierceCounty />}
-            />
-            <Route
-              path="/resources/service-areas/thurston-county"
-              element={<ThurstonCounty />}
-            />
-            <Route
-              path="/resources/service-areas/kitsap-county"
-              element={<KitsapCounty />}
-            />
+            <Route path="/resources/service-areas/king-county" element={<KingCounty />} />
+            <Route path="/resources/service-areas/pierce-county" element={<PierceCounty />} />
+            <Route path="/resources/service-areas/thurston-county" element={<ThurstonCounty />} />
+            <Route path="/resources/service-areas/kitsap-county" element={<KitsapCounty />} />
           </Routes>
         </main>
         <Footer />
