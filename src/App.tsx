@@ -9,6 +9,11 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
+import Services from "./pages/Services";
+import LocalMoving from "./pages/services/LocalMoving";
+import PackingServices from "./pages/services/PackingServices";
+import ApartmentMoving from "./pages/services/ApartmentMoving";
+import LongDistanceMoving from "./pages/services/LongDistanceMoving";
 import Calculator from "./pages/resources/Calculator";
 import MovingTips from "./pages/resources/MovingTips";
 import PackingGuide from "./pages/resources/PackingGuide";
@@ -31,6 +36,11 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/local-moving" element={<LocalMoving />} />
+              <Route path="/services/packing-services" element={<PackingServices />} />
+              <Route path="/services/apartment-moving" element={<ApartmentMoving />} />
+              <Route path="/services/long-distance-moving" element={<LongDistanceMoving />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/calculator" element={<Calculator />} />
               <Route path="/resources/moving-tips" element={<MovingTips />} />
