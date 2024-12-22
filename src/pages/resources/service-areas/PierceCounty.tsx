@@ -59,8 +59,8 @@ const PierceCounty = () => {
 
           <div className="space-y-6">
             <img
-              src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
-              alt="Pierce County landscape"
+              src="/lovable-uploads/c35016d1-350c-441e-89bb-b88afd43d6c7.png"
+              alt="Tacoma waterfront at sunset with marina and city skyline"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
