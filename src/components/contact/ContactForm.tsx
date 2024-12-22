@@ -12,7 +12,7 @@ const formSchema = z.object({
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
   moveFromDate: z.string().min(1, "Move from date is required"),
-  moveToDate: z.string().min(1, "Move to date is required"),
+  moveSize: z.string().min(1, "Move size is required"),
   referralSource: z.string().min(1, "Please select how you heard about us"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
@@ -25,7 +25,7 @@ const ContactForm = () => {
       email: "",
       phone: "",
       moveFromDate: "",
-      moveToDate: "",
+      moveSize: "",
       referralSource: "",
       message: "",
     },
@@ -38,7 +38,7 @@ const ContactForm = () => {
         Email: ${values.email}
         Phone: ${values.phone}
         Move From Date: ${values.moveFromDate}
-        Move To Date: ${values.moveToDate}
+        Move Size: ${values.moveSize}
         Referral Source: ${values.referralSource}
         Message: ${values.message}
       `;
@@ -114,13 +114,27 @@ const ContactForm = () => {
 
             <FormField
               control={form.control}
-              name="moveToDate"
+              name="moveSize"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Preferred Move End Date</FormLabel>
-                  <FormControl>
-                    <Input type="date" {...field} />
-                  </FormControl>
+                  <FormLabel>Move Size</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select move size" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="studio">Studio</SelectItem>
+                      <SelectItem value="1bedroom">1 Bedroom</SelectItem>
+                      <SelectItem value="2bedroom">2 Bedrooms</SelectItem>
+                      <SelectItem value="3bedroom">3 Bedrooms</SelectItem>
+                      <SelectItem value="4bedroom">4 Bedrooms</SelectItem>
+                      <SelectItem value="5bedroom">5 Bedrooms</SelectItem>
+                      <SelectItem value="6bedroom">6 Bedrooms</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}
