@@ -26,12 +26,12 @@ const ThurstonCounty = () => {
 
             <h2 className="text-2xl font-semibold mb-4">Areas We Serve in Thurston County</h2>
             <p className="mb-6">
-              Olympia - Including Downtown and West Side<br />
-              Lacey - Including Hawks Prairie and Woodland<br />
-              Tumwater<br />
-              Yelm<br />
-              Rochester<br />
-              Tenino<br />
+              Olympia - Including Downtown and West Side
+              Lacey - Including Hawks Prairie and Woodland
+              Tumwater
+              Yelm
+              Rochester
+              Tenino
               Rainier
             </p>
 
@@ -47,25 +47,25 @@ const ThurstonCounty = () => {
 
             <h2 className="text-2xl font-semibold mb-4">Our Thurston County Services</h2>
             <p className="mb-6">
-              Local residential moving<br />
-              Commercial and office relocations<br />
-              Government office moving<br />
-              Professional packing services<br />
-              Storage solutions<br />
-              Specialty item moving<br />
+              Local residential moving
+              Commercial and office relocations
+              Government office moving
+              Professional packing services
+              Storage solutions
+              Specialty item moving
               Senior moving assistance
             </p>
           </div>
 
           <div className="space-y-6">
             <img
-              src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
-              alt="Thurston County landscape"
+              src="/lovable-uploads/d854d334-cecc-4759-a38e-e7c325286122.png"
+              alt="Olympia waterfront with port and marina at sunset"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
-              alt="Thurston County nature"
+              src="/lovable-uploads/b22970d2-7bef-4c43-91a3-d1934d24aac7.png"
+              alt="Olympic Mountains view through evergreen trees"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
