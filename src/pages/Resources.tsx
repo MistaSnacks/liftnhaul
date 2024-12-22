@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Truck, Package, Calculator } from "lucide-react";
+import { Truck, Package, Calculator, MapPin } from "lucide-react";
 
 const Resources = () => {
   return (
@@ -18,7 +18,7 @@ const Resources = () => {
           Everything you need for a successful move, from packing tips to cost calculations.
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Link to="/resources/moving-tips">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
@@ -54,6 +54,19 @@ const Resources = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Calculate approximate moving costs based on distance, home size, and services needed.</p>
+              </CardContent>
+            </Card>
+          </Link>
+
+          <Link to="/resources/service-areas">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <MapPin className="w-8 h-8 text-primary mb-2" />
+                <CardTitle>Service Areas</CardTitle>
+                <CardDescription>Areas we serve in Western WA</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Learn about our service coverage in Pierce, King, Thurston, and Kitsap counties.</p>
               </CardContent>
             </Card>
           </Link>
