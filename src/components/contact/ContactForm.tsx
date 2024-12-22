@@ -50,6 +50,7 @@ const ContactForm = () => {
       toast({
         title: "Quote Request Submitted",
         description: "Thank you! Our team will contact you shortly to discuss your move.",
+        className: "bg-primary text-primary-foreground border-2 border-secondary animate-fade-in",
       });
       
       form.reset();
