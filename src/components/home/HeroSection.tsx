@@ -6,8 +6,8 @@ const HeroSection = () => {
     <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-          alt="Professional moving services"
+          src="/lovable-uploads/df42768b-70f3-463c-9c13-a17ba6e81517.png"
+          alt="Professional moving services in action"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
