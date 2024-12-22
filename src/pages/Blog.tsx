@@ -1,7 +1,6 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { File } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const blogPosts = [
@@ -9,77 +8,77 @@ const Blog = () => {
       title: "Moving to Tacoma: Your Complete Guide",
       path: "/blog/moving-to-tacoma-guide",
       description: "Everything you need to know about relocating to Tacoma, WA",
-      content: "Discover what makes Tacoma a great place to live, from neighborhoods to activities and local culture."
+      image: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad",
     },
     {
       title: "Best Neighborhoods in Tacoma",
       path: "/blog/best-tacoma-neighborhoods",
       description: "Discover the unique character of Tacoma's top neighborhoods",
-      content: "Explore Tacoma's diverse neighborhoods and find the perfect area for your lifestyle and needs."
+      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118",
     },
     {
       title: "Moving Tips & Tricks",
       path: "/blog/moving-tips-and-tricks",
       description: "Expert advice for a smooth and stress-free move",
-      content: "Professional insights and practical tips to make your moving experience easier and more organized."
-    }
+      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+    },
+    {
+      title: "Living in Olympia: A Comprehensive Guide",
+      path: "/blog/living-in-olympia-guide",
+      description: "Discover life in Washington's capital city",
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+    },
+    {
+      title: "Port Orchard: Your Ultimate Guide",
+      path: "/blog/port-orchard-living-guide",
+      description: "Everything about living in Port Orchard, WA",
+      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3",
+    },
+    {
+      title: "Seattle Living Guide",
+      path: "/blog/seattle-living-guide",
+      description: "Navigate life in the Emerald City",
+      image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
+    },
+    {
+      title: "Bellevue: A Modern Living Guide",
+      path: "/blog/bellevue-living-guide",
+      description: "Explore life in the heart of the Eastside",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+    },
   ];
 
   return (
-    <>
+    <div className="min-h-screen pt-24 pb-16">
       <Helmet>
         <title>Moving & Relocation Blog | LiftNHaul</title>
-        <meta 
-          name="description" 
-          content="Expert insights, local guides, and moving tips to help you navigate your relocation journey in the Pacific Northwest." 
-        />
-        <meta 
-          name="keywords" 
-          content="moving blog, relocation tips, Tacoma neighborhoods, moving advice, Pacific Northwest living" 
+        <meta
+          name="description"
+          content="Expert moving tips, city guides, and relocation advice from LiftNHaul. Learn about living in the Pacific Northwest and make your move easier."
         />
       </Helmet>
-      
-      <div className="min-h-screen">
-        <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-              alt="Moving blog"
-              className="w-full h-full object-cover opacity-20"
-            />
-          </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center space-y-4 animate-fadeIn">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Moving & Relocation Blog</h1>
-              <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-                Expert insights and local knowledge to help you navigate your move.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {blogPosts.map((post) => (
-                <Link key={post.title} to={post.path}>
-                  <Card className="h-full hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <File className="w-8 h-8 text-primary mb-2" />
-                      <CardTitle>{post.title}</CardTitle>
-                      <CardDescription>{post.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600">{post.content}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </div>
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold mb-8">Moving & Relocation Blog</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <Link key={post.path} to={post.path}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <CardContent className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
+                  <p className="text-gray-600">{post.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
