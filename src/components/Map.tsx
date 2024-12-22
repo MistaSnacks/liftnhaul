@@ -13,27 +13,31 @@ const Map = () => {
   const initializeMap = () => {
     if (!mapContainer.current || !mapboxToken) return;
 
-    mapboxgl.accessToken = mapboxToken;
-    
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v12',
-      center: [-122.4443, 47.2529], // Tacoma coordinates
-      zoom: 11
-    });
+    try {
+      mapboxgl.accessToken = mapboxToken;
+      
+      map.current = new mapboxgl.Map({
+        container: mapContainer.current,
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [-122.4443, 47.2529], // Tacoma coordinates
+        zoom: 11
+      });
 
-    // Add navigation controls
-    map.current.addControl(
-      new mapboxgl.NavigationControl(),
-      'top-right'
-    );
+      // Add navigation controls
+      map.current.addControl(
+        new mapboxgl.NavigationControl(),
+        'top-right'
+      );
 
-    // Add marker for Tacoma
-    new mapboxgl.Marker()
-      .setLngLat([-122.4443, 47.2529])
-      .addTo(map.current);
+      // Add marker for Tacoma
+      new mapboxgl.Marker()
+        .setLngLat([-122.4443, 47.2529])
+        .addTo(map.current);
 
-    setIsMapInitialized(true);
+      setIsMapInitialized(true);
+    } catch (error) {
+      console.error('Error initializing map:', error);
+    }
   };
 
   useEffect(() => {
