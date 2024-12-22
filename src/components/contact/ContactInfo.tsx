@@ -6,10 +6,20 @@ const ContactInfo = () => {
     <div className="space-y-8">
       <div>
         <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-4">
           Whether you're planning a local move or need professional packing services, 
           our family-owned team is ready to assist you with all your moving needs in 
           Tacoma and throughout Pierce County.
+        </p>
+        <p className="text-gray-600 mb-8">
+          At Lift n' Haul, we understand that every move is unique. Our experienced team 
+          specializes in providing personalized moving solutions tailored to your specific 
+          requirements. From carefully handling your precious belongings to ensuring timely 
+          delivery, we take pride in making your moving experience as smooth as possible. 
+          Our commitment to exceptional customer service and attention to detail has made 
+          us a trusted name in the Pierce County moving industry. Contact us today to 
+          discuss your moving needs and let us show you why we're the preferred choice 
+          for residential and commercial moves in the area.
         </p>
       </div>
 
