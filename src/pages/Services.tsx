@@ -1,80 +1,64 @@
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import { Truck, Box, Home } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
-  const services = [
-    {
-      title: "Local Moving",
-      description: "Professional moving services within Tacoma and Pierce County",
-      icon: Truck,
-      path: "/services/local-moving",
-      image: "https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-    },
-    {
-      title: "Packing Services",
-      description: "Expert packing solutions for a stress-free move",
-      icon: Box,
-      path: "/services/packing-services",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115"
-    },
-    {
-      title: "Apartment Moving",
-      description: "Specialized solutions for apartment relocations",
-      icon: Home,
-      path: "/services/apartment-moving",
-      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
-    },
-    {
-      title: "Long Distance Moving",
-      description: "Reliable interstate and long-distance relocations",
-      icon: Truck,
-      path: "/services/long-distance-moving",
-      image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8"
-    }
-  ];
-
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      <Helmet>
-        <title>Moving Services in Tacoma | LiftNHaul</title>
-        <meta name="description" content="Comprehensive moving services in Tacoma including local moving, packing, apartment moving, and long distance relocations. Professional and reliable moving solutions." />
-        <meta name="keywords" content="moving services, Tacoma movers, local moving, packing services, apartment moving, long distance moving" />
-      </Helmet>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h1>
-          <p className="text-xl text-gray-600">Comprehensive moving solutions tailored to your needs</p>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+            alt="Professional moving services"
+            className="w-full h-full object-cover opacity-20"
+          />
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Link
-                key={index}
-                to={service.path}
-                className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2"
-              >
-                <div className="absolute inset-0">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20" />
-                </div>
-                <div className="relative p-8 text-white">
-                  <Icon className="h-12 w-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-gray-200">{service.description}</p>
-                </div>
-              </Link>
-            );
-          })}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-4 animate-fadeIn">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Professional Moving Services
+            </h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              Comprehensive moving solutions tailored to your needs
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
+      
+      {/* Services Content Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
+              <p className="text-lg text-gray-600">
+                We offer a range of moving services to meet your needs, including residential, commercial, and long-distance moves.
+              </p>
+              <p className="text-lg text-gray-600">
+                Our team of experienced movers is dedicated to providing you with a seamless and stress-free moving experience.
+              </p>
+            </div>
+            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+                alt="Moving services in action"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-primary text-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-3xl font-bold mb-8">
+            Ready to Experience Our Services?
+          </h2>
+          <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90">
+            Get Your Free Quote Today
+          </Button>
+        </div>
+      </section>
     </div>
   );
 };
