@@ -17,7 +17,7 @@ const KingCounty = () => {
       
       <div className="container mx-auto px-4 py-8 mt-24">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="prose max-w-none">
+          <div className="prose max-w-none text-left">
             <h1 className="text-4xl font-bold text-primary mb-8">Moving Services in King County</h1>
             
             <p className="text-lg mb-6">
@@ -25,16 +25,16 @@ const KingCounty = () => {
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Areas We Serve in King County</h2>
-            <ul className="list-disc pl-6 mb-6">
-              <li>Seattle - Including Downtown, Capitol Hill, and West Seattle</li>
-              <li>Bellevue - Including Downtown and Crossroads</li>
-              <li>Kent - Including East Hill and Valley</li>
-              <li>Renton</li>
-              <li>Federal Way</li>
-              <li>Auburn</li>
-              <li>Mercer Island</li>
-              <li>Kirkland</li>
-            </ul>
+            <p className="mb-6">
+              Seattle - Including Downtown, Capitol Hill, and West Seattle
+              Bellevue - Including Downtown and Crossroads
+              Kent - Including East Hill and Valley
+              Renton
+              Federal Way
+              Auburn
+              Mercer Island
+              Kirkland
+            </p>
 
             <h2 className="text-2xl font-semibold mb-4">Specialized King County Moving Services</h2>
             <p className="mb-6">
@@ -47,15 +47,15 @@ const KingCounty = () => {
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Our King County Services Include</h2>
-            <ul className="list-disc pl-6 mb-6">
-              <li>Residential moving services</li>
-              <li>Commercial and office relocations</li>
-              <li>High-rise apartment moving</li>
-              <li>Professional packing and unpacking</li>
-              <li>Secure storage solutions</li>
-              <li>Specialty item transportation</li>
-              <li>Same-day moving services</li>
-            </ul>
+            <p className="mb-6">
+              Residential moving services
+              Commercial and office relocations
+              High-rise apartment moving
+              Professional packing and unpacking
+              Secure storage solutions
+              Specialty item transportation
+              Same-day moving services
+            </p>
           </div>
 
           <div className="space-y-6">
@@ -65,8 +65,8 @@ const KingCounty = () => {
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-              alt="Bellevue downtown"
+              src="/lovable-uploads/46dac536-d0a0-4fe7-a8ef-7d3a9530bd42.png"
+              alt="Seattle skyline with Space Needle and Mount Rainier in the background"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
