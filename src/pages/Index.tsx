@@ -97,8 +97,15 @@ const Index = () => {
       </section>
 
       {/* Service Areas Section */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1502175353174-a7a70e73b362"
+            alt="Mount Rainier and Tacoma Skyline"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Our Service Areas</h2>
             <p className="mt-4 text-xl text-gray-200">
