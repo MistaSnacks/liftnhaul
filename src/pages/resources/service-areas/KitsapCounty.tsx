@@ -60,13 +60,13 @@ const KitsapCounty = () => {
 
           <div className="space-y-6">
             <img
-              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
-              alt="Kitsap County landscape"
+              src="/lovable-uploads/ca3bb3b2-7239-4a85-b213-5397bf7641b5.png"
+              alt="Waterfront buildings and marina in Kitsap County"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1501854140801-50d01698950b"
-              alt="Kitsap County nature"
+              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+              alt="Kitsap County landscape"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
