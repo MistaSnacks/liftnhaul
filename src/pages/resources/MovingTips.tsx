@@ -127,26 +127,38 @@ const MovingTips = () => {
           </CardContent>
         </Card>
 
-        {/* New Post-Move Organization Section */}
         <Card className="mb-8">
           <CardContent className="pt-6">
-            <h2 className="text-2xl font-semibold mb-4">Post-Move Organization</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-                alt="Organizing after the move"
-                className="rounded-lg shadow-lg w-full h-48 object-cover"
-              />
-              <div>
-                <h3 className="text-xl font-medium mb-3">Getting Settled</h3>
-                <ul className="list-disc pl-6 space-y-3 text-gray-700">
-                  <li>Create an unpacking schedule</li>
-                  <li>Set up essential rooms first</li>
-                  <li>Organize as you unpack</li>
-                  <li>Document any damages for claims</li>
-                </ul>
-              </div>
-            </div>
+            <h2 className="text-2xl font-semibold mb-4">Moving Day Success Tips</h2>
+            <p className="text-gray-700 mb-4">
+              Being prepared for moving day is crucial for a successful relocation.
+              Here are some additional tips to ensure everything goes smoothly:
+            </p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+              <li>Prepare an essentials box with items you'll need immediately</li>
+              <li>Keep important documents and valuables with you</li>
+              <li>Have cash on hand for unexpected expenses</li>
+              <li>Take photos of electronics before disconnecting</li>
+              <li>Label boxes clearly with contents and destination rooms</li>
+              <li>Pack a separate box for first-day items</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-8">
+          <CardContent className="pt-6">
+            <h2 className="text-2xl font-semibold mb-4">Special Items Handling</h2>
+            <p className="text-gray-700 mb-4">
+              Different items require different handling approaches. Here's how to
+              handle special items during your move:
+            </p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+              <li>Use wardrobe boxes for hanging clothes</li>
+              <li>Wrap furniture in moving blankets</li>
+              <li>Pack electronics in original boxes if possible</li>
+              <li>Use specialty boxes for dishes and glassware</li>
+              <li>Consider climate-controlled storage for sensitive items</li>
+            </ul>
           </CardContent>
         </Card>
       </div>

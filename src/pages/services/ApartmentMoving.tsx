@@ -28,15 +28,34 @@ const ApartmentMoving = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-900">Expert Apartment Moving</h2>
             <p className="text-gray-600">
-              Our apartment moving services are specifically designed to handle the unique challenges of apartment relocations. We're experienced in navigating stairs, elevators, and tight spaces while protecting your belongings and the building's property.
+              Our apartment moving services are specifically designed to handle the unique challenges of apartment relocations. We're experienced in navigating stairs, elevators, and tight spaces while protecting your belongings and the building's property. Our team understands the complexities of apartment moves and has developed specialized techniques to ensure a smooth transition.
             </p>
-            <ul className="space-y-2 text-gray-600">
-              <li>✓ Experienced in multi-story buildings</li>
-              <li>✓ Elevator and stairway specialists</li>
-              <li>✓ Property protection measures</li>
-              <li>✓ Efficient space management</li>
-            </ul>
+            <p className="text-gray-600">
+              Whether you're moving to a high-rise apartment or a garden-style complex, our experienced movers have the expertise to handle your move efficiently and safely. We take extra precautions to protect both your belongings and the building's common areas throughout the moving process.
+            </p>
           </div>
+        </div>
+
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-2xl font-semibold mb-4">Specialized Apartment Moving Services</h2>
+          <p className="text-gray-600 mb-4">
+            Our apartment moving services include comprehensive solutions tailored to the unique requirements of apartment relocations. We handle everything from securing elevator access and parking permits to protecting hallways and common areas during the move. Our team is trained in the best practices for navigating tight corners, narrow hallways, and multiple flights of stairs.
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-4">Building Protection</h2>
+          <p className="text-gray-600 mb-4">
+            We take extra care to protect your apartment building's common areas during the move. This includes using floor runners, door jamb protectors, and elevator padding to prevent any damage. Our team is also experienced in working with building management to ensure compliance with all moving regulations and requirements.
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
+          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+            <li>Elevator reservation coordination</li>
+            <li>Proper protection of common areas</li>
+            <li>Specialized equipment for tight spaces</li>
+            <li>Furniture disassembly and reassembly</li>
+            <li>Packing and unpacking services</li>
+            <li>Storage solutions if needed</li>
+          </ul>
         </div>
       </div>
     </div>

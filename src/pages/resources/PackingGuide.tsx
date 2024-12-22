@@ -127,28 +127,54 @@ const PackingGuide = () => {
           </CardContent>
         </Card>
 
-        {/* New Storage Solutions Section */}
         <Card className="mb-8">
           <CardContent className="pt-6">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center">
-              <Archive className="mr-2 text-primary" />
-              Storage Solutions
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <img
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-                alt="Storage solutions for moving"
-                className="rounded-lg shadow-lg w-full h-48 object-cover"
-              />
-              <div>
-                <h3 className="text-xl font-medium mb-3">Temporary Storage Tips</h3>
-                <ul className="list-disc pl-6 space-y-3 text-gray-700">
-                  <li>Consider climate-controlled units for sensitive items</li>
-                  <li>Create an inventory system for stored items</li>
-                  <li>Stack boxes strategically for easy access</li>
-                  <li>Leave walkways between stacked items</li>
-                </ul>
-              </div>
+            <h2 className="text-2xl font-semibold mb-4">Room-by-Room Packing Guide</h2>
+            <div className="space-y-4">
+              <h3 className="text-xl font-medium">Kitchen</h3>
+              <p className="text-gray-700">
+                The kitchen often contains the most fragile items and requires special
+                attention during packing. Use dish pack boxes and plenty of packing
+                paper. Pack plates vertically and wrap each glass individually.
+              </p>
+
+              <h3 className="text-xl font-medium">Living Room</h3>
+              <p className="text-gray-700">
+                Start with decorative items and books. Use picture boxes for artwork
+                and mirrors. Disassemble furniture when possible and keep hardware
+                together in labeled bags.
+              </p>
+
+              <h3 className="text-xl font-medium">Bedroom</h3>
+              <p className="text-gray-700">
+                Use wardrobe boxes for hanging clothes. Pack off-season items first.
+                Consider vacuum bags for bulky bedding and clothing items.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-8">
+          <CardContent className="pt-6">
+            <h2 className="text-2xl font-semibold mb-4">Special Items Packing</h2>
+            <div className="space-y-4">
+              <h3 className="text-xl font-medium">Electronics</h3>
+              <p className="text-gray-700">
+                Take photos of wire connections before disconnecting. Use original
+                boxes when possible, or similar-sized boxes with plenty of padding.
+              </p>
+
+              <h3 className="text-xl font-medium">Artwork and Mirrors</h3>
+              <p className="text-gray-700">
+                Use picture boxes and corner protectors. Mark boxes as fragile and
+                pack them separately from other items.
+              </p>
+
+              <h3 className="text-xl font-medium">Valuable Items</h3>
+              <p className="text-gray-700">
+                Keep important documents, jewelry, and other valuables with you
+                during the move. Consider insurance for high-value items.
+              </p>
             </div>
           </CardContent>
         </Card>

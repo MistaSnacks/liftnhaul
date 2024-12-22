@@ -28,15 +28,35 @@ const LocalMoving = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-900">Expert Local Moving Solutions</h2>
             <p className="text-gray-600">
-              Our local moving services are designed to make your relocation within Tacoma and Pierce County seamless and stress-free. With years of experience and a dedicated team of professional movers, we ensure your belongings are handled with the utmost care.
+              Our local moving services are designed to make your relocation within Tacoma and Pierce County seamless and stress-free. With years of experience and a dedicated team of professional movers, we ensure your belongings are handled with the utmost care and attention to detail.
             </p>
-            <ul className="space-y-2 text-gray-600">
-              <li>✓ Experienced and professional moving crew</li>
-              <li>✓ Fully equipped modern moving trucks</li>
-              <li>✓ Comprehensive insurance coverage</li>
-              <li>✓ Flexible scheduling options</li>
-            </ul>
+            <p className="text-gray-600">
+              Whether you're moving to a new home across town or relocating your business within Pierce County, our experienced team has the expertise and equipment to handle your move efficiently and professionally. We understand that every move is unique, which is why we offer customized solutions tailored to your specific needs.
+            </p>
+            <p className="text-gray-600">
+              Our comprehensive local moving services include careful packing of your belongings, safe transportation in our well-maintained trucks, and professional unpacking at your new location. We use high-quality packing materials and proven techniques to ensure your items arrive safely at their destination.
+            </p>
           </div>
+        </div>
+
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-2xl font-semibold mb-4">Why Choose Our Local Moving Service?</h2>
+          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+            <li>Experienced and professional moving crew with extensive local knowledge</li>
+            <li>Fully equipped modern moving trucks with proper padding and securing equipment</li>
+            <li>Comprehensive insurance coverage for peace of mind</li>
+            <li>Flexible scheduling options to accommodate your timeline</li>
+            <li>Transparent pricing with no hidden fees</li>
+            <li>Local expertise in navigating Tacoma and Pierce County areas</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mb-4">Our Local Moving Process</h2>
+          <p className="text-gray-600 mb-4">
+            We've developed a streamlined process to ensure your local move goes smoothly from start to finish. Our approach begins with a detailed consultation to understand your specific needs and requirements. We then create a customized moving plan that takes into account everything from packing requirements to delivery scheduling.
+          </p>
+          <p className="text-gray-600 mb-4">
+            Our team arrives on time with all necessary equipment and supplies, ensuring efficient packing and loading of your belongings. We take extra care with fragile items and valuable possessions, using specialized packing materials when needed. Throughout the move, our team maintains clear communication, keeping you informed of progress and addressing any concerns that may arise.
+          </p>
         </div>
       </div>
     </div>

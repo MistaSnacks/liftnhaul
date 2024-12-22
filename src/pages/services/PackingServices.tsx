@@ -28,15 +28,34 @@ const PackingServices = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-900">Comprehensive Packing Solutions</h2>
             <p className="text-gray-600">
-              Our professional packing services take the stress out of preparing for your move. We use high-quality materials and proven techniques to ensure your belongings are protected throughout the entire moving process.
+              Our professional packing services take the stress out of preparing for your move. We use high-quality materials and proven techniques to ensure your belongings are protected throughout the entire moving process. Our experienced team handles everything from delicate china to bulky furniture with expert care and attention.
             </p>
-            <ul className="space-y-2 text-gray-600">
-              <li>✓ High-quality packing materials</li>
-              <li>✓ Professional packing techniques</li>
-              <li>✓ Fragile item specialization</li>
-              <li>✓ Full or partial packing options</li>
-            </ul>
+            <p className="text-gray-600">
+              Whether you need full-service packing for your entire home or partial packing for specific items, our team can accommodate your needs. We understand that each item requires different handling and protection, which is why we use specialized materials and techniques for different types of belongings.
+            </p>
           </div>
+        </div>
+
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-2xl font-semibold mb-4">Our Packing Process</h2>
+          <p className="text-gray-600 mb-4">
+            We follow a systematic approach to ensure all your items are packed securely and efficiently. Our process begins with an assessment of your belongings to determine the appropriate packing materials and techniques needed. We then carefully wrap and pack each item, using protective materials such as bubble wrap, packing paper, and custom boxes where necessary.
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-4">Quality Packing Materials</h2>
+          <p className="text-gray-600 mb-4">
+            We use only high-quality packing materials to ensure maximum protection for your belongings. Our supplies include sturdy moving boxes in various sizes, bubble wrap, packing paper, tape, and specialized containers for delicate items. We also provide wardrobe boxes for clothing and custom crating for valuable or fragile items that require extra protection.
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
+          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+            <li>Custom crating for artwork and antiques</li>
+            <li>Electronics packing and protection</li>
+            <li>Furniture disassembly and reassembly</li>
+            <li>Specialized packing for fragile items</li>
+            <li>Unpacking services at your new location</li>
+            <li>Packing supplies delivery</li>
+          </ul>
         </div>
       </div>
     </div>
