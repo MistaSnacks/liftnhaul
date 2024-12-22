@@ -22,30 +22,6 @@ const Blog = () => {
       path: "/blog/moving-tips-and-tricks",
       description: "Expert advice for a smooth and stress-free move",
       content: "Professional insights and practical tips to make your moving experience easier and more organized."
-    },
-    {
-      title: "Living in Olympia: A Comprehensive Guide",
-      path: "/blog/living-in-olympia",
-      description: "Discover life in Washington's capital city",
-      content: "Everything you need to know about moving to and living in Olympia, Washington's historic capital."
-    },
-    {
-      title: "Port Orchard: Your Ultimate Moving Guide",
-      path: "/blog/port-orchard-guide",
-      description: "Everything about moving to Port Orchard, WA",
-      content: "A complete guide to relocating to Port Orchard, featuring local insights and essential information."
-    },
-    {
-      title: "Seattle Living: What to Know Before Moving",
-      path: "/blog/seattle-living-guide",
-      description: "Essential tips for relocating to Seattle",
-      content: "Your comprehensive guide to moving to Seattle, from neighborhoods to lifestyle and culture."
-    },
-    {
-      title: "Moving to Bellevue: A Complete Guide",
-      path: "/blog/bellevue-guide",
-      description: "Your comprehensive guide to life in Bellevue",
-      content: "Everything you need to know about relocating to Bellevue, Washington's tech hub."
     }
   ];
 
@@ -59,7 +35,7 @@ const Blog = () => {
         />
         <meta 
           name="keywords" 
-          content="moving blog, relocation tips, Tacoma neighborhoods, moving advice, Pacific Northwest living, Seattle moving, Olympia relocation, Bellevue guide" 
+          content="moving blog, relocation tips, Tacoma neighborhoods, moving advice, Pacific Northwest living" 
         />
       </Helmet>
       
