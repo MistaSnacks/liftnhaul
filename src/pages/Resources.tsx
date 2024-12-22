@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Truck, Package, MapPin, File, Grid } from "lucide-react";
+import { Truck, Package, MapPin } from "lucide-react";
 
 const Resources = () => {
   const resources = [

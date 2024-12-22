@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { File, Grid } from "lucide-react";
+import { File } from "lucide-react";
 
 const Blog = () => {
   const blogPosts = [
