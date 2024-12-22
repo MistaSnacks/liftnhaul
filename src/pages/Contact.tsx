@@ -13,10 +13,6 @@ const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
-  address: z.string().min(5, "Address must be at least 5 characters"),
-  city: z.string().min(2, "City must be at least 2 characters"),
-  state: z.string().min(2, "State must be at least 2 characters"),
-  zipCode: z.string().min(5, "ZIP code must be at least 5 digits"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -28,10 +24,6 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
-      address: "",
-      city: "",
-      state: "",
-      zipCode: "",
       message: "",
     },
   });
@@ -79,7 +71,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-600">Tacoma, WA 98445</p>
+                  <p className="text-gray-600">Tacoma, WA 98402</p>
                 </div>
               </div>
 
@@ -87,7 +79,7 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">(253) 655-7973</p>
+                  <p className="text-gray-600">(253) 555-0123</p>
                 </div>
               </div>
 
@@ -155,64 +147,6 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-
-                <FormField
-                  control={form.control}
-                  name="address"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Address</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Street address" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <FormField
-                    control={form.control}
-                    name="city"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>City</FormLabel>
-                        <FormControl>
-                          <Input placeholder="City" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="state"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>State</FormLabel>
-                        <FormControl>
-                          <Input placeholder="State" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="zipCode"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>ZIP Code</FormLabel>
-                        <FormControl>
-                          <Input placeholder="ZIP code" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
 
                 <FormField
                   control={form.control}
