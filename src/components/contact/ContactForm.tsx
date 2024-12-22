@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -18,6 +19,7 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,6 +46,12 @@ const ContactForm = () => {
       `;
 
       window.location.href = `mailto:info@liftnhaul.com?subject=Moving Quote Request&body=${encodeURIComponent(emailContent)}`;
+      
+      toast({
+        title: "Quote Request Submitted",
+        description: "Thank you! Our team will contact you shortly to discuss your move.",
+      });
+      
       form.reset();
     } catch (error) {
       console.error('Error sending form:', error);
