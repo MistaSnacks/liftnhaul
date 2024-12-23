@@ -40,8 +40,8 @@ const About = () => {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png"
-                alt="LiftNHaul professional mover in safety gear inside moving truck demonstrating commitment to safety"
+                src="/lovable-uploads/15f86686-87a0-4835-96ac-9fb21dbdc095.png"
+                alt="LiftNHaul professional mover showcasing our commitment to excellence and professionalism"
                 className="w-full h-full object-cover"
               />
             </div>
