@@ -37,8 +37,8 @@ const PortOrchardGuide = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3"
-            alt="Scenic waterfront view of Port Orchard"
+            src="/lovable-uploads/6962ae5a-1011-4fb4-8245-5c2c1bb5c41a.png"
+            alt="Downtown Port Orchard waterfront featuring local businesses, marina with boats, and scenic hillside homes overlooking Sinclair Inlet"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 

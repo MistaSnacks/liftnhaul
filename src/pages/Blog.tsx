@@ -29,8 +29,8 @@ const Blog = () => {
       title: "Port Orchard: Your Ultimate Guide",
       path: "/blog/port-orchard-living-guide",
       description: "Everything about living in Port Orchard, WA",
-      image: "/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png",
-      alt: "Professional moving company truck and team providing expert moving services"
+      image: "/lovable-uploads/6962ae5a-1011-4fb4-8245-5c2c1bb5c41a.png",
+      alt: "Downtown Port Orchard waterfront featuring local businesses, marina with boats, and scenic hillside homes overlooking Sinclair Inlet"
     },
     {
       title: "Seattle Living Guide",
