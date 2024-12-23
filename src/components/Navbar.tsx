@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2">
               <img 
-                src="/lovable-uploads/c2e019f8-e809-498b-a113-29bbd76985e2.png" 
+                src="/lovable-uploads/396f78c7-1e1e-4c74-886e-bfddf9a55a37.png" 
                 alt="LiftNHaul Moving Company Logo - Professional Moving Services in Tacoma" 
                 className="h-12 w-auto"
               />
