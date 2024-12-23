@@ -16,7 +16,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8 animate-fadeIn">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              We Make Moving Cheap, Safe, Fast, and Easy!
+            Tacoma's Trusted Family-Owned Moving Company
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
               Serving Pierce County families and businesses since 2024 with professional, reliable moving services
