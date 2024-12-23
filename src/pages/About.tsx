@@ -8,8 +8,8 @@ const About = () => {
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-            alt="Professional moving services - LiftNHaul moving truck being loaded"
+            src="/lovable-uploads/e4890e7d-447e-40b9-85b7-3e124b84df52.png"
+            alt="Professional moving company team member in LiftNHaul uniform standing in front of wrapped furniture and moving supplies"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
