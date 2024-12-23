@@ -1,6 +1,5 @@
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
-import Map from "@/components/Map";
 
 const Contact = () => {
   return (
@@ -27,17 +26,6 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <ContactInfo />
           <ContactForm />
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-3xl font-bold mb-6">Service Area</h2>
-          <p className="text-gray-600 mb-8">
-            We proudly serve Tacoma and the surrounding Pierce County area, providing professional 
-            moving services to both residential and commercial customers.
-          </p>
-          <div className="h-[400px] rounded-lg overflow-hidden">
-            <Map />
-          </div>
         </div>
       </div>
     </div>
