@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const SocialLinks = () => {
   return (
@@ -8,11 +8,19 @@ const SocialLinks = () => {
         <a href="#" className="text-gray-400 hover:text-white transition-colors">
           <Facebook className="h-6 w-6" />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white transition-colors">
+        <a 
+          href="https://www.instagram.com/liftnhaulco/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-gray-400 hover:text-white transition-colors"
+        >
           <Instagram className="h-6 w-6" />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white transition-colors">
-          <Twitter className="h-6 w-6" />
+        <a 
+          href="#" 
+          className="text-gray-400 hover:text-white transition-colors"
+        >
+          <Linkedin className="h-6 w-6" />
         </a>
       </div>
     </div>
