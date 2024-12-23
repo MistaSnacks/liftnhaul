@@ -30,7 +30,7 @@ const Services = () => {
       description: "Reliable interstate and long-distance relocations",
       icon: Truck,
       path: "/services/long-distance-moving",
-      image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8"
+      image: "/lovable-uploads/f57c2395-b4e9-410f-ab9f-46613cf6f480.png"
     }
   ];
 
