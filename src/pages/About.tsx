@@ -40,7 +40,7 @@ const About = () => {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/lovable-uploads/284d11ed-eb47-487f-a98e-ff17a493f91f.png"
+                src="/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png"
                 alt="LiftNHaul professional mover in safety gear inside moving truck demonstrating commitment to safety"
                 className="w-full h-full object-cover"
               />
@@ -70,7 +70,7 @@ const About = () => {
               {
                 title: "Professional Excellence",
                 description: "Our team of licensed and insured movers undergoes rigorous training to ensure your move is handled with the utmost care and efficiency.",
-                image: "/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png",
+                image: "/lovable-uploads/284d11ed-eb47-487f-a98e-ff17a493f91f.png",
                 alt: "LiftNHaul team member in uniform exemplifying our professional moving standards"
               }
             ].map((value, index) => (
