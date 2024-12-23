@@ -8,50 +8,43 @@ const Blog = () => {
       title: "Moving to Tacoma: Your Complete Guide",
       path: "/blog/moving-to-tacoma-guide",
       description: "Everything you need to know about relocating to Tacoma, WA",
-      image: "https://images.unsplash.com/photo-1449034446853-66c86144b0ad",
-      alt: "Scenic view of Tacoma's iconic skyline with Mount Rainier in the background"
+      image: "/lovable-uploads/47c8688d-a2e1-4523-936f-a77517aa47d1.png",
+      alt: "Tacoma waterfront at sunset with marina and city skyline"
     },
     {
       title: "Best Neighborhoods in Tacoma",
       path: "/blog/best-tacoma-neighborhoods",
       description: "Discover the unique character of Tacoma's top neighborhoods",
-      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118",
-      alt: "Tree-lined residential street in North Tacoma featuring historic craftsman homes"
-    },
-    {
-      title: "Moving Tips & Tricks",
-      path: "/blog/moving-tips-and-tricks",
-      description: "Expert advice for a smooth and stress-free move",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
-      alt: "Professional movers carefully packing and organizing moving boxes"
+      image: "/lovable-uploads/47be9504-23a0-448a-953d-f4138d94615d.png",
+      alt: "Point Ruston waterfront featuring modern luxury apartments and community spaces"
     },
     {
       title: "Living in Olympia: A Comprehensive Guide",
       path: "/blog/living-in-olympia-guide",
       description: "Discover life in Washington's capital city",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-      alt: "Washington State Capitol building in Olympia with blooming cherry blossoms"
+      image: "/lovable-uploads/3e62240c-5e1e-496b-83f2-dea72304b102.png",
+      alt: "Aerial view of Olympia's port and waterfront at dusk"
     },
     {
       title: "Port Orchard: Your Ultimate Guide",
       path: "/blog/port-orchard-living-guide",
       description: "Everything about living in Port Orchard, WA",
-      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3",
-      alt: "Port Orchard waterfront marina with boats and Olympic Mountains view"
+      image: "/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png",
+      alt: "Professional moving company truck and team providing expert moving services"
     },
     {
       title: "Seattle Living Guide",
       path: "/blog/seattle-living-guide",
       description: "Navigate life in the Emerald City",
-      image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
-      alt: "Seattle skyline featuring Space Needle and downtown buildings at sunset"
+      image: "/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png",
+      alt: "Seattle skyline featuring Space Needle and downtown buildings"
     },
     {
       title: "Bellevue: A Modern Living Guide",
       path: "/blog/bellevue-living-guide",
       description: "Explore life in the heart of the Eastside",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-      alt: "Downtown Bellevue skyline with modern high-rise buildings and Lake Washington"
+      image: "/lovable-uploads/be984819-5b89-4169-a886-620a3dde6bcf.png",
+      alt: "Downtown Bellevue skyline with modern high-rise buildings"
     },
   ];
 
