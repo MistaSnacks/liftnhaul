@@ -11,21 +11,21 @@ const PackingServices = () => {
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-right mb-12">
-          <Box className="ml-auto h-16 w-16 text-primary mb-4" />
+        <div className="text-center mb-12">
+          <Box className="mx-auto h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Professional Packing Services</h1>
           <p className="text-xl text-gray-600">Expert packing solutions for a stress-free move</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="rounded-lg overflow-hidden order-2 md:order-1">
+          <div className="rounded-lg overflow-hidden">
             <img
               src="/lovable-uploads/ec2a8ea5-1d55-4347-83df-8a5edf55451c.png"
               alt="Professional packing service - Expert handling and secure packaging of belongings"
               className="w-full h-64 object-cover"
             />
           </div>
-          <div className="space-y-4 text-right order-1 md:order-2">
+          <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-900">Comprehensive Packing Solutions</h2>
             <p className="text-gray-600">
               Our professional packing services take the stress out of preparing for your move. We use high-quality materials and proven techniques to ensure your belongings are protected throughout the entire moving process. Our experienced team handles everything from delicate china to bulky furniture with expert care and attention.
@@ -36,7 +36,7 @@ const PackingServices = () => {
           </div>
         </div>
 
-        <div className="prose prose-lg max-w-none text-right">
+        <div className="prose prose-lg max-w-none">
           <h2 className="text-2xl font-semibold mb-4">Our Packing Process</h2>
           <p className="text-gray-600 mb-4">
             We follow a systematic approach to ensure all your items are packed securely and efficiently. Our process begins with an assessment of your belongings to determine the appropriate packing materials and techniques needed. We then carefully wrap and pack each item, using protective materials such as bubble wrap, packing paper, and custom boxes where necessary.
