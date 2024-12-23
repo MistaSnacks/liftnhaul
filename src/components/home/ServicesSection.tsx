@@ -1,6 +1,5 @@
 import { Truck, Box, Home } from "lucide-react";
 import { Link } from "react-router-dom";
-import EditableText from "@/components/ui/editable-text";
 
 const ServicesSection = () => {
   const services = [
@@ -38,17 +37,10 @@ const ServicesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <EditableText
-            id="services-title"
-            defaultText="Our Services"
-            className="text-3xl font-bold text-gray-900"
-            as="h2"
-          />
-          <EditableText
-            id="services-subtitle"
-            defaultText="Comprehensive moving solutions tailored to your needs"
-            className="mt-4 text-xl text-gray-600"
-          />
+          <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
+          <p className="mt-4 text-xl text-gray-600">
+            Comprehensive moving solutions tailored to your needs
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -66,17 +58,8 @@ const ServicesSection = () => {
                 />
               </div>
               <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
-              <EditableText
-                id={`service-title-${index}`}
-                defaultText={service.title}
-                className="text-xl font-semibold mb-2"
-                as="h3"
-              />
-              <EditableText
-                id={`service-description-${index}`}
-                defaultText={service.description}
-                className="text-gray-600"
-              />
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
             </Link>
           ))}
         </div>
