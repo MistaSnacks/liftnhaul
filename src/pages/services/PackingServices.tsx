@@ -20,8 +20,8 @@ const PackingServices = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115"
-              alt="Professional packing service"
+              src="/lovable-uploads/4b1b1a5f-4637-45ad-a00c-b3b7ecb18fd9.png"
+              alt="Professional packing supplies and equipment - Storage containers and moving dollies for secure item storage"
               className="w-full h-64 object-cover"
             />
           </div>
