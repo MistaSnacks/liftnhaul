@@ -5,7 +5,7 @@ const FooterLogo = () => {
     <div className="space-y-4">
       <div className="flex items-center gap-2">
         <img 
-          src="/lovable-uploads/cb795fbd-18c0-4f1f-8ed6-f8e63107b408.png" 
+          src="/lovable-uploads/4f1137f5-ab67-44bb-a90c-f4e9c3d45377.png" 
           alt="LiftNHaul Moving Company Logo - Professional Moving Services in Tacoma" 
           className="h-12 w-auto"
         />
