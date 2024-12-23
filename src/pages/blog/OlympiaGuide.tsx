@@ -37,8 +37,8 @@ const OlympiaGuide = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
-            alt="Scenic view of Olympia, Washington"
+            src="/lovable-uploads/3e62240c-5e1e-496b-83f2-dea72304b102.png"
+            alt="Aerial view of Olympia's port and waterfront at dusk"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
