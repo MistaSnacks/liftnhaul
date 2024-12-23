@@ -1,77 +1,50 @@
-import React, { useEffect, useRef, useState } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import { Input } from './ui/input';
-import { Button } from './ui/button';
+import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
+import { useCallback, useMemo } from "react";
 
 const Map = () => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
-  const [mapboxToken, setMapboxToken] = useState('');
-  const [isMapInitialized, setIsMapInitialized] = useState(false);
+  // Tacoma, WA coordinates
+  const center = useMemo(() => ({ lat: 47.2529, lng: -122.4443 }), []);
 
-  const initializeMap = () => {
-    if (!mapContainer.current || !mapboxToken) return;
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || "",
+  });
 
-    try {
-      mapboxgl.accessToken = mapboxToken;
-      
-      map.current = new mapboxgl.Map({
-        container: mapContainer.current,
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [-122.4443, 47.2529], // Tacoma coordinates
-        zoom: 11
-      });
+  const mapOptions = useMemo<google.maps.MapOptions>(
+    () => ({
+      disableDefaultUI: false,
+      clickableIcons: true,
+      scrollwheel: true,
+    }),
+    []
+  );
 
-      // Add navigation controls
-      map.current.addControl(
-        new mapboxgl.NavigationControl(),
-        'top-right'
-      );
+  const onLoad = useCallback((map: google.maps.Map) => {
+    const bounds = new window.google.maps.LatLngBounds(center);
+    map.fitBounds(bounds);
+  }, [center]);
 
-      // Add marker for Tacoma
-      new mapboxgl.Marker()
-        .setLngLat([-122.4443, 47.2529])
-        .addTo(map.current);
-
-      setIsMapInitialized(true);
-    } catch (error) {
-      console.error('Error initializing map:', error);
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      if (map.current) {
-        map.current.remove();
-      }
-    };
-  }, []);
-
-  if (!isMapInitialized) {
+  if (!isLoaded) {
     return (
-      <div className="p-4 border rounded-lg">
-        <p className="mb-4 text-sm text-gray-600">
-          Please enter your Mapbox public token to view the map. You can get one at{' '}
-          <a href="https://mapbox.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-            mapbox.com
-          </a>
-        </p>
-        <div className="flex gap-2">
-          <Input
-            type="text"
-            placeholder="Enter Mapbox token"
-            value={mapboxToken}
-            onChange={(e) => setMapboxToken(e.target.value)}
-          />
-          <Button onClick={initializeMap}>Initialize Map</Button>
-        </div>
+      <div className="h-full w-full flex items-center justify-center bg-gray-100">
+        <p>Loading map...</p>
       </div>
     );
   }
 
   return (
-    <div ref={mapContainer} className="h-full w-full" />
+    <GoogleMap
+      options={mapOptions}
+      zoom={14}
+      center={center}
+      mapTypeId={google.maps.MapTypeId.ROADMAP}
+      mapContainerStyle={{ width: "100%", height: "100%" }}
+      onLoad={onLoad}
+    >
+      <MarkerF
+        position={center}
+        title="Lift n' Haul"
+      />
+    </GoogleMap>
   );
 };
 
