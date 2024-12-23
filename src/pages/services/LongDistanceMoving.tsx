@@ -20,8 +20,8 @@ const LongDistanceMoving = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8"
-              alt="Long distance moving service"
+              src="/lovable-uploads/f57c2395-b4e9-410f-ab9f-46613cf6f480.png"
+              alt="Professional long distance moving service - Expert movers carefully loading boxes into a moving truck for interstate relocation"
               className="w-full h-64 object-cover"
             />
           </div>
