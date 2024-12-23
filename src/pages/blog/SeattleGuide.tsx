@@ -37,8 +37,8 @@ const SeattleGuide = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a"
-            alt="Seattle skyline with Space Needle"
+            src="/lovable-uploads/41d87ca9-1d61-4978-9725-fd85bfd3b431.png"
+            alt="Aerial view of downtown Seattle featuring the iconic Space Needle, modern skyscrapers, and Elliott Bay with Mount Rainier visible in the distance"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
