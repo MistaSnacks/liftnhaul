@@ -12,7 +12,7 @@ const ContactInfo = () => {
           Tacoma and throughout Pierce County.
         </p>
         <p className="text-gray-600 mb-8">
-          At Lift n' Haul, we understand that every move is unique. Our experienced team 
+          At LiftNHaul, we understand that every move is unique. Our experienced team 
           specializes in providing personalized moving solutions tailored to your specific 
           requirements. From carefully handling your precious belongings to ensuring timely 
           delivery, we take pride in making your moving experience as smooth as possible. 
