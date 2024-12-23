@@ -14,7 +14,6 @@ const About = () => {
         />
       </Helmet>
 
-      {/* Hero Section - Matched to Home page styling */}
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -40,7 +39,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Story Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -73,7 +71,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <EditableText
@@ -127,7 +124,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img

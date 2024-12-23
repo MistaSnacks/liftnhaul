@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import EditableText from "@/components/ui/editable-text";
 
 const HeroSection = () => {
   return (
@@ -13,12 +14,17 @@ const HeroSection = () => {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8 animate-fadeIn">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Professional Moving Services in Tacoma
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free.
-          </p>
+          <EditableText
+            id="hero-title"
+            defaultText="Professional Moving Services in Tacoma"
+            className="text-4xl md:text-6xl font-bold leading-tight"
+            as="h1"
+          />
+          <EditableText
+            id="hero-subtitle"
+            defaultText="Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free."
+            className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto"
+          />
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90" asChild>
               <Link to="/contact">Get Free Quote</Link>
