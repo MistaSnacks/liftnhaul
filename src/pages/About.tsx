@@ -8,7 +8,7 @@ const About = () => {
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/064d5b17-7551-4df5-8ca2-fc692aef3efa.png"
+            src="/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png"
             alt="Professional LiftNHaul mover in company uniform showcasing dedication to quality service"
             className="w-full h-full object-cover opacity-20"
           />
@@ -40,7 +40,7 @@ const About = () => {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/lovable-uploads/284d11ed-eb47-487f-a98e-ff17a493f91f.png"
+                src="/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png"
                 alt="LiftNHaul professional mover in safety gear inside moving truck demonstrating commitment to safety"
                 className="w-full h-full object-cover"
               />
@@ -58,13 +58,13 @@ const About = () => {
               {
                 title: "Family Values",
                 description: "We treat every customer like family, providing personalized service and attention to detail that only a family-owned business can deliver.",
-                image: "/lovable-uploads/49fffc5b-328c-4a43-b998-28af3bf0ce21.png",
+                image: "/lovable-uploads/fdff4c77-00a3-43b1-8ad9-f07783cb187e.png",
                 alt: "LiftNHaul mover carefully loading customer belongings demonstrating our family-first approach"
               },
               {
                 title: "Local Expertise",
                 description: "With over a decade of experience moving families throughout Pierce County, we know every neighborhood and understand local moving challenges.",
-                image: "/lovable-uploads/0f7a6beb-5dbd-4a43-bd4e-b3114112ce05.png",
+                image: "/lovable-uploads/8304f55b-626e-4fd3-9277-9d997aa3f85d.png",
                 alt: "LiftNHaul professional mover organizing items in moving truck showing local expertise"
               },
               {
