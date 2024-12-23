@@ -33,26 +33,37 @@ const LocalMoving = () => {
             <img
               src="/lovable-uploads/9bbecd0e-b23a-4e47-9bdb-8229de44f733.png"
               alt="Professional local moving service"
-              className="w-full h-[500px] object-cover"
+              className="w-full h-[600px] object-cover"
             />
           </div>
           
-          <div className="space-y-6">
-            <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-semibold text-gray-900">Expert Local Moving Solutions</h2>
-              <p className="text-gray-600">
-                Our local moving services are designed to make your relocation within Tacoma and Pierce County seamless and stress-free. With years of experience and a dedicated team of professional movers, we ensure your belongings are handled with the utmost care and attention to detail.
-              </p>
+          <div className="space-y-6 prose prose-lg max-w-none">
+            <h2 className="text-2xl font-semibold text-gray-900">Expert Local Moving Solutions</h2>
+            <p className="text-gray-600">
+              At LiftNHaul, we specialize in providing comprehensive local moving services throughout Tacoma and Pierce County. Our experienced team understands that every move is unique, and we tailor our services to meet your specific needs. Whether you're moving to a new apartment downtown or relocating your family home to a different neighborhood, we have the expertise and resources to ensure a smooth transition.
+            </p>
 
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8">Our Local Moving Process</h2>
-              <p className="text-gray-600">
-                We've developed a streamlined process to ensure your local move goes smoothly from start to finish. Our approach begins with a detailed consultation to understand your specific needs and requirements. We then create a customized moving plan that takes into account everything from packing requirements to delivery scheduling.
-              </p>
+            <p className="text-gray-600">
+              Our local moving services are designed to be flexible and accommodating. We offer everything from basic moving assistance to full-service relocations, including packing, unpacking, and furniture assembly. Our team is thoroughly trained in proper lifting techniques and handling procedures, ensuring your belongings are transported safely and efficiently.
+            </p>
 
-              <p className="text-gray-600">
-                Our team arrives on time with all necessary equipment and supplies, ensuring efficient packing and loading of your belongings. We take extra care with fragile items and valuable possessions, using specialized packing materials when needed. Throughout the move, our team maintains clear communication, keeping you informed of progress and addressing any concerns that may arise.
-              </p>
-            </div>
+            <h3 className="text-xl font-semibold text-gray-900">Why Choose Our Local Moving Service?</h3>
+            <p className="text-gray-600">
+              We pride ourselves on our attention to detail and commitment to customer satisfaction. Our movers arrive on time, equipped with all necessary tools and materials to handle your move professionally. We use high-quality moving blankets, straps, and padding to protect your furniture and belongings during transit. Our trucks are well-maintained and equipped with GPS tracking, allowing us to provide accurate arrival times and real-time updates throughout your move.
+            </p>
+
+            <p className="text-gray-600">
+              Understanding the local area gives us a significant advantage. We're familiar with Tacoma's neighborhoods, traffic patterns, and building requirements, which helps us plan and execute moves more efficiently. Our knowledge of local regulations and building policies ensures compliance with all necessary requirements, making your move hassle-free.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900">Our Local Moving Process</h3>
+            <p className="text-gray-600">
+              We begin with a detailed consultation to understand your specific needs and requirements. Our team creates a customized moving plan that takes into account everything from packing requirements to delivery scheduling. We provide transparent pricing with no hidden fees, and our experienced move coordinators are available to answer any questions throughout the process.
+            </p>
+
+            <p className="text-gray-600">
+              On moving day, our professional team arrives with all necessary equipment and supplies. We take extra care with fragile items and valuable possessions, using specialized packing materials when needed. Throughout the move, we maintain clear communication, keeping you informed of progress and addressing any concerns that may arise.
+            </p>
           </div>
         </div>
       </div>
