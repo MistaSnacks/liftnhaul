@@ -46,14 +46,14 @@ const LongDistanceMoving = () => {
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
-            <li>GPS tracking for shipment monitoring</li>
-            <li>Climate-controlled transport options</li>
-            <li>Full-value protection coverage</li>
-            <li>Storage solutions at origin or destination</li>
-            <li>Custom crating for valuable items</li>
-            <li>Vehicle transportation services</li>
-          </ul>
+          <div className="space-y-2 text-gray-600 mb-6">
+            <p>GPS tracking for shipment monitoring</p>
+            <p>Climate-controlled transport options</p>
+            <p>Full-value protection coverage</p>
+            <p>Storage solutions at origin or destination</p>
+            <p>Custom crating for valuable items</p>
+            <p>Vehicle transportation services</p>
+          </div>
 
           <p className="text-gray-600 mb-4">
             Our long-distance moving services are designed to provide peace of mind during what can be a stressful time. We handle every aspect of your move with professionalism and care, ensuring your belongings arrive safely and on schedule at your new home.

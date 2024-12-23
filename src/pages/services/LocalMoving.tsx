@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Truck } from "lucide-react";
 
 const LocalMoving = () => {
   return (
@@ -12,7 +11,6 @@ const LocalMoving = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Truck className="mx-auto h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Local Moving Services</h1>
           <p className="text-xl text-gray-600">Professional moving services in Tacoma and Pierce County</p>
         </div>
@@ -41,14 +39,14 @@ const LocalMoving = () => {
 
         <div className="prose prose-lg max-w-none">
           <h2 className="text-2xl font-semibold mb-4">Why Choose Our Local Moving Service?</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
-            <li>Experienced and professional moving crew with extensive local knowledge</li>
-            <li>Fully equipped modern moving trucks with proper padding and securing equipment</li>
-            <li>Comprehensive insurance coverage for peace of mind</li>
-            <li>Flexible scheduling options to accommodate your timeline</li>
-            <li>Transparent pricing with no hidden fees</li>
-            <li>Local expertise in navigating Tacoma and Pierce County areas</li>
-          </ul>
+          <div className="space-y-2 text-gray-600 mb-6">
+            <p>Experienced and professional moving crew with extensive local knowledge</p>
+            <p>Fully equipped modern moving trucks with proper padding and securing equipment</p>
+            <p>Comprehensive insurance coverage for peace of mind</p>
+            <p>Flexible scheduling options to accommodate your timeline</p>
+            <p>Transparent pricing with no hidden fees</p>
+            <p>Local expertise in navigating Tacoma and Pierce County areas</p>
+          </div>
 
           <h2 className="text-2xl font-semibold mb-4">Our Local Moving Process</h2>
           <p className="text-gray-600 mb-4">
