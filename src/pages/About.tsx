@@ -16,10 +16,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8 animate-fadeIn">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Tacoma's Trusted Family-Owned Moving Company
+              We Make Moving Cheap, Safe, Fast, and Easy!
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Serving Pierce County families and businesses since 2010 with professional, reliable moving services
+              Serving Pierce County families and businesses since 2024 with professional, reliable moving services
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ const About = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-600">
-                Founded in 2010 by the Johnson family, LiftNHaul has grown from a single truck operation to Tacoma's premier moving service. As a family-owned business, we understand the importance of treating your belongings with the same care we would give our own.
+                Founded in 2024 by Chringle Mcmath, LiftNHaul began as an idea to help our family and has grown intoa family-owned business. We understand the importance of treating your belongings with the same care we would give our own.
               </p>
               <p className="text-lg text-gray-600">
                 Our deep roots in Pierce County have helped us build lasting relationships with our community, earning us a reputation for reliability, professionalism, and exceptional customer service.
@@ -63,13 +63,13 @@ const About = () => {
               },
               {
                 title: "Local Expertise",
-                description: "With over a decade of experience moving families throughout Pierce County, we know every neighborhood and understand local moving challenges.",
+                description: "With over a decade of experience on our team moving families throughout Pierce County, we know every neighborhood and understand local moving challenges.",
                 image: "/lovable-uploads/8304f55b-626e-4fd3-9277-9d997aa3f85d.png",
                 alt: "LiftNHaul moving expert navigating Tacoma's neighborhoods with local knowledge"
               },
               {
                 title: "Professional Excellence",
-                description: "Our team of licensed and insured movers undergoes rigorous training to ensure your move is handled with the utmost care and efficiency.",
+                description: "Our team undergoes rigorous training to ensure your move is handled with the utmost care and efficiency.",
                 image: "/lovable-uploads/693a37fa-dfcd-4909-84c8-7d355c71d8ae.png",
                 alt: "LiftNHaul professional mover in safety gear demonstrating excellence in moving services"
               }
