@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import EditableText from "@/components/ui/editable-text";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>About Us | LiftNHaul Moving Services</title>
+        <meta 
+          name="description" 
+          content="Learn about LiftNHaul's history, values, and commitment to providing professional moving services in Tacoma and Pierce County." 
+        />
+      </Helmet>
+
       {/* Hero Section - Matched to Home page styling */}
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -15,12 +25,17 @@ const About = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8 animate-fadeIn">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Tacoma's Trusted Family-Owned Moving Company
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Serving Pierce County families and businesses since 2010 with professional, reliable moving services
-            </p>
+            <EditableText
+              id="about-title"
+              defaultText="Tacoma's Trusted Family-Owned Moving Company"
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              as="h1"
+            />
+            <EditableText
+              id="about-subtitle"
+              defaultText="Serving Pierce County families and businesses since 2010 with professional, reliable moving services"
+              className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto"
+            />
           </div>
         </div>
       </section>
@@ -30,13 +45,22 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
-              <p className="text-lg text-gray-600">
-                Founded in 2010 by the Johnson family, LiftNHaul has grown from a single truck operation to Tacoma's premier moving service. As a family-owned business, we understand the importance of treating your belongings with the same care we would give our own.
-              </p>
-              <p className="text-lg text-gray-600">
-                Our deep roots in Pierce County have helped us build lasting relationships with our community, earning us a reputation for reliability, professionalism, and exceptional customer service.
-              </p>
+              <EditableText
+                id="our-story-title"
+                defaultText="Our Story"
+                className="text-3xl font-bold text-gray-900"
+                as="h2"
+              />
+              <EditableText
+                id="our-story-p1"
+                defaultText="Founded in 2010 by the Johnson family, LiftNHaul has grown from a single truck operation to Tacoma's premier moving service. As a family-owned business, we understand the importance of treating your belongings with the same care we would give our own."
+                className="text-lg text-gray-600"
+              />
+              <EditableText
+                id="our-story-p2"
+                defaultText="Our deep roots in Pierce County have helped us build lasting relationships with our community, earning us a reputation for reliability, professionalism, and exceptional customer service."
+                className="text-lg text-gray-600"
+              />
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
@@ -52,7 +76,12 @@ const About = () => {
       {/* Values Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+          <EditableText
+            id="values-title"
+            defaultText="Our Core Values"
+            className="text-3xl font-bold text-center mb-12"
+            as="h2"
+          />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -80,8 +109,17 @@ const About = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  <EditableText
+                    id={`value-title-${index}`}
+                    defaultText={value.title}
+                    className="text-xl font-semibold mb-2"
+                    as="h3"
+                  />
+                  <EditableText
+                    id={`value-description-${index}`}
+                    defaultText={value.description}
+                    className="text-gray-600"
+                  />
                 </div>
               </div>
             ))}
@@ -99,11 +137,14 @@ const About = () => {
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl font-bold mb-8">
-            Ready to Experience the LiftNHaul Difference?
-          </h2>
-          <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90">
-            Get Your Free Quote Today
+          <EditableText
+            id="cta-title"
+            defaultText="Ready to Experience the LiftNHaul Difference?"
+            className="text-3xl font-bold mb-8"
+            as="h2"
+          />
+          <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90" asChild>
+            <Link to="/contact">Get Your Free Quote Today</Link>
           </Button>
         </div>
       </section>
