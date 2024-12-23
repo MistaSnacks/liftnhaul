@@ -45,15 +45,9 @@ const ApartmentMoving = () => {
             We take extra care to protect your apartment building's common areas during the move. This includes using floor runners, door jamb protectors, and elevator padding to prevent any damage. Our team is also experienced in working with building management to ensure compliance with all moving regulations and requirements.
           </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
-            <li>Elevator reservation coordination</li>
-            <li>Proper protection of common areas</li>
-            <li>Specialized equipment for tight spaces</li>
-            <li>Furniture disassembly and reassembly</li>
-            <li>Packing and unpacking services</li>
-            <li>Storage solutions if needed</li>
-          </ul>
+          <p className="text-gray-600 mb-4">
+            Our services include elevator reservation coordination, proper protection of common areas, specialized equipment for tight spaces, furniture disassembly and reassembly, packing and unpacking services, and storage solutions if needed.
+          </p>
         </div>
       </div>
     </div>

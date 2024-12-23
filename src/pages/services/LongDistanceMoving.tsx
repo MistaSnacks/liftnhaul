@@ -45,16 +45,6 @@ const LongDistanceMoving = () => {
             As licensed and insured interstate movers, we handle all the complexities of cross-state moves. Our team is familiar with state regulations and requirements, ensuring your move complies with all necessary guidelines. We maintain all required permits and insurance coverage for interstate transportation.
           </p>
 
-          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
-          <div className="space-y-2 text-gray-600 mb-6">
-            <p>GPS tracking for shipment monitoring</p>
-            <p>Climate-controlled transport options</p>
-            <p>Full-value protection coverage</p>
-            <p>Storage solutions at origin or destination</p>
-            <p>Custom crating for valuable items</p>
-            <p>Vehicle transportation services</p>
-          </div>
-
           <p className="text-gray-600 mb-4">
             Our long-distance moving services are designed to provide peace of mind during what can be a stressful time. We handle every aspect of your move with professionalism and care, ensuring your belongings arrive safely and on schedule at your new home.
           </p>

@@ -44,16 +44,6 @@ const PackingServices = () => {
           <p className="text-gray-600 mb-4">
             We use only high-quality packing materials to ensure maximum protection for your belongings. Our supplies include sturdy moving boxes in various sizes, bubble wrap, packing paper, tape, and specialized containers for delicate items. We also provide wardrobe boxes for clothing and custom crating for valuable or fragile items that require extra protection.
           </p>
-
-          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
-          <div className="text-gray-600 mb-6 space-y-2">
-            <p>Custom crating for artwork and antiques</p>
-            <p>Electronics packing and protection</p>
-            <p>Furniture disassembly and reassembly</p>
-            <p>Specialized packing for fragile items</p>
-            <p>Unpacking services at your new location</p>
-            <p>Packing supplies delivery</p>
-          </div>
         </div>
       </div>
     </div>
