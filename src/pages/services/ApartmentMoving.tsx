@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Home } from "lucide-react";
 
 const ApartmentMoving = () => {
   return (
@@ -12,7 +11,6 @@ const ApartmentMoving = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Home className="mx-auto h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Apartment Moving Services</h1>
           <p className="text-xl text-gray-600">Specialized solutions for apartment relocations</p>
         </div>

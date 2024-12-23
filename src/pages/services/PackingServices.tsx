@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Box } from "lucide-react";
 
 const PackingServices = () => {
   return (
@@ -12,7 +11,6 @@ const PackingServices = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Box className="mx-auto h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Professional Packing Services</h1>
           <p className="text-xl text-gray-600">Expert packing solutions for a stress-free move</p>
         </div>

@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Truck } from "lucide-react";
 
 const LongDistanceMoving = () => {
   return (
@@ -12,7 +11,6 @@ const LongDistanceMoving = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Truck className="mx-auto h-16 w-16 text-primary mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Long Distance Moving Services</h1>
           <p className="text-xl text-gray-600">Reliable interstate and long-distance relocations</p>
         </div>
