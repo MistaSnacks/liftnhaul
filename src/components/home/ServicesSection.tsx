@@ -14,7 +14,7 @@ const ServicesSection = () => {
       icon: Box,
       title: "Packing Services",
       description: "Expert packing and unpacking for a stress-free move",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+      image: "/lovable-uploads/f55622e7-cc4d-4aff-9fd3-59dae78ccc16.png",
       path: "/services/packing-services"
     },
     {
