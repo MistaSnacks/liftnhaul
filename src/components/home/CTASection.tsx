@@ -6,8 +6,8 @@ const CTASection = () => {
     <section className="py-16 bg-primary relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
-          alt="Moving CTA background"
+          src="/lovable-uploads/00db380c-9d3f-4dad-8001-ed4022c567d8.png"
+          alt="Professional moving services - LiftNHaul mover in action"
           className="w-full h-full object-cover opacity-10"
         />
       </div>
