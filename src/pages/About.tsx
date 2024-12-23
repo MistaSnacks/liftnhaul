@@ -105,9 +105,11 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8">
             Ready to Experience the LiftNHaul Difference?
           </h2>
-          <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90">
-            Get Your Free Quote Today
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90">
+              Get Your Free Quote Today
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
