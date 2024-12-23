@@ -14,7 +14,7 @@ const ServicesSection = () => {
       icon: Box,
       title: "Packing Services",
       description: "Expert packing and unpacking for a stress-free move",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
+      image: "/lovable-uploads/47be9504-23a0-448a-953d-f4138d94615d.png",
       path: "/services/packing-services"
     },
     {
@@ -53,7 +53,7 @@ const ServicesSection = () => {
               <div className="h-40 mb-4 overflow-hidden rounded-lg">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} - ${service.description}`}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
