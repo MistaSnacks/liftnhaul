@@ -63,8 +63,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2">
               <img 
-                src="http://liftnhaul.com/wp-content/uploads/2024/10/cropped-logo1-1-3.webp" 
-                alt="LiftNHaul Logo" 
+                src="/lovable-uploads/cb795fbd-18c0-4f1f-8ed6-f8e63107b408.png" 
+                alt="LiftNHaul Moving Company Logo - Professional Moving Services in Tacoma" 
                 className="h-12 w-auto"
               />
               <h1 className="text-2xl font-bold text-primary">LiftNHaul</h1>
