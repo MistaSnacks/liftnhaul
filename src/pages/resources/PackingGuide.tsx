@@ -37,28 +37,28 @@ const PackingGuide = () => {
               <Box className="mr-2 text-primary" />
               Essential Packing Supplies
             </h2>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-center">
+            <div className="space-y-3 text-gray-700">
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 Moving boxes in various sizes
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 Packing tape and dispenser
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 Bubble wrap and packing paper
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 Markers for labeling
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 Furniture blankets and padding
-              </li>
-            </ul>
+              </p>
+            </div>
           </Card>
         </div>
 
@@ -69,11 +69,11 @@ const PackingGuide = () => {
                 <Package className="mr-2 text-primary" />
                 Kitchen Packing
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Pack plates vertically for better protection</li>
-                <li>Use cell boxes for glasses and stemware</li>
-                <li>Wrap appliances in bubble wrap</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Pack plates vertically for better protection</p>
+                <p>Use cell boxes for glasses and stemware</p>
+                <p>Wrap appliances in bubble wrap</p>
+              </div>
             </CardContent>
           </Card>
 
@@ -83,11 +83,11 @@ const PackingGuide = () => {
                 <Box className="mr-2 text-primary" />
                 Bedroom Items
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Use wardrobe boxes for hanging clothes</li>
-                <li>Keep clothing in dresser drawers</li>
-                <li>Pack shoes individually in original boxes</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Use wardrobe boxes for hanging clothes</p>
+                <p>Keep clothing in dresser drawers</p>
+                <p>Pack shoes individually in original boxes</p>
+              </div>
             </CardContent>
           </Card>
 
@@ -97,11 +97,11 @@ const PackingGuide = () => {
                 <Truck className="mr-2 text-primary" />
                 Loading Tips
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Load heaviest items first</li>
-                <li>Create tiers to maximize space</li>
-                <li>Keep essential items easily accessible</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Load heaviest items first</p>
+                <p>Create tiers to maximize space</p>
+                <p>Keep essential items easily accessible</p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -110,13 +110,11 @@ const PackingGuide = () => {
           <CardContent className="pt-6">
             <h2 className="text-2xl font-semibold mb-4">Pro Packing Tips</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <ul className="list-disc pl-6 space-y-3 text-gray-700">
-                  <li>Fill boxes completely to prevent collapse</li>
-                  <li>Keep box weight under 50 pounds</li>
-                  <li>Label boxes on multiple sides</li>
-                  <li>Pack an essentials box for first-day items</li>
-                </ul>
+              <div className="space-y-3 text-gray-700">
+                <p>Fill boxes completely to prevent collapse</p>
+                <p>Keep box weight under 50 pounds</p>
+                <p>Label boxes on multiple sides</p>
+                <p>Pack an essentials box for first-day items</p>
               </div>
               <img
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"

@@ -37,28 +37,28 @@ const MovingTips = () => {
               <Calendar className="mr-2 text-primary" />
               Moving Timeline
             </h2>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-center">
+            <div className="space-y-3 text-gray-700">
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 8 weeks before: Start planning and decluttering
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 6 weeks before: Book moving services
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 4 weeks before: Begin packing non-essentials
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 2 weeks before: Update address and utilities
-              </li>
-              <li className="flex items-center">
+              </p>
+              <p className="flex items-center">
                 <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                 1 week before: Pack remaining items
-              </li>
-            </ul>
+              </p>
+            </div>
           </Card>
         </div>
 
@@ -69,11 +69,11 @@ const MovingTips = () => {
                 <Clock className="mr-2 text-primary" />
                 Time-Saving Tips
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Pack room by room</li>
-                <li>Label boxes clearly</li>
-                <li>Keep important documents separate</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Pack room by room</p>
+                <p>Label boxes clearly</p>
+                <p>Keep important documents separate</p>
+              </div>
             </CardContent>
           </Card>
 
@@ -83,11 +83,11 @@ const MovingTips = () => {
                 <Home className="mr-2 text-primary" />
                 New Home Setup
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Set up utilities before moving</li>
-                <li>Clean before unpacking</li>
-                <li>Unpack essentials first</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Set up utilities before moving</p>
+                <p>Clean before unpacking</p>
+                <p>Unpack essentials first</p>
+              </div>
             </CardContent>
           </Card>
 
@@ -97,11 +97,11 @@ const MovingTips = () => {
                 <List className="mr-2 text-primary" />
                 Moving Day Checklist
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Keep important items with you</li>
-                <li>Do a final walkthrough</li>
-                <li>Have payment ready for movers</li>
-              </ul>
+              <div className="space-y-2 text-gray-700">
+                <p>Keep important items with you</p>
+                <p>Do a final walkthrough</p>
+                <p>Have payment ready for movers</p>
+              </div>
             </CardContent>
           </Card>
         </div>
