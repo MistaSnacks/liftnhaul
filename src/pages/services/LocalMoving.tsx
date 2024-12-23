@@ -20,8 +20,8 @@ const LocalMoving = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-              alt="Local moving service"
+              src="/lovable-uploads/9bbecd0e-b23a-4e47-9bdb-8229de44f733.png"
+              alt="Professional local moving service - Experienced mover carefully handling boxes during a local move in Tacoma"
               className="w-full h-64 object-cover"
             />
           </div>

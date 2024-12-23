@@ -7,7 +7,7 @@ const ServicesSection = () => {
       icon: Truck,
       title: "Local Moving",
       description: "Professional moving services in Tacoma and Pierce County area",
-      image: "https://images.unsplash.com/photo-1600518464441-9154a4dea21b",
+      image: "/lovable-uploads/9bbecd0e-b23a-4e47-9bdb-8229de44f733.png",
       path: "/services/local-moving"
     },
     {
