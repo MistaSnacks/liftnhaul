@@ -14,7 +14,7 @@ const ServicesSection = () => {
       icon: Box,
       title: "Packing Services",
       description: "Expert packing and unpacking for a stress-free move",
-      image: "/lovable-uploads/f55622e7-cc4d-4aff-9fd3-59dae78ccc16.png",
+      image: "/lovable-uploads/ec2a8ea5-1d55-4347-83df-8a5edf55451c.png",
       path: "/services/packing-services"
     },
     {
@@ -53,7 +53,7 @@ const ServicesSection = () => {
               <div className="h-40 mb-4 overflow-hidden rounded-lg">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} - Professional moving service in Tacoma featuring ${service.description.toLowerCase()}`}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
