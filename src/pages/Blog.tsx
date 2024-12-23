@@ -36,8 +36,8 @@ const Blog = () => {
       title: "Seattle Living Guide",
       path: "/blog/seattle-living-guide",
       description: "Navigate life in the Emerald City",
-      image: "/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png",
-      alt: "Seattle skyline featuring Space Needle and downtown buildings"
+      image: "/lovable-uploads/d50cf589-a248-43a2-8c27-084bd0aa0016.png",
+      alt: "Aerial view of downtown Seattle featuring the iconic Space Needle, modern skyscrapers, and Puget Sound with Mount Rainier visible in the distance"
     },
     {
       title: "Bellevue: A Modern Living Guide",
