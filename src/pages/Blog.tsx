@@ -43,8 +43,8 @@ const Blog = () => {
       title: "Bellevue: A Modern Living Guide",
       path: "/blog/bellevue-living-guide",
       description: "Explore life in the heart of the Eastside",
-      image: "/lovable-uploads/be984819-5b89-4169-a886-620a3dde6bcf.png",
-      alt: "Downtown Bellevue skyline with modern high-rise buildings"
+      image: "/lovable-uploads/077af8e9-9606-44bf-b639-b953b106b55c.png",
+      alt: "Aerial view of downtown Bellevue featuring modern skyscrapers, Downtown Park with its circular walking path, and signature water features, surrounded by urban development and green spaces"
     },
   ];
 

@@ -37,8 +37,8 @@ const BellevueGuide = () => {
 
         <div className="prose prose-lg max-w-none">
           <img
-            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-            alt="Modern Bellevue skyline"
+            src="/lovable-uploads/077af8e9-9606-44bf-b639-b953b106b55c.png"
+            alt="Aerial view of downtown Bellevue featuring modern skyscrapers, Downtown Park with its circular walking path, and signature water features, surrounded by urban development and green spaces"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
           />
 
