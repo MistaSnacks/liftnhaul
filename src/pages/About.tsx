@@ -8,8 +8,8 @@ const About = () => {
       <section className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png"
-            alt="Professional LiftNHaul mover in company uniform showcasing dedication to quality service"
+            src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
+            alt="Professional moving services - LiftNHaul moving truck being loaded"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -40,8 +40,8 @@ const About = () => {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/lovable-uploads/284d11ed-eb47-487f-a98e-ff17a493f91f.png"
-                alt="LiftNHaul professional mover in safety gear inside moving truck demonstrating commitment to safety"
+                src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135"
+                alt="Family owned moving company team"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -58,27 +58,24 @@ const About = () => {
               {
                 title: "Family Values",
                 description: "We treat every customer like family, providing personalized service and attention to detail that only a family-owned business can deliver.",
-                image: "/lovable-uploads/fdff4c77-00a3-43b1-8ad9-f07783cb187e.png",
-                alt: "LiftNHaul mover carefully loading customer belongings demonstrating our family-first approach"
+                image: "https://images.unsplash.com/photo-1591474200742-8e512e6f98f8"
               },
               {
                 title: "Local Expertise",
                 description: "With over a decade of experience moving families throughout Pierce County, we know every neighborhood and understand local moving challenges.",
-                image: "/lovable-uploads/8304f55b-626e-4fd3-9277-9d997aa3f85d.png",
-                alt: "LiftNHaul professional mover organizing items in moving truck showing local expertise"
+                image: "https://images.unsplash.com/photo-1609715572512-cce1996e4ff4"
               },
               {
                 title: "Professional Excellence",
                 description: "Our team of licensed and insured movers undergoes rigorous training to ensure your move is handled with the utmost care and efficiency.",
-                image: "/lovable-uploads/b383a86e-28a0-415a-b550-4e3f69342350.png",
-                alt: "LiftNHaul team member in uniform exemplifying our professional moving standards"
+                image: "https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
               }
             ].map((value, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="h-48 overflow-hidden">
                   <img
                     src={value.image}
-                    alt={value.alt}
+                    alt={value.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -96,8 +93,8 @@ const About = () => {
       <section className="py-16 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/284d11ed-eb47-487f-a98e-ff17a493f91f.png"
-            alt="LiftNHaul professional moving team member in action"
+            src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+            alt="Professional movers in Tacoma"
             className="w-full h-full object-cover opacity-10"
           />
         </div>
