@@ -17,9 +17,6 @@ const MovingToTacoma = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Moving to Tacoma: Your Complete Guide
           </h1>
-          <p className="text-lg text-gray-600">
-            Published on May 1, 2024 • 12 min read
-          </p>
         </header>
 
         <div className="prose prose-lg max-w-none">

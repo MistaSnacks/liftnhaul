@@ -30,9 +30,6 @@ const SeattleGuide = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Seattle Living Guide: Your Gateway to the Emerald City
           </h1>
-          <p className="text-lg text-gray-600">
-            Published on May 15, 2024 • 15 min read
-          </p>
         </header>
 
         <div className="prose prose-lg max-w-none">

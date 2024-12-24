@@ -17,9 +17,6 @@ const TacomaNeighborhoods = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Best Neighborhoods in Tacoma: A Local's Guide
           </h1>
-          <p className="text-lg text-gray-600">
-            Published on May 2, 2024 • 15 min read
-          </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
