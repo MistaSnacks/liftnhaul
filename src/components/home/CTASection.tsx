@@ -9,6 +9,9 @@ const CTASection = () => {
           src="/lovable-uploads/00db380c-9d3f-4dad-8001-ed4022c567d8.png"
           alt="Professional moving services - LiftNHaul mover in action"
           className="w-full h-full object-cover opacity-10"
+          width="1920"
+          height="1080"
+          loading="lazy"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

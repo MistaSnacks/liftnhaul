@@ -9,6 +9,9 @@ const HeroSection = () => {
           src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
           alt="Professional moving services - LiftNHaul moving truck being loaded"
           className="w-full h-full object-cover opacity-20"
+          width="1920"
+          height="1080"
+          fetchPriority="high"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

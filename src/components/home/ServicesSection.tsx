@@ -21,7 +21,7 @@ const ServicesSection = () => {
       icon: Home,
       title: "Apartment Moving",
       description: "Specialized solutions for apartment relocations",
-      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
       path: "/services/apartment-moving"
     },
     {
@@ -55,6 +55,9 @@ const ServicesSection = () => {
                   src={service.image}
                   alt={`${service.title} - Professional moving service in Tacoma featuring ${service.description.toLowerCase()}`}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  width="800"
+                  height="600"
                 />
               </div>
               <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
