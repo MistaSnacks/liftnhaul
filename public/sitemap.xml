@@ -2,125 +2,125 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://liftnhaul.netlify.app/</loc>
+    <loc>https://liftnhaul.com/</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/about</loc>
+    <loc>https://liftnhaul.com/about</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/contact</loc>
+    <loc>https://liftnhaul.com/contact</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/services</loc>
+    <loc>https://liftnhaul.com/services</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Service Pages -->
   <url>
-    <loc>https://liftnhaul.netlify.app/services/local-moving</loc>
+    <loc>https://liftnhaul.com/services/local-moving</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/services/long-distance-moving</loc>
+    <loc>https://liftnhaul.com/services/long-distance-moving</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/services/packing-services</loc>
+    <loc>https://liftnhaul.com/services/packing-services</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/services/apartment-moving</loc>
+    <loc>https://liftnhaul.com/services/apartment-moving</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.7</priority>
   </url>
 
   <!-- Resource Pages -->
   <url>
-    <loc>https://liftnhaul.netlify.app/resources</loc>
+    <loc>https://liftnhaul.com/resources</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/moving-tips</loc>
+    <loc>https://liftnhaul.com/resources/moving-tips</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/packing-guide</loc>
+    <loc>https://liftnhaul.com/resources/packing-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/service-areas</loc>
+    <loc>https://liftnhaul.com/resources/service-areas</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
 
   <!-- Service Areas -->
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/service-areas/king-county</loc>
+    <loc>https://liftnhaul.com/resources/service-areas/king-county</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/service-areas/pierce-county</loc>
+    <loc>https://liftnhaul.com/resources/service-areas/pierce-county</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/service-areas/thurston-county</loc>
+    <loc>https://liftnhaul.com/resources/service-areas/thurston-county</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/resources/service-areas/kitsap-county</loc>
+    <loc>https://liftnhaul.com/resources/service-areas/kitsap-county</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
 
   <!-- Blog Pages -->
   <url>
-    <loc>https://liftnhaul.netlify.app/blog</loc>
+    <loc>https://liftnhaul.com/blog</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/moving-to-tacoma-guide</loc>
+    <loc>https://liftnhaul.com/blog/moving-to-tacoma-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/best-tacoma-neighborhoods</loc>
+    <loc>https://liftnhaul.com/blog/best-tacoma-neighborhoods</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/seattle-living-guide</loc>
+    <loc>https://liftnhaul.com/blog/seattle-living-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/bellevue-living-guide</loc>
+    <loc>https://liftnhaul.com/blog/bellevue-living-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/living-in-olympia-guide</loc>
+    <loc>https://liftnhaul.com/blog/living-in-olympia-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liftnhaul.netlify.app/blog/port-orchard-living-guide</loc>
+    <loc>https://liftnhaul.com/blog/port-orchard-living-guide</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.6</priority>
   </url>
