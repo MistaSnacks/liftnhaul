@@ -46,20 +46,6 @@ const ContactForm = () => {
           throw new Error('Failed to submit form to webhook');
         }
       }
-
-      // Prepare email content as backup
-      const emailContent = `
-        Name: ${values.name}
-        Email: ${values.email}
-        Phone: ${values.phone}
-        Move From Date: ${values.moveFromDate}
-        Move Size: ${values.moveSize}
-        Referral Source: ${values.referralSource}
-        Message: ${values.message}
-      `;
-
-      // Open email client as backup
-      window.location.href = `mailto:info@liftnhaul.com?subject=Moving Quote Request&body=${encodeURIComponent(emailContent)}`;
       
       toast({
         title: "Quote Request Submitted",
