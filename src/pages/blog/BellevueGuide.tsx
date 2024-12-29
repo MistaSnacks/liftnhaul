@@ -1,90 +1,78 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Card, CardContent } from "@/components/ui/card";
 
 const BellevueGuide = () => {
-  const navigate = useNavigate();
-
-  const handleQuoteClick = () => {
-    navigate('/contact');
-  };
-
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <>
       <Helmet>
-        <title>Living in Bellevue, WA: Modern Living Guide | LiftNHaul</title>
+        <title>Living in Bellevue Guide | Moving to Bellevue WA | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Everything you need to know about living in Bellevue, Washington. Discover the city's amenities, neighborhoods, and lifestyle in this comprehensive guide." 
+          content="Everything you need to know about living in Bellevue, WA. Discover neighborhoods, lifestyle, schools, and essential tips for moving to Bellevue." 
         />
       </Helmet>
+      
+      <div className="container mx-auto px-4 py-8 mt-24">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl font-bold text-primary mb-8">Living in Bellevue: Your Complete Guide</h1>
+          
+          <div className="grid gap-8">
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Why Choose Bellevue?</h2>
+                <p className="text-gray-700 mb-4">
+                  Bellevue combines the best of urban living with suburban comfort. Known for its excellent schools, 
+                  growing tech presence, and beautiful parks, Bellevue offers a high quality of life for families 
+                  and professionals alike.
+                </p>
+                <img
+                  src="/lovable-uploads/46dac536-d0a0-4fe7-a8ef-7d3a9530bd42.png"
+                  alt="Bellevue downtown skyline with Mount Rainier in background"
+                  className="w-full h-[400px] object-cover rounded-lg mb-4"
+                />
+              </CardContent>
+            </Card>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Bellevue: A Modern Living Guide
-          </h1>
-        </header>
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Popular Neighborhoods</h2>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Downtown Bellevue - Urban core with luxury apartments and shopping</li>
+                  <li>West Bellevue - Prestigious area with waterfront properties</li>
+                  <li>Crossroads - Diverse community with great amenities</li>
+                  <li>Somerset - Hill-top homes with stunning views</li>
+                  <li>Lake Hills - Family-friendly with great schools</li>
+                </ul>
+              </CardContent>
+            </Card>
 
-        <div className="prose prose-lg max-w-none">
-          <img
-            src="/lovable-uploads/077af8e9-9606-44bf-b639-b953b106b55c.png"
-            alt="Aerial view of downtown Bellevue featuring modern skyscrapers"
-            className="w-full h-[400px] object-cover rounded-lg mb-8"
-            loading="lazy"
-          />
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Education</h2>
+                <p className="text-gray-700 mb-4">
+                  Bellevue School District is consistently ranked among the best in Washington State, 
+                  making it a top choice for families. The city also hosts Bellevue College and 
+                  satellite campuses of major universities.
+                </p>
+              </CardContent>
+            </Card>
 
-          <p className="text-lg mb-6">
-            Bellevue, Washington's fifth-largest city, combines urban sophistication 
-            with suburban comfort. Known for its high-tech industry, excellent schools, 
-            and beautiful parks, Bellevue offers residents a high quality of life in 
-            the heart of the Eastside.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Why Choose Bellevue?</h2>
-          <p className="mb-6">
-            Bellevue offers the perfect balance of urban amenities and natural beauty. 
-            The city features a growing downtown core, top-rated schools, and easy 
-            access to outdoor recreation, making it ideal for families and professionals.
-          </p>
-
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle>Ready to Move to Bellevue?</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                Let our experienced team help you with your relocation to Bellevue. 
-                We understand the local area and can ensure a smooth transition to 
-                your new home.
-              </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
-                <Phone className="mr-2 h-4 w-4" />
-                Get a Free Quote
-              </Button>
-            </CardContent>
-          </Card>
-
-          <h2 className="text-2xl font-bold mb-4">Employment and Economy</h2>
-          <p className="mb-6">
-            Bellevue's economy is driven by technology companies, with major employers 
-            including Microsoft, T-Mobile, and numerous startups. The city's strategic 
-            location and business-friendly environment continue to attract new companies 
-            and talent.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Lifestyle and Recreation</h2>
-          <p className="mb-6">
-            From the Bellevue Collection's luxury shopping to the tranquil Bellevue 
-            Botanical Garden, residents enjoy diverse entertainment options. The city's 
-            park system, including the Downtown Park and Mercer Slough Nature Park, 
-            provides ample opportunities for outdoor recreation.
-          </p>
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Lifestyle & Recreation</h2>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Bellevue Square - Premier shopping destination</li>
+                  <li>Bellevue Downtown Park - Urban green space</li>
+                  <li>Mercer Slough Nature Park - Environmental education</li>
+                  <li>Meydenbauer Beach Park - Waterfront recreation</li>
+                  <li>Numerous hiking and biking trails</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </>
   );
 };
 

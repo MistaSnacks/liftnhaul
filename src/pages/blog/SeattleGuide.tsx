@@ -1,90 +1,81 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Card, CardContent } from "@/components/ui/card";
 
 const SeattleGuide = () => {
-  const navigate = useNavigate();
-
-  const handleQuoteClick = () => {
-    navigate('/contact');
-  };
-
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <>
       <Helmet>
-        <title>Living in Seattle, WA: Your Complete Guide | LiftNHaul</title>
+        <title>Living in Seattle Guide | Moving to Seattle WA | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Discover everything about living in Seattle, Washington. From lifestyle and culture to housing and activities, your complete guide to life in the Emerald City." 
+          content="Comprehensive guide to living in Seattle, WA. Learn about neighborhoods, lifestyle, cost of living, and everything you need to know about moving to Seattle." 
         />
       </Helmet>
+      
+      <div className="container mx-auto px-4 py-8 mt-24">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl font-bold text-primary mb-8">Living in Seattle: Your Complete Guide</h1>
+          
+          <div className="grid gap-8">
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Why Move to Seattle?</h2>
+                <p className="text-gray-700 mb-4">
+                  Seattle, known for its vibrant tech scene, stunning natural beauty, and rich cultural heritage, 
+                  offers a unique blend of urban amenities and outdoor adventures. From the iconic Space Needle 
+                  to the bustling Pike Place Market, the city provides endless opportunities for both work and leisure.
+                </p>
+                <img
+                  src="/lovable-uploads/04dffb87-16a4-4fa0-afc5-479ac4deb54b.png"
+                  alt="Seattle skyline featuring Space Needle and downtown buildings"
+                  className="w-full h-[400px] object-cover rounded-lg mb-4"
+                />
+              </CardContent>
+            </Card>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Seattle Living Guide: Your Complete Resource
-          </h1>
-        </header>
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Popular Seattle Neighborhoods</h2>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Capitol Hill - Known for its vibrant nightlife and diverse community</li>
+                  <li>Ballard - Historic district with excellent restaurants and breweries</li>
+                  <li>Queen Anne - Featuring stunning city views and historic homes</li>
+                  <li>South Lake Union - Tech hub with modern amenities</li>
+                  <li>West Seattle - Beach community with great views</li>
+                </ul>
+              </CardContent>
+            </Card>
 
-        <div className="prose prose-lg max-w-none">
-          <img
-            src="/lovable-uploads/41d87ca9-1d61-4978-9725-fd85bfd3b431.png"
-            alt="Aerial view of downtown Seattle featuring the iconic Space Needle"
-            className="w-full h-[400px] object-cover rounded-lg mb-8"
-            loading="lazy"
-          />
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Cost of Living</h2>
+                <p className="text-gray-700 mb-4">
+                  Seattle's cost of living is higher than the national average, primarily due to housing costs. 
+                  However, the city offers high-paying job opportunities, especially in the tech sector, 
+                  which can help offset these expenses.
+                </p>
+              </CardContent>
+            </Card>
 
-          <p className="text-lg mb-6">
-            Seattle, known as the Emerald City, offers a unique blend of urban sophistication 
-            and natural beauty. From its iconic Space Needle to the bustling Pike Place Market, 
-            Seattle provides residents with a high quality of life, abundant career opportunities, 
-            and access to the stunning Pacific Northwest landscape.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Why Choose Seattle?</h2>
-          <p className="mb-6">
-            Seattle stands out for its thriving tech industry, rich cultural scene, and 
-            commitment to sustainability. The city offers diverse neighborhoods, each with 
-            its own character, excellent public transportation, and proximity to outdoor 
-            recreation opportunities.
-          </p>
-
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle>Ready to Move to Seattle?</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                Let our experienced team help you with your relocation to Seattle. 
-                We understand the local area and can ensure a smooth transition to 
-                your new home.
-              </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
-                <Phone className="mr-2 h-4 w-4" />
-                Get a Free Quote
-              </Button>
-            </CardContent>
-          </Card>
-
-          <h2 className="text-2xl font-bold mb-4">Employment Opportunities</h2>
-          <p className="mb-6">
-            Seattle is home to major tech companies like Amazon and Microsoft, as well as 
-            a thriving startup ecosystem. The city also has strong healthcare, aerospace, 
-            and creative sectors, providing diverse career opportunities.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Lifestyle and Culture</h2>
-          <p className="mb-6">
-            From world-class dining to outdoor markets, Seattle offers endless entertainment 
-            options. The city is known for its coffee culture, music scene, and commitment 
-            to the arts. Residents enjoy easy access to hiking trails, water activities, 
-            and weekend getaways to nearby destinations.
-          </p>
+            <Card>
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Transportation</h2>
+                <p className="text-gray-700 mb-4">
+                  Seattle offers various transportation options including:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Link Light Rail</li>
+                  <li>Metro Bus System</li>
+                  <li>Streetcars</li>
+                  <li>Water Taxis</li>
+                  <li>Extensive bike lanes and trails</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </>
   );
 };
 
