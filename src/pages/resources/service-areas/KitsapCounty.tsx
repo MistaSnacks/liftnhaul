@@ -25,16 +25,16 @@ const KitsapCounty = () => {
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Areas We Serve in Kitsap County</h2>
-            <p className="mb-6">
-              Bremerton - Including Downtown and Navy Yard<br />
-              Port Orchard - Including Downtown and Manchester<br />
-              Poulsbo - Including Historic Downtown<br />
-              Bainbridge Island<br />
-              Silverdale<br />
-              Seabeck<br />
-              Kingston<br />
-              Olalla
-            </p>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Bremerton - Including Downtown and Navy Yard</li>
+              <li>Port Orchard - Including Downtown and Manchester</li>
+              <li>Poulsbo - Including Historic Downtown</li>
+              <li>Bainbridge Island</li>
+              <li>Silverdale</li>
+              <li>Seabeck</li>
+              <li>Kingston</li>
+              <li>Olalla</li>
+            </ul>
 
             <h2 className="text-2xl font-semibold mb-4">Peninsula Moving Specialists</h2>
             <p className="mb-6">
@@ -47,15 +47,15 @@ const KitsapCounty = () => {
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Our Kitsap County Services</h2>
-            <p className="mb-6">
-              Residential moving services<br />
-              Military relocations<br />
-              Commercial moving<br />
-              Ferry-coordinated moves<br />
-              Professional packing and unpacking<br />
-              Storage solutions<br />
-              Specialty item moving
-            </p>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Residential moving services</li>
+              <li>Military relocations</li>
+              <li>Commercial moving</li>
+              <li>Ferry-coordinated moves</li>
+              <li>Professional packing and unpacking</li>
+              <li>Storage solutions</li>
+              <li>Specialty item moving</li>
+            </ul>
           </div>
 
           <div className="space-y-6">
