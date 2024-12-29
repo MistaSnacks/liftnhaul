@@ -14,77 +14,52 @@ const SeattleGuide = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <Helmet>
-        <title>Living in Seattle: Your Complete Guide | LiftNHaul</title>
+        <title>Living in Seattle, WA: Your Complete Guide | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Everything you need to know about living in Seattle, WA. From neighborhoods and culture to employment and lifestyle, discover life in the Emerald City." 
-        />
-        <meta 
-          name="keywords" 
-          content="Seattle WA, living in Seattle, Seattle neighborhoods, Seattle culture, Emerald City, Seattle lifestyle, moving to Seattle" 
+          content="Discover everything about living in Seattle, Washington. From lifestyle and culture to housing and activities, your complete guide to life in the Emerald City." 
         />
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Seattle Living Guide: Your Gateway to the Emerald City
+            Seattle Living Guide: Your Complete Resource
           </h1>
         </header>
 
         <div className="prose prose-lg max-w-none">
           <img
             src="/lovable-uploads/41d87ca9-1d61-4978-9725-fd85bfd3b431.png"
-            alt="Aerial view of downtown Seattle featuring the iconic Space Needle, modern skyscrapers, and Elliott Bay with Mount Rainier visible in the distance"
+            alt="Aerial view of downtown Seattle featuring the iconic Space Needle"
             className="w-full h-[400px] object-cover rounded-lg mb-8"
+            loading="lazy"
           />
 
           <p className="text-lg mb-6">
-            Seattle, known as the Emerald City, stands as a vibrant metropolis 
-            surrounded by natural beauty. From its iconic Space Needle to the bustling 
-            Pike Place Market, Seattle combines urban sophistication with outdoor 
-            adventure opportunities. This comprehensive guide will help you understand 
-            what makes Seattle unique and what to expect when moving to this dynamic city.
+            Seattle, known as the Emerald City, offers a unique blend of urban sophistication 
+            and natural beauty. From its iconic Space Needle to the bustling Pike Place Market, 
+            Seattle provides residents with a high quality of life, abundant career opportunities, 
+            and access to the stunning Pacific Northwest landscape.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">Why Choose Seattle?</h2>
           <p className="mb-6">
-            Seattle attracts residents with its strong job market, particularly in 
-            technology and innovation, combined with its rich cultural scene and 
-            outdoor lifestyle opportunities. The city's commitment to sustainability, 
-            diverse neighborhoods, and proximity to both mountains and water make it 
-            an attractive destination for professionals and families seeking a high 
-            quality of life.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Location and Climate</h2>
-          <p className="mb-6">
-            Nestled between Puget Sound and Lake Washington, Seattle enjoys a 
-            temperate maritime climate. While the city is known for its rainfall, 
-            it actually receives less annual precipitation than many major U.S. cities. 
-            The mild temperatures and lush environment create perfect conditions for 
-            year-round outdoor activities, from hiking and biking to water sports.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Housing Market Overview</h2>
-          <p className="mb-6">
-            Seattle's housing market is known for its competitiveness, reflecting 
-            the city's strong economy and desirability. From modern downtown 
-            condominiums to charming craftsman homes in residential neighborhoods, 
-            the city offers diverse housing options. Popular neighborhoods include 
-            Capitol Hill, Ballard, Queen Anne, and West Seattle, each with its own 
-            distinct character and amenities.
+            Seattle stands out for its thriving tech industry, rich cultural scene, and 
+            commitment to sustainability. The city offers diverse neighborhoods, each with 
+            its own character, excellent public transportation, and proximity to outdoor 
+            recreation opportunities.
           </p>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Planning Your Seattle Move?</CardTitle>
+              <CardTitle>Ready to Move to Seattle?</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4">
                 Let our experienced team help you with your relocation to Seattle. 
-                We understand the unique challenges of moving in the city and can 
-                ensure a smooth transition to your new home.
+                We understand the local area and can ensure a smooth transition to 
+                your new home.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={handleQuoteClick}>
                 <Phone className="mr-2 h-4 w-4" />
@@ -95,41 +70,17 @@ const SeattleGuide = () => {
 
           <h2 className="text-2xl font-bold mb-4">Employment Opportunities</h2>
           <p className="mb-6">
-            Seattle's job market is dominated by technology companies, including 
-            Amazon and Microsoft, along with aerospace giant Boeing. The city also 
-            supports thriving healthcare, education, and creative sectors. This 
-            diverse economy provides numerous career opportunities and contributes 
-            to the city's innovation-driven culture.
+            Seattle is home to major tech companies like Amazon and Microsoft, as well as 
+            a thriving startup ecosystem. The city also has strong healthcare, aerospace, 
+            and creative sectors, providing diverse career opportunities.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Transportation</h2>
+          <h2 className="text-2xl font-bold mb-4">Lifestyle and Culture</h2>
           <p className="mb-6">
-            Seattle offers comprehensive public transportation options, including 
-            buses, light rail, and the iconic ferry system. The city is also 
-            known for its walkability and bicycle-friendly infrastructure. While 
-            traffic can be challenging during peak hours, many residents find 
-            alternative transportation methods effective for daily commuting.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Culture and Lifestyle</h2>
-          <p className="mb-6">
-            Seattle's cultural scene is rich and diverse, from world-class museums 
-            and theaters to intimate music venues and art galleries. The city's 
-            food scene celebrates local ingredients and global influences, while 
-            the famous coffee culture keeps residents energized. Outdoor 
-            enthusiasts appreciate easy access to hiking trails, water activities, 
-            and skiing within a short drive.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-4">Planning Your Move</h2>
-          <p className="mb-6">
-            Moving to Seattle requires careful planning and consideration of 
-            various factors, from choosing the right neighborhood to understanding 
-            the local climate and transportation options. Our team of moving 
-            experts can provide valuable assistance and information to ensure 
-            your transition to Seattle is smooth and successful. We understand 
-            the unique aspects of moving to this dynamic city and can help you 
-            navigate every step of the process.
+            From world-class dining to outdoor markets, Seattle offers endless entertainment 
+            options. The city is known for its coffee culture, music scene, and commitment 
+            to the arts. Residents enjoy easy access to hiking trails, water activities, 
+            and weekend getaways to nearby destinations.
           </p>
         </div>
       </article>
