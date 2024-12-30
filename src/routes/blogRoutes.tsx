@@ -1,7 +1,7 @@
-import BellevueGuide from "@/pages/blog/BellevueGuide";
 import MovingToTacoma from "@/pages/blog/MovingToTacoma";
 import TacomaNeighborhoods from "@/pages/blog/TacomaNeighborhoods";
 import SeattleGuide from "@/pages/blog/SeattleGuide";
+import BellevueGuide from "@/pages/blog/BellevueGuide";
 import OlympiaGuide from "@/pages/blog/OlympiaGuide";
 import PortOrchardGuide from "@/pages/blog/PortOrchardGuide";
 

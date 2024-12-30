@@ -9,7 +9,7 @@ import { formSchema, FormValues } from "./types";
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const [webhookUrl, setWebhookUrl] = useState("https://mistasnacks.app.n8n.cloud/webhook/36a38fb4-8440-4bf2-a25f-79be1d29d729");
+  const [webhookUrl, setWebhookUrl] = useState("https://mistasnacks.app.n8n.cloud/webhook/New-Lead");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<FormValues>({
