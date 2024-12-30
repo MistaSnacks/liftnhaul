@@ -5,6 +5,7 @@ import Services from "@/pages/Services";
 import Blog from "@/pages/Blog";
 import Resources from "@/pages/Resources";
 import Sitemap from "@/pages/Sitemap";
+import NotFound from "@/pages/NotFound";
 
 export const mainRoutes = [
   { path: "/", element: <Index /> },
@@ -14,4 +15,5 @@ export const mainRoutes = [
   { path: "/blog", element: <Blog /> },
   { path: "/resources", element: <Resources /> },
   { path: "/sitemap", element: <Sitemap /> },
+  { path: "*", element: <NotFound /> },
 ];
