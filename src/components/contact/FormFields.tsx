@@ -14,7 +14,7 @@ interface FormFieldsProps {
 export const FormFields = ({ form, webhookUrl, setWebhookUrl }: FormFieldsProps) => {
   return (
     <>
-      {import.meta.env.DEV && (
+      {process.env.NODE_ENV === 'development' && (
         <FormItem>
           <FormLabel>N8N Webhook URL (Development Only)</FormLabel>
           <FormControl>
