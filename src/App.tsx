@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { mainRoutes } from "./routes/mainRoutes";
 import { serviceRoutes } from "./routes/serviceRoutes";
 import { blogRoutes } from "./routes/blogRoutes";
@@ -17,7 +17,6 @@ function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Navigate to="/home" replace />} />
             {mainRoutes.map((route) => (
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
