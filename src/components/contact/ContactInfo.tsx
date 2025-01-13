@@ -46,13 +46,13 @@ const ContactInfo = () => {
           </Card>
         </a>
 
-        <a href="mailto:info@liftnhaul.com" className="block">
+        <a href="mailto:info@tacomaliftnhaul.com" className="block">
           <Card className="p-6 transition-colors hover:bg-secondary cursor-pointer min-h-[120px] flex items-center">
             <div className="flex items-start space-x-4">
               <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-600">info@liftnhaul.com</p>
+                <p className="text-gray-600">info@tacomaliftnhaul.com</p>
               </div>
             </div>
           </Card>

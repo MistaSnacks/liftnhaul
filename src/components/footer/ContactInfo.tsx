@@ -15,7 +15,7 @@ const ContactInfo = () => {
         </li>
         <li className="flex items-center justify-center text-gray-400">
           <Mail className="h-5 w-5 mr-2" />
-          info@liftnhaul.com
+          info@tacomaliftnhaul.com
         </li>
       </ul>
     </div>
