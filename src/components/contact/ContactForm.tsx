@@ -34,7 +34,11 @@ const ContactForm = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            // Add mode: 'cors' and credentials to handle CORS
+            "Accept": "application/json",
           },
+          mode: 'cors', // Explicitly set CORS mode
+          credentials: 'omit', // Don't send credentials
           body: JSON.stringify({
             ...values,
             timestamp: new Date().toISOString(),
@@ -43,6 +47,7 @@ const ContactForm = () => {
         });
 
         if (!response.ok) {
+          console.error('Webhook response:', await response.text());
           throw new Error('Failed to submit form to webhook');
         }
       }
