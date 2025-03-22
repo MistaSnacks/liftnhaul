@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    hmr: {
+      // Ensure WebSocket connection works properly
+      clientPort: 443,
+      protocol: 'wss',
+    },
   },
   plugins: [
     react(),
@@ -19,5 +24,9 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  define: {
+    // Define the WebSocket token to prevent the error
+    __WS_TOKEN__: JSON.stringify(process.env.VITE_WS_TOKEN || 'dev-token'),
   },
 }));
