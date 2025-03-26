@@ -14,6 +14,9 @@ export default defineConfig(({ mode }) => ({
       clientPort: 443,
       protocol: 'wss',
     },
+    allowedHosts: [
+      "8fed0b4d-b496-4d51-a428-d29ca82cccd0.lovableproject.com"
+    ],
   },
   plugins: [
     react(),
