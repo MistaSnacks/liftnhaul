@@ -30,8 +30,8 @@ export default defineConfig(({ mode }) => ({
   },
   define: {
     // Fix the WebSocket token to prevent syntax errors
-    __WS_TOKEN__: JSON.stringify('dev-token'),
+    '__WS_TOKEN__': JSON.stringify('dev-token'),
     // Add fallback global definition for older Vite versions
-    global: 'window',
+    'global': 'window',
   },
 }));
