@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 
 const LocalMoving = () => {
@@ -13,8 +14,12 @@ const LocalMoving = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/lovable-uploads/9bbecd0e-b23a-4e47-9bdb-8229de44f733.png"
-            alt="Professional local moving service"
+            alt="Professional local moving service - LiftNHaul movers loading a truck in Tacoma"
             className="w-full h-full object-cover opacity-20"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,8 +37,12 @@ const LocalMoving = () => {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img
               src="/lovable-uploads/9bbecd0e-b23a-4e47-9bdb-8229de44f733.png"
-              alt="Professional local moving service"
+              alt="Professional local moving service - LiftNHaul movers in Tacoma"
               className="w-full h-[600px] object-cover"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           

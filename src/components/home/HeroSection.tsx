@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const HeroSection = () => {
           width="1920"
           height="1080"
           fetchPriority="high"
+          decoding="async"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
