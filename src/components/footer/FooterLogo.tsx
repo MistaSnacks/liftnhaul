@@ -10,6 +10,9 @@ const FooterLogo = () => {
             src="/lovable-uploads/34967260-f376-4639-9678-fb69aa1eef1d.png" 
             alt="LiftNHaul Movers - Professional Moving Services in Tacoma" 
             className="h-16 w-auto object-contain"
+            loading="lazy"
+            width="512" 
+            height="512"
           />
           <h3 className="text-2xl font-bold">LiftNHaul Movers</h3>
         </div>

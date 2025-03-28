@@ -31,12 +31,13 @@ const ServiceAreasSection = () => {
     <section className="py-16 bg-primary text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1502175353174-a7a70e73b362?auto=format&fit=crop&w=1920&q=80"
-          alt="Mount Rainier and Tacoma Skyline"
+          src="/lovable-uploads/4f1137f5-ab67-44bb-a90c-f4e9c3d45377.png"
+          alt="Mount Rainier and Tacoma Skyline - LiftNHaul service areas"
           className="w-full h-full object-cover opacity-10"
           width="1920"
           height="1080"
           loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
