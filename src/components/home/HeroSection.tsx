@@ -22,7 +22,7 @@ const HeroSection = () => {
             Professional Moving Services in Tacoma
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free.
+            Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free. Voted among the best movers in Tacoma for residential moving services.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90" asChild>

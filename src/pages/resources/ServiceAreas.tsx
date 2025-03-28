@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
@@ -30,17 +31,21 @@ const ServiceAreas = () => {
   return (
     <>
       <Helmet>
-        <title>Service Areas | Moving Services in Western Washington | LiftNHaul</title>
+        <title>Service Areas | Moving Companies Tacoma WA | LiftNHaul Movers</title>
         <meta 
           name="description" 
-          content="LiftNHaul provides professional moving services across Pierce, King, Thurston, and Kitsap counties. Discover our service coverage and local expertise." 
+          content="LiftNHaul Movers provides professional moving services across Pierce, King, Thurston, and Kitsap counties. Discover our service coverage and local expertise." 
+        />
+        <meta
+          name="keywords"
+          content="moving companies tacoma wa, pierce county movers, puyallup moving services, lakewood movers, seattle area moving company, bellevue residential movers, olympia moving services"
         />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
         <h1 className="text-4xl font-bold text-primary mb-8">Our Service Areas</h1>
         <p className="text-lg text-gray-700 mb-8">
-          Providing professional moving services across Western Washington's most populous counties.
+          Providing professional moving services across Western Washington's most populous counties. Whether you need local moving services in Tacoma, puyallup moving services, or lakewood movers, we've got you covered.
         </p>
         
         <div className="grid md:grid-cols-2 gap-6">

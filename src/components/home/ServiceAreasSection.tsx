@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -40,9 +41,9 @@ const ServiceAreasSection = () => {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold">Our Service Areas</h2>
+          <h2 className="text-3xl font-bold">Moving Companies Tacoma WA & Service Areas</h2>
           <p className="mt-4 text-xl text-gray-200">
-            Professional moving services across Western Washington
+            Professional moving services across Western Washington - including Seattle area moving company services
           </p>
         </div>
 

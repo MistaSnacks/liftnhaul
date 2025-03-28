@@ -1,12 +1,13 @@
+
 import { Helmet } from "react-helmet";
 
 const PackingServices = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Professional Packing Services | LiftNHaul Tacoma</title>
-        <meta name="description" content="Expert packing services in Tacoma. Professional packers, quality materials, and secure handling of your belongings for a worry-free move." />
-        <meta name="keywords" content="packing services, professional packers, moving supplies, Tacoma packing, secure packing" />
+        <title>Professional Packing Services Washington | LiftNHaul Movers Tacoma</title>
+        <meta name="description" content="Expert packing services in Tacoma and Washington state. Professional packers, quality materials, and secure handling of your belongings for a worry-free move." />
+        <meta name="keywords" content="packing services washington, professional packers, moving supplies, Tacoma packing, secure packing, tacoma moving company, pierce county movers" />
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
@@ -19,7 +20,7 @@ const PackingServices = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-4 animate-fadeIn">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Professional Packing Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Professional Packing Services Washington</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               Expert packing solutions for a stress-free move
             </p>
@@ -39,14 +40,14 @@ const PackingServices = () => {
           
           <div className="space-y-6">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-semibold text-gray-900">Comprehensive Packing Solutions</h2>
+              <h2 className="text-2xl font-semibold text-gray-900">Comprehensive Packing Solutions in Tacoma</h2>
               <p className="text-gray-600">
                 Our professional packing services take the stress out of preparing for your move. We use high-quality materials and proven techniques to ensure your belongings are protected throughout the entire moving process. Our experienced team handles everything from delicate china to bulky furniture with expert care and attention.
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mt-8">Quality Packing Materials</h2>
               <p className="text-gray-600">
-                We use only high-quality packing materials to ensure maximum protection for your belongings. Our supplies include sturdy moving boxes in various sizes, bubble wrap, packing paper, tape, and specialized containers for delicate items. We also provide wardrobe boxes for clothing and custom crating for valuable or fragile items that require extra protection.
+                We use only high-quality packing materials to ensure maximum protection for your belongings. Our supplies include sturdy moving boxes in various sizes, bubble wrap, packing paper, tape, and specialized containers for delicate items. We also provide wardrobe boxes for clothing and custom crating for valuable or fragile items that require extra protection. As one of the leading packing services in Washington state, we maintain a comprehensive inventory of packing supplies to handle any job.
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ const FooterLogo = () => {
       </div>
       <p className="text-gray-400">
         Professional moving services in Tacoma and Pierce County area.
-        Licensed, insured, and committed to excellence.
+        Licensed, insured, and committed to excellence. Your trusted local moving company in Washington.
       </p>
     </div>
   );

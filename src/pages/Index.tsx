@@ -12,7 +12,7 @@ const Index = () => {
       <Helmet>
         <title>LiftNHaul Movers - Professional Moving Services in Tacoma</title>
         <meta name="description" content="Professional moving services in Tacoma, WA. Local & long-distance moving, packing services, and apartment relocation experts serving Pierce County and beyond." />
-        <meta name="keywords" content="moving services tacoma, local movers pierce county, packing services washington, apartment moving" />
+        <meta name="keywords" content="moving services tacoma, local movers pierce county, tacoma moving company, best movers in tacoma, moving company near me, affordable movers tacoma, professional movers pierce county, packing services washington, residential moving services" />
       </Helmet>
       
       <HeroSection />
