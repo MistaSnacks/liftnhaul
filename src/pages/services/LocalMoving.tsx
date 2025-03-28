@@ -8,6 +8,28 @@ const LocalMoving = () => {
         <title>Local Moving Services in Tacoma | LiftNHaul Movers</title>
         <meta name="description" content="Professional local moving services in Tacoma and Pierce County. Experienced movers, competitive rates, and stress-free relocations within the area." />
         <meta name="keywords" content="local moving services tacoma, tacoma moving company, pierce county movers, best movers in tacoma, moving company near me, affordable movers tacoma, residential moving services, professional movers pierce county" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Moving Service",
+              "provider": {
+                "@type": "MovingCompany",
+                "name": "LiftNHaul Movers",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tacoma",
+                  "addressRegion": "WA"
+                }
+              },
+              "name": "Local Moving Services",
+              "description": "Professional local moving services in Tacoma and Pierce County. Experienced movers, competitive rates, and stress-free relocations within the area.",
+              "areaServed": "Tacoma and Pierce County",
+              "mainEntityOfPage": "https://liftnhaul.com/services/local-moving"
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">

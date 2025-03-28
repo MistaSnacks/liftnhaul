@@ -8,6 +8,28 @@ const PackingServices = () => {
         <title>Professional Packing Services Washington | LiftNHaul Movers Tacoma</title>
         <meta name="description" content="Expert packing services in Tacoma and Washington state. Professional packers, quality materials, and secure handling of your belongings for a worry-free move." />
         <meta name="keywords" content="packing services washington, professional packers, moving supplies, Tacoma packing, secure packing, tacoma moving company, pierce county movers" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Packing Service",
+              "provider": {
+                "@type": "MovingCompany",
+                "name": "LiftNHaul Movers",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tacoma",
+                  "addressRegion": "WA"
+                }
+              },
+              "name": "Professional Packing Services",
+              "description": "Expert packing services in Tacoma and Washington state. Professional packers, quality materials, and secure handling of your belongings for a worry-free move.",
+              "areaServed": "Tacoma and Washington State",
+              "mainEntityOfPage": "https://liftnhaul.com/services/packing-services"
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">

@@ -8,6 +8,28 @@ const ApartmentMoving = () => {
         <title>Apartment Moving Services Tacoma | LiftNHaul Movers</title>
         <meta name="description" content="Specialized apartment moving services in Tacoma. Expert handling of stairs, elevators, and tight spaces for a smooth apartment relocation." />
         <meta name="keywords" content="apartment moving tacoma, tacoma moving company, residential moving services, elevator moving, furniture moving company, pierce county movers" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Moving Service",
+              "provider": {
+                "@type": "MovingCompany",
+                "name": "LiftNHaul Movers",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tacoma",
+                  "addressRegion": "WA"
+                }
+              },
+              "name": "Apartment Moving Services",
+              "description": "Specialized apartment moving services in Tacoma. Expert handling of stairs, elevators, and tight spaces for a smooth apartment relocation.",
+              "areaServed": "Tacoma and Pierce County",
+              "mainEntityOfPage": "https://liftnhaul.com/services/apartment-moving"
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">

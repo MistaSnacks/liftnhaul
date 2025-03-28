@@ -40,6 +40,76 @@ const ServiceAreas = () => {
           name="keywords"
           content="moving companies tacoma wa, pierce county movers, puyallup moving services, lakewood movers, seattle area moving company, bellevue residential movers, olympia moving services"
         />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Service",
+                    "name": "Pierce County Moving Services",
+                    "description": "Professional moving services in Pierce County, including Tacoma, Puyallup, and Lakewood",
+                    "provider": {
+                      "@type": "MovingCompany",
+                      "name": "LiftNHaul Movers"
+                    },
+                    "areaServed": "Pierce County",
+                    "url": "https://liftnhaul.com/resources/service-areas/pierce-county"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Service",
+                    "name": "King County Moving Services",
+                    "description": "Professional moving services in King County, including Seattle, Bellevue, and Kent",
+                    "provider": {
+                      "@type": "MovingCompany",
+                      "name": "LiftNHaul Movers"
+                    },
+                    "areaServed": "King County",
+                    "url": "https://liftnhaul.com/resources/service-areas/king-county"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "Service",
+                    "name": "Thurston County Moving Services",
+                    "description": "Professional moving services in Thurston County, including Olympia, Lacey, and Tumwater",
+                    "provider": {
+                      "@type": "MovingCompany",
+                      "name": "LiftNHaul Movers"
+                    },
+                    "areaServed": "Thurston County",
+                    "url": "https://liftnhaul.com/resources/service-areas/thurston-county"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "item": {
+                    "@type": "Service",
+                    "name": "Kitsap County Moving Services",
+                    "description": "Professional moving services in Kitsap County, including Bremerton, Port Orchard, and Poulsbo",
+                    "provider": {
+                      "@type": "MovingCompany",
+                      "name": "LiftNHaul Movers"
+                    },
+                    "areaServed": "Kitsap County",
+                    "url": "https://liftnhaul.com/resources/service-areas/kitsap-county"
+                  }
+                }
+              ]
+            }
+          `}
+        </script>
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">

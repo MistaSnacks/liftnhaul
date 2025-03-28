@@ -8,6 +8,28 @@ const LongDistanceMoving = () => {
         <title>Long Distance Moving Services | LiftNHaul Movers Tacoma</title>
         <meta name="description" content="Professional long distance moving services from Tacoma. Reliable interstate moving, expert handling, and comprehensive logistics for your long-distance relocation." />
         <meta name="keywords" content="long distance moving washington state, interstate movers tacoma, cross country moving services, washington state long distance movers, professional long distance moving, state to state movers" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Moving Service",
+              "provider": {
+                "@type": "MovingCompany",
+                "name": "LiftNHaul Movers",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tacoma",
+                  "addressRegion": "WA"
+                }
+              },
+              "name": "Long Distance Moving Services",
+              "description": "Professional long distance moving services from Tacoma. Reliable interstate moving, expert handling, and comprehensive logistics for your long-distance relocation.",
+              "areaServed": "Washington State and Beyond",
+              "mainEntityOfPage": "https://liftnhaul.com/services/long-distance-moving"
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">

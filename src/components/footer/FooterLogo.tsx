@@ -21,6 +21,9 @@ const FooterLogo = () => {
         Professional moving services in Tacoma and Pierce County area.
         Licensed, insured, and committed to excellence. Your trusted local moving company in Washington.
       </p>
+      <div className="text-xs text-gray-500">
+        <a href="/sitemap.xml" className="hover:underline">Sitemap</a>
+      </div>
     </div>
   );
 };

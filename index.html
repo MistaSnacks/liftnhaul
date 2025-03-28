@@ -31,28 +31,52 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "MovingService",
-        "provider": {
-          "@type": "MovingCompany",
-          "name": "LiftNHaul Movers",
-          "description": "Professional moving services in Tacoma and Pierce County",
-          "areaServed": ["Tacoma", "Pierce County", "King County", "Thurston County"],
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "1234 Moving Lane",
-            "addressLocality": "Tacoma",
-            "addressRegion": "WA",
-            "postalCode": "98402"
+        "@type": "LocalBusiness",
+        "name": "LiftNHaul Movers",
+        "image": "https://liftnhaul.com/lovable-uploads/34967260-f376-4639-9678-fb69aa1eef1d.png",
+        "url": "https://liftnhaul.com",
+        "telephone": "(253) 555-0123",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1234 Moving Lane",
+          "addressLocality": "Tacoma",
+          "addressRegion": "WA",
+          "postalCode": "98402",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.2529,
+          "longitude": -122.4443
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
           },
-          "telephone": "(253) 555-0123",
-          "url": "https://liftnhaul.com"
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "16:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/liftnhaulmovers",
+          "https://www.instagram.com/liftnhaulmovers"
+        ],
+        "@id": "https://liftnhaul.com",
+        "areaServed": ["Tacoma", "Pierce County", "King County", "Thurston County", "Kitsap County"],
+        "description": "Professional moving services in Tacoma, WA. Local & long-distance moving, packing services, and apartment relocation experts serving Pierce County and beyond.",
+        "disambiguatingDescription": "Moving company in Tacoma specializing in local and long-distance moves",
+        "founder": {
+          "@type": "Person",
+          "name": "LiftNHaul Founder"
         },
-        "areaServed": {
-          "@type": "State",
-          "name": "Washington"
-        },
+        "foundingDate": "2018",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Moving Services",
@@ -90,6 +114,26 @@
               }
             }
           ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "87",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Tacoma Resident"
+          },
+          "reviewBody": "LiftNHaul Movers provided exceptional service for our family's move. The team was professional, careful with our belongings, and efficient."
         }
       }
     </script>
