@@ -14,6 +14,7 @@ const Index = () => {
         <meta name="description" content="LiftNHaul provides professional moving services in Tacoma, WA. Trusted local & long-distance moving, packing services, and apartment relocation experts serving Pierce County and beyond." />
         <meta name="keywords" content="LiftNHaul, LiftNHaul Movers, Tacoma movers, moving services tacoma, local movers pierce county, tacoma moving company, best movers in tacoma, moving company near me, affordable movers tacoma, professional movers pierce county, packing services washington, residential moving services" />
         <link rel="canonical" href="https://liftnhaul.com/" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
       </Helmet>
       
       <HeroSection />
