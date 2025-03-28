@@ -1,3 +1,57 @@
+
+# Allow all search engine bots
 User-agent: *
+
+# Allow access to most content
 Allow: /
+Allow: /services/
+Allow: /about/
+Allow: /contact/
+Allow: /resources/
+Allow: /blog/
+
+# Prevent indexing of administrative and private areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /cgi-bin/
+Disallow: /backend/
+
+# Prevent indexing of search results and filtered pages
+Disallow: /*?s=
+Disallow: /*?p=
+Disallow: /*?filter=
+
+# Prevent indexing of duplicate content
+Disallow: /*?sort=
+Disallow: /*?order=
+Disallow: /print/
+Disallow: /pdf/
+
+# Block specific file types
+Disallow: /*.php$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.conf$
+Disallow: /*.env$
+
+# Special rules for specific bots
+User-agent: Googlebot
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+
+# Bing specific rules
+User-agent: Bingbot
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+
+# Add your XML sitemap location
 Sitemap: https://liftnhaul.com/sitemap.xml
