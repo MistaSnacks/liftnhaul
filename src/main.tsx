@@ -3,7 +3,5 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-// Token is already defined in index.html and vite.config.ts
-// Removing redundant definition to avoid conflicts
-
+// Mount the React application
 createRoot(document.getElementById("root")!).render(<App />);
