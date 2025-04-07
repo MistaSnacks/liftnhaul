@@ -1,6 +1,7 @@
 
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
+import ContactMap from "@/components/contact/ContactMap";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
@@ -34,6 +35,11 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <ContactInfo />
           <ContactForm />
+        </div>
+        
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold mb-6">Find Us</h2>
+          <ContactMap />
         </div>
       </div>
     </div>
