@@ -28,23 +28,12 @@ const ServiceAreasSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-primary text-white relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/lovable-uploads/4f1137f5-ab67-44bb-a90c-f4e9c3d45377.png"
-          alt="Mount Rainier and Tacoma Skyline - LiftNHaul service areas"
-          className="w-full h-full object-cover opacity-10"
-          width="1920"
-          height="1080"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-16 bg-primary text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold">Moving Companies Tacoma WA & Service Areas</h2>
+          <h2 className="text-3xl font-bold">Service Areas & Coverage</h2>
           <p className="mt-4 text-xl text-gray-200">
-            Professional moving services across Western Washington - including Seattle area moving company services
+            Expert moving services throughout Western Washington counties
           </p>
         </div>
 
