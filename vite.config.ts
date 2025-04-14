@@ -29,8 +29,8 @@ export default defineConfig(({ mode }) => ({
     },
   },
   define: {
-    // Use JSON.stringify to properly create string literals
-    '__WS_TOKEN__': JSON.stringify('dev-token'),
+    // Use a simple string literal without JSON.stringify to avoid any parsing issues
+    '__WS_TOKEN__': "'dev-token'",
     // Correctly define global for older Vite versions
     'global': 'globalThis',
   },
