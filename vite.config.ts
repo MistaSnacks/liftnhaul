@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -31,8 +30,8 @@ export default defineConfig(({ mode }) => ({
   define: {
     // Properly define all environment variables as string literals
     '__WS_TOKEN__': "'dev-token'",
-    // Define any other potential environment variables as string literals
     '_hnRgeqybKIB': "'undefined'",
+    'BMD32f6Zh9U2': "'undefined'",
     // Use globalThis for global definition
     'global': 'globalThis',
   },

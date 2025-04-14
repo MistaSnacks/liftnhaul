@@ -17,7 +17,8 @@ if (typeof window !== 'undefined' && typeof window.__WS_TOKEN__ === 'undefined')
 if (typeof window !== 'undefined') {
   // Define default values for any other environment variables
   const defaultEnvVars = {
-    '_hnRgeqybKIB': undefined
+    '_hnRgeqybKIB': undefined,
+    'BMD32f6Zh9U2': undefined // Add the new environment variable
   };
   
   // Apply defaults for any undefined variables
