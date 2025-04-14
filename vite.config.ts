@@ -29,9 +29,11 @@ export default defineConfig(({ mode }) => ({
     },
   },
   define: {
-    // Use a simple string literal without JSON.stringify to avoid any parsing issues
+    // Properly define all environment variables as string literals
     '__WS_TOKEN__': "'dev-token'",
-    // Correctly define global for older Vite versions
+    // Define any other potential environment variables as string literals
+    '_hnRgeqybKIB': "'undefined'",
+    // Use globalThis for global definition
     'global': 'globalThis',
   },
 }));
