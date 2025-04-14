@@ -29,9 +29,9 @@ export default defineConfig(({ mode }) => ({
     },
   },
   define: {
-    // Fix the WebSocket token syntax by properly defining it as a simple string
-    '__WS_TOKEN__': JSON.stringify("dev-token"),
-    // Add fallback global definition for older Vite versions
+    // Properly define the WebSocket token as a string literal
+    '__WS_TOKEN__': '"dev-token"',
+    // Correctly define global for older Vite versions
     'global': 'globalThis',
   },
 }));
