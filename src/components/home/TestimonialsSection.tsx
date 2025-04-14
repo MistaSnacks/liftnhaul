@@ -1,6 +1,6 @@
 
 import { Star } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -8,12 +8,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getSortedReviews } from "@/data/googleReviews";
+import { GoogleReview, getSortedReviews } from "@/data/googleReviews";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 const TestimonialsSection = () => {
-  const sortedReviews = getSortedReviews();
+  const [reviews, setReviews] = useState<GoogleReview[]>([]);
   
   // Setup autoplay plugin with 5 second delay and stopping on interaction
   const autoplayPlugin = useRef(
@@ -27,6 +27,21 @@ const TestimonialsSection = () => {
     },
     [autoplayPlugin.current]
   );
+  
+  // Fetch reviews on component mount
+  useEffect(() => {
+    const fetchReviews = () => {
+      try {
+        const sortedReviews = getSortedReviews();
+        console.log("Fetched reviews:", sortedReviews);
+        setReviews(sortedReviews);
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+      }
+    };
+    
+    fetchReviews();
+  }, []);
   
   // Re-enable autoplay when user stops interacting
   useEffect(() => {
@@ -58,22 +73,30 @@ const TestimonialsSection = () => {
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent>
-              {sortedReviews.map((review) => (
-                <CarouselItem key={review.id} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-                    <div className="mb-4">
-                      <h3 className="font-semibold text-gray-900">{review.name}</h3>
-                      <p className="text-sm text-gray-600">{review.time}</p>
+              {reviews.length > 0 ? (
+                reviews.map((review) => (
+                  <CarouselItem key={review.id} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+                      <div className="mb-4">
+                        <h3 className="font-semibold text-gray-900">{review.name}</h3>
+                        <p className="text-sm text-gray-600">{review.time}</p>
+                      </div>
+                      <div className="flex mb-3">
+                        {Array.from({ length: review.rating }).map((_, i) => (
+                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-gray-700 leading-relaxed flex-grow">{review.text}</p>
                     </div>
-                    <div className="flex mb-3">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 leading-relaxed flex-grow">{review.text}</p>
+                  </CarouselItem>
+                ))
+              ) : (
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white p-6 rounded-lg shadow-md h-full flex flex-col justify-center items-center">
+                    <p>Loading reviews...</p>
                   </div>
                 </CarouselItem>
-              ))}
+              )}
             </CarouselContent>
             <div className="absolute -left-4 top-1/2 -translate-y-1/2">
               <CarouselPrevious className="relative left-0" />
