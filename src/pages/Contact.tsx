@@ -1,7 +1,5 @@
-
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
-import ServiceAreaMap from "@/components/contact/ServiceAreaMap";
 
 const Contact = () => {
   return (
@@ -28,11 +26,6 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <ContactInfo />
           <ContactForm />
-        </div>
-        
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Service Areas</h2>
-          <ServiceAreaMap />
         </div>
       </div>
     </div>
