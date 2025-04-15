@@ -1,8 +1,10 @@
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { mainRoutes } from "./routes/mainRoutes";
 import { serviceRoutes } from "./routes/serviceRoutes";
 import { blogRoutes } from "./routes/blogRoutes";
 import { resourceRoutes } from "./routes/resourceRoutes";
+import { locationRoutes } from "./routes/locationRoutes";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,6 +29,9 @@ function App() {
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
             {resourceRoutes.map((route) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
+            {locationRoutes.map((route) => (
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
           </Routes>

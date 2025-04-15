@@ -1,127 +1,196 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
     <loc>https://liftnhaul.com/</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/about</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/contact</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/services</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Service Pages -->
   <url>
     <loc>https://liftnhaul.com/services/local-moving</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/services/long-distance-moving</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/services/packing-services</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/services/apartment-moving</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Location Pages -->
+  <url>
+    <loc>https://liftnhaul.com/locations</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Pierce County Locations -->
+  <url>
+    <loc>https://liftnhaul.com/locations/pierce-county</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/pierce-county/tacoma</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/pierce-county/puyallup</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/pierce-county/lakewood</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- King County Locations -->
+  <url>
+    <loc>https://liftnhaul.com/locations/king-county</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/king-county/seattle</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/king-county/bellevue</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/king-county/kent</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Thurston County Locations -->
+  <url>
+    <loc>https://liftnhaul.com/locations/thurston-county</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/thurston-county/olympia</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liftnhaul.com/locations/thurston-county/lacey</loc>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.6</priority>
   </url>
 
   <!-- Resource Pages -->
   <url>
     <loc>https://liftnhaul.com/resources</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/moving-tips</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/packing-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/service-areas</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
 
   <!-- Service Areas -->
   <url>
     <loc>https://liftnhaul.com/resources/service-areas/king-county</loc>
-    <lastmod>2024-03-21</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/service-areas/pierce-county</loc>
-    <lastmod>2024-03-21</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/service-areas/thurston-county</loc>
-    <lastmod>2024-03-21</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/resources/service-areas/kitsap-county</loc>
-    <lastmod>2024-03-21</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2024-04-15</lastmod>
+    <priority>0.5</priority>
   </url>
 
   <!-- Blog Pages -->
   <url>
     <loc>https://liftnhaul.com/blog</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/moving-to-tacoma-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/best-tacoma-neighborhoods</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/seattle-living-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/bellevue-living-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/living-in-olympia-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liftnhaul.com/blog/port-orchard-living-guide</loc>
-    <lastmod>2024-03-21</lastmod>
+    <lastmod>2024-04-15</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

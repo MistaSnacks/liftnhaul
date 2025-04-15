@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const QuickLinks = () => {
@@ -18,6 +19,11 @@ const QuickLinks = () => {
         <li>
           <Link to="/services" className="text-gray-400 hover:text-white transition-colors">
             Services
+          </Link>
+        </li>
+        <li>
+          <Link to="/locations" className="text-gray-400 hover:text-white transition-colors">
+            Locations
           </Link>
         </li>
         <li>

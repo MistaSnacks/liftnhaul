@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -37,20 +38,36 @@ const Sitemap = () => {
           </div>
           
           <div>
+            <h2 className="text-2xl font-semibold mb-4">Locations</h2>
+            <ul className="space-y-2">
+              <li><Link to="/locations" className="text-gray-600 hover:text-primary">All Locations</Link></li>
+              
+              <li className="mt-2 font-medium">Pierce County:</li>
+              <li className="ml-4"><Link to="/locations/pierce-county" className="text-gray-600 hover:text-primary">Pierce County Overview</Link></li>
+              <li className="ml-4"><Link to="/locations/pierce-county/tacoma" className="text-gray-600 hover:text-primary">Tacoma</Link></li>
+              <li className="ml-4"><Link to="/locations/pierce-county/puyallup" className="text-gray-600 hover:text-primary">Puyallup</Link></li>
+              <li className="ml-4"><Link to="/locations/pierce-county/lakewood" className="text-gray-600 hover:text-primary">Lakewood</Link></li>
+              
+              <li className="mt-2 font-medium">King County:</li>
+              <li className="ml-4"><Link to="/locations/king-county" className="text-gray-600 hover:text-primary">King County Overview</Link></li>
+              <li className="ml-4"><Link to="/locations/king-county/seattle" className="text-gray-600 hover:text-primary">Seattle</Link></li>
+              <li className="ml-4"><Link to="/locations/king-county/bellevue" className="text-gray-600 hover:text-primary">Bellevue</Link></li>
+              <li className="ml-4"><Link to="/locations/king-county/kent" className="text-gray-600 hover:text-primary">Kent</Link></li>
+              
+              <li className="mt-2 font-medium">Thurston County:</li>
+              <li className="ml-4"><Link to="/locations/thurston-county" className="text-gray-600 hover:text-primary">Thurston County Overview</Link></li>
+              <li className="ml-4"><Link to="/locations/thurston-county/olympia" className="text-gray-600 hover:text-primary">Olympia</Link></li>
+              <li className="ml-4"><Link to="/locations/thurston-county/lacey" className="text-gray-600 hover:text-primary">Lacey</Link></li>
+            </ul>
+          </div>
+          
+          <div>
             <h2 className="text-2xl font-semibold mb-4">Resources</h2>
             <ul className="space-y-2">
               <li><Link to="/resources" className="text-gray-600 hover:text-primary">All Resources</Link></li>
               <li><Link to="/resources/moving-tips" className="text-gray-600 hover:text-primary">Moving Tips</Link></li>
               <li><Link to="/resources/packing-guide" className="text-gray-600 hover:text-primary">Packing Guide</Link></li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mt-6 mb-4">Service Areas</h3>
-            <ul className="space-y-2">
-              <li><Link to="/resources/service-areas" className="text-gray-600 hover:text-primary">All Service Areas</Link></li>
-              <li><Link to="/resources/service-areas/king-county" className="text-gray-600 hover:text-primary">King County</Link></li>
-              <li><Link to="/resources/service-areas/pierce-county" className="text-gray-600 hover:text-primary">Pierce County</Link></li>
-              <li><Link to="/resources/service-areas/thurston-county" className="text-gray-600 hover:text-primary">Thurston County</Link></li>
-              <li><Link to="/resources/service-areas/kitsap-county" className="text-gray-600 hover:text-primary">Kitsap County</Link></li>
+              <li><Link to="/resources/service-areas" className="text-gray-600 hover:text-primary">Service Areas</Link></li>
             </ul>
           </div>
           
