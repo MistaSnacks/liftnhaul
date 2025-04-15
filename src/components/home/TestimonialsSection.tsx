@@ -1,6 +1,4 @@
-
 import { Star } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -8,49 +6,46 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { GoogleReview, getSortedReviews } from "@/data/googleReviews";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 
 const TestimonialsSection = () => {
-  const [reviews, setReviews] = useState<GoogleReview[]>([]);
-  
-  // Setup autoplay plugin with 5 second delay and stopping on interaction
-  const autoplayPlugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
-  );
-  
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      align: "start",
-      loop: true,
+  const testimonials = [
+    {
+      name: "Sarah Johnson",
+      location: "Tacoma, WA",
+      text: "The team made our local move completely stress-free. They handled our furniture with care and were incredibly professional throughout the entire process. Highly recommend!",
+      rating: 5
     },
-    [autoplayPlugin.current]
-  );
-  
-  // Fetch reviews on component mount
-  useEffect(() => {
-    const fetchReviews = () => {
-      try {
-        const sortedReviews = getSortedReviews();
-        console.log("Fetched reviews:", sortedReviews);
-        setReviews(sortedReviews);
-      } catch (error) {
-        console.error("Error fetching reviews:", error);
-      }
-    };
-    
-    fetchReviews();
-  }, []);
-  
-  // Re-enable autoplay when user stops interacting
-  useEffect(() => {
-    if (emblaApi) {
-      emblaApi.on('pointerUp', () => {
-        autoplayPlugin.current.reset();
-      });
+    {
+      name: "Michael Chen",
+      location: "Lakewood, WA",
+      text: "Their packing service was a lifesaver! They carefully packed all our belongings and labeled everything clearly. The unpacking was just as organized. Worth every penny.",
+      rating: 5
+    },
+    {
+      name: "Emily Rodriguez",
+      location: "University Place, WA",
+      text: "Moving from my apartment was seamless. The crew was punctual, efficient, and took extra care with my furniture. They made the whole process so much easier!",
+      rating: 5
+    },
+    {
+      name: "David Thompson",
+      location: "Gig Harbor, WA",
+      text: "Outstanding service from start to finish. The team was professional, courteous, and handled our long-distance move with expertise. Everything arrived in perfect condition.",
+      rating: 5
+    },
+    {
+      name: "Lisa Martinez",
+      location: "Puyallup, WA",
+      text: "I was impressed by their attention to detail during our local move. They wrapped all furniture carefully and were very efficient. Great communication throughout!",
+      rating: 5
+    },
+    {
+      name: "James Wilson",
+      location: "Federal Way, WA",
+      text: "The packing and moving service exceeded my expectations. They were thorough, professional, and made our move stress-free. Would definitely use them again!",
+      rating: 5
     }
-  }, [emblaApi]);
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
@@ -58,45 +53,35 @@ const TestimonialsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">What Our Customers Say</h2>
           <p className="mt-4 text-xl text-gray-600">
-            Real reviews from Google
+            Real experiences from satisfied customers
           </p>
         </div>
 
         <div className="relative">
           <Carousel
-            ref={emblaRef}
             opts={{
               align: "start",
               loop: true,
             }}
-            plugins={[autoplayPlugin.current]}
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent>
-              {reviews.length > 0 ? (
-                reviews.map((review) => (
-                  <CarouselItem key={review.id} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-                      <div className="mb-4">
-                        <h3 className="font-semibold text-gray-900">{review.name}</h3>
-                        <p className="text-sm text-gray-600">{review.time}</p>
-                      </div>
-                      <div className="flex mb-3">
-                        {Array.from({ length: review.rating }).map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <p className="text-gray-700 leading-relaxed flex-grow">{review.text}</p>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+                    <div className="mb-4">
+                      <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
+                      <p className="text-sm text-gray-600">{testimonial.location}</p>
                     </div>
-                  </CarouselItem>
-                ))
-              ) : (
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white p-6 rounded-lg shadow-md h-full flex flex-col justify-center items-center">
-                    <p>Loading reviews...</p>
+                    <div className="flex mb-3">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">{testimonial.text}</p>
                   </div>
                 </CarouselItem>
-              )}
+              ))}
             </CarouselContent>
             <div className="absolute -left-4 top-1/2 -translate-y-1/2">
               <CarouselPrevious className="relative left-0" />

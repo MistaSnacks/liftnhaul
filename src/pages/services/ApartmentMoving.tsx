@@ -1,35 +1,12 @@
-
 import { Helmet } from "react-helmet";
 
 const ApartmentMoving = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Apartment Moving Services Tacoma | LiftNHaul Movers</title>
+        <title>Apartment Moving Services Tacoma | LiftNHaul</title>
         <meta name="description" content="Specialized apartment moving services in Tacoma. Expert handling of stairs, elevators, and tight spaces for a smooth apartment relocation." />
-        <meta name="keywords" content="apartment moving tacoma, tacoma moving company, residential moving services, elevator moving, furniture moving company, pierce county movers" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "serviceType": "Moving Service",
-              "provider": {
-                "@type": "MovingCompany",
-                "name": "LiftNHaul Movers",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Tacoma",
-                  "addressRegion": "WA"
-                }
-              },
-              "name": "Apartment Moving Services",
-              "description": "Specialized apartment moving services in Tacoma. Expert handling of stairs, elevators, and tight spaces for a smooth apartment relocation.",
-              "areaServed": "Tacoma and Pierce County",
-              "mainEntityOfPage": "https://liftnhaul.com/services/apartment-moving"
-            }
-          `}
-        </script>
+        <meta name="keywords" content="apartment moving, Tacoma apartment movers, residential moving, elevator moving" />
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
@@ -42,7 +19,7 @@ const ApartmentMoving = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-4 animate-fadeIn">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Apartment Moving Services Tacoma</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Apartment Moving Services</h1>
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               Specialized solutions for apartment relocations
             </p>
@@ -62,7 +39,7 @@ const ApartmentMoving = () => {
           
           <div className="space-y-6">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-semibold text-gray-900">Expert Apartment Moving in Tacoma</h2>
+              <h2 className="text-2xl font-semibold text-gray-900">Expert Apartment Moving</h2>
               <p className="text-gray-600">
                 Our apartment moving services are specifically designed to handle the unique challenges of apartment relocations. We're experienced in navigating stairs, elevators, and tight spaces while protecting your belongings and the building's property. Our team understands the complexities of apartment moves and has developed specialized techniques to ensure a smooth transition.
               </p>
@@ -73,7 +50,7 @@ const ApartmentMoving = () => {
               </p>
 
               <p className="text-gray-600">
-                As a professional furniture moving company, our services include elevator reservation coordination, proper protection of common areas, specialized equipment for tight spaces, furniture disassembly and reassembly, packing and unpacking services, and storage solutions if needed. We're committed to providing the most efficient and stress-free apartment moving experience in Tacoma.
+                Our services include elevator reservation coordination, proper protection of common areas, specialized equipment for tight spaces, furniture disassembly and reassembly, packing and unpacking services, and storage solutions if needed.
               </p>
             </div>
           </div>

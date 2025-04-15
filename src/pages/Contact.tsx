@@ -1,17 +1,9 @@
-
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
-import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Contact Us | LiftNHaul Movers Tacoma</title>
-        <meta name="description" content="Get in touch with Tacoma's trusted moving experts. Request a quote for local or long-distance moving, packing services, and more." />
-        <meta name="keywords" content="moving company near me, tacoma moving company, pierce county movers, affordable movers tacoma, contact movers, moving quote" />
-      </Helmet>
-      
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -13,7 +12,6 @@ const HeroSection = () => {
           width="1920"
           height="1080"
           fetchPriority="high"
-          decoding="async"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -22,7 +20,7 @@ const HeroSection = () => {
             Professional Moving Services in Tacoma
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free. Voted among the best movers in Tacoma for residential moving services.
+            Trusted movers serving Pierce County and beyond. Licensed, insured, and committed to making your move stress-free.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90" asChild>

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const QuickLinks = () => {
@@ -40,11 +39,6 @@ const QuickLinks = () => {
           <Link to="/sitemap" className="text-gray-400 hover:text-white transition-colors">
             Sitemap
           </Link>
-        </li>
-        <li>
-          <a href="/sitemap.xml" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-            XML Sitemap
-          </a>
         </li>
       </ul>
     </div>

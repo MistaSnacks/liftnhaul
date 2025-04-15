@@ -1,20 +1,3 @@
-
-# Allow all search engines
 User-agent: *
 Allow: /
-
-# Disallow admin and private areas
-Disallow: /admin/
-Disallow: /wp-admin/
-Disallow: /private/
-Disallow: /includes/
-Disallow: /cgi-bin/
-Disallow: /backend/
-
-# Prevent indexing of search results
-Disallow: /*?s=
-Disallow: /*?p=
-Disallow: /*?filter=
-
-# Sitemap location
 Sitemap: https://liftnhaul.com/sitemap.xml
