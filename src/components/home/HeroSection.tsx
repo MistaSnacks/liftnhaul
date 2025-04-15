@@ -13,7 +13,7 @@ const HeroSection = () => {
           width="1920"
           height="1080"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
