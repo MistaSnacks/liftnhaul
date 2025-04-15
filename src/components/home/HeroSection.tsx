@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -11,6 +12,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover opacity-20"
           width="1920"
           height="1080"
+          loading="eager"
           fetchPriority="high"
         />
       </div>
