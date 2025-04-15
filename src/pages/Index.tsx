@@ -6,6 +6,10 @@ import ServiceAreasSection from "@/components/home/ServiceAreasSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";
 import { Link } from "react-router-dom";
+import { lazy, Suspense } from "react";
+
+// Lazy load less critical components
+const TestimonialsSectionLazy = lazy(() => import("@/components/home/TestimonialsSection"));
 
 const Index = () => {
   return (
@@ -21,14 +25,17 @@ const Index = () => {
           content="moving company near me, tacoma moving company, local movers pierce county, packing services washington, apartment moving tacoma" 
         />
         <link rel="canonical" href="https://liftnhaul.com/" />
+        {/* Speed optimization meta tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
       </Helmet>
       <div className="min-h-screen">
         <HeroSection />
         <ServicesSection />
-        <div className="py-8 bg-gray-50">
+        <div className="py-6 md:py-8 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl font-semibold text-primary mb-6">Comprehensive Moving Solutions</h2>
-            <p className="text-gray-700 mb-6 max-w-3xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-semibold text-primary mb-4 md:mb-6">Comprehensive Moving Solutions</h2>
+            <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 max-w-3xl mx-auto">
               As the <Link to="/locations/pierce-county/tacoma" className="text-primary hover:underline">leading moving company in Tacoma</Link>, 
               we offer a complete range of services from <Link to="/services/local-moving" className="text-primary hover:underline">local moves</Link> to 
               <Link to="/services/long-distance-moving" className="text-primary hover:underline"> interstate relocations</Link>. Our team provides 
@@ -41,7 +48,9 @@ const Index = () => {
           </div>
         </div>
         <ServiceAreasSection />
-        <TestimonialsSection />
+        <Suspense fallback={<div className="py-16 bg-gray-50"></div>}>
+          <TestimonialsSectionLazy />
+        </Suspense>
         <CTASection />
       </div>
     </>

@@ -1,3 +1,4 @@
+
 import { Star } from "lucide-react";
 import {
   Carousel,
@@ -6,8 +7,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const TestimonialsSection = () => {
+  const isMobile = useIsMobile();
+  
   const testimonials = [
     {
       name: "Sarah Johnson",
@@ -48,11 +52,11 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">What Our Customers Say</h2>
-          <p className="mt-4 text-xl text-gray-600">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">What Our Customers Say</h2>
+          <p className="mt-3 text-base md:text-xl text-gray-600">
             Real experiences from satisfied customers
           </p>
         </div>
@@ -62,33 +66,38 @@ const TestimonialsSection = () => {
             opts={{
               align: "start",
               loop: true,
+              dragFree: true,
             }}
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
-                    <div className="mb-4">
+                <CarouselItem key={index} className="pl-4 sm:pl-6 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+                    <div className="mb-2 md:mb-4">
                       <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-600">{testimonial.location}</p>
+                      <p className="text-xs md:text-sm text-gray-600">{testimonial.location}</p>
                     </div>
-                    <div className="flex mb-3">
+                    <div className="flex mb-2 md:mb-3">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                        <Star key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" />
                       ))}
                     </div>
-                    <p className="text-gray-700 leading-relaxed">{testimonial.text}</p>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">{testimonial.text}</p>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="absolute -left-4 top-1/2 -translate-y-1/2">
-              <CarouselPrevious className="relative left-0" />
-            </div>
-            <div className="absolute -right-4 top-1/2 -translate-y-1/2">
-              <CarouselNext className="relative right-0" />
-            </div>
+            {!isMobile && (
+              <>
+                <div className="absolute -left-4 top-1/2 -translate-y-1/2 hidden md:block">
+                  <CarouselPrevious className="relative left-0" />
+                </div>
+                <div className="absolute -right-4 top-1/2 -translate-y-1/2 hidden md:block">
+                  <CarouselNext className="relative right-0" />
+                </div>
+              </>
+            )}
           </Carousel>
         </div>
       </div>
