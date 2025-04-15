@@ -38,6 +38,7 @@ const Locations = () => {
           name="keywords"
           content="moving company near me, tacoma moving company, pierce county movers, seattle area moving company, bellevue residential movers, olympia moving services"
         />
+        <link rel="canonical" href="https://liftnhaul.com/locations" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
@@ -52,7 +53,7 @@ const Locations = () => {
             <Link key={county.name} to={county.path}>
               <Card className="hover:shadow-lg transition-shadow h-full">
                 <CardHeader>
-                  <MapPin className="w-8 h-8 text-primary mb-2" />
+                  <MapPin className="w-8 h-8 text-primary mb-2" aria-hidden="true" />
                   <CardTitle>{county.name}</CardTitle>
                   <CardDescription>{county.description}</CardDescription>
                 </CardHeader>

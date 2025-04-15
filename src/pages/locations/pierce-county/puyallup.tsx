@@ -10,8 +10,13 @@ const Puyallup = () => {
         <title>Moving Services in Puyallup, WA | Professional Movers | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Reliable moving services in Puyallup, WA. Local experts providing residential and commercial moving, packing services, and more in the South Hill area." 
+          content="Reliable puyallup moving services in South Hill and Downtown areas. Local experts providing residential and commercial moving, packing services, and more." 
         />
+        <meta 
+          name="keywords" 
+          content="puyallup moving services, south hill movers, downtown puyallup moving, pierce county movers, moving company near me"
+        />
+        <link rel="canonical" href="https://liftnhaul.com/locations/pierce-county/puyallup" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
@@ -40,7 +45,7 @@ const Puyallup = () => {
           <div>
             <img
               src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-              alt="Professional movers loading a moving truck"
+              alt="LiftNHaul professional movers carefully handling furniture during a Puyallup residential move"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg opacity-90"
             />
           </div>

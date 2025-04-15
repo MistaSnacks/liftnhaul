@@ -10,13 +10,14 @@ const LongDistanceMoving = () => {
         <title>Long Distance Moving Washington State | Interstate Movers Tacoma | LiftNHaul</title>
         <meta name="description" content="Professional long distance moving services from Tacoma. Reliable interstate movers, cross country moving services, and comprehensive state to state movers for your long-distance relocation." />
         <meta name="keywords" content="long distance moving washington state, interstate movers tacoma, cross country moving services, washington state long distance movers, professional long distance moving, state to state movers" />
+        <link rel="canonical" href="https://liftnhaul.com/services/long-distance-moving" />
       </Helmet>
 
       <div className="pt-24 pb-12 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/lovable-uploads/f57c2395-b4e9-410f-ab9f-46613cf6f480.png"
-            alt="Professional long distance moving service"
+            alt="Professional long distance moving truck on an interstate highway"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -35,7 +36,7 @@ const LongDistanceMoving = () => {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img
               src="/lovable-uploads/f57c2395-b4e9-410f-ab9f-46613cf6f480.png"
-              alt="Professional interstate movers Tacoma providing long distance moving services"
+              alt="LiftNHaul professional interstate movers loading furniture into a moving truck for long distance relocation"
               className="w-full h-[500px] object-cover"
             />
           </div>

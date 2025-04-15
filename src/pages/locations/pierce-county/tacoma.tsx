@@ -16,6 +16,7 @@ const Tacoma = () => {
           name="keywords" 
           content="tacoma moving company, local moving services tacoma, best movers in tacoma, affordable movers tacoma, pierce county movers, moving company near me" 
         />
+        <link rel="canonical" href="https://liftnhaul.com/locations/pierce-county/tacoma" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
@@ -33,7 +34,7 @@ const Tacoma = () => {
           <div>
             <img
               src="/lovable-uploads/c35016d1-350c-441e-89bb-b88afd43d6c7.png"
-              alt="Tacoma skyline with Mount Rainier in the background"
+              alt="Tacoma skyline with Mount Rainier in the background where our moving company serves clients"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -77,7 +78,7 @@ const Tacoma = () => {
           <div className="order-1 md:order-2">
             <img
               src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-              alt="LiftNHaul movers carefully loading a moving truck in Tacoma"
+              alt="LiftNHaul professional movers carefully loading furniture into a moving truck in Tacoma's North End neighborhood"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg opacity-90"
             />
           </div>

@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-          alt="Professional moving services - LiftNHaul moving truck being loaded"
+          alt="Professional moving services - LiftNHaul moving experts carefully loading household items into moving truck"
           className="w-full h-full object-cover opacity-20"
           width="1920"
           height="1080"

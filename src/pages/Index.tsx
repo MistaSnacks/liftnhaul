@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
@@ -16,7 +17,7 @@ const Index = () => {
         />
         <meta 
           name="keywords" 
-          content="moving services tacoma, local movers pierce county, packing services washington, apartment moving" 
+          content="moving company near me, tacoma moving company, local movers pierce county, packing services washington, apartment moving tacoma" 
         />
         <link rel="canonical" href="https://liftnhaul.com/" />
       </Helmet>

@@ -12,6 +12,11 @@ const Kent = () => {
           name="description" 
           content="Professional moving services in Kent, WA. Local experts providing residential and commercial moving, packing services, and more throughout Kent." 
         />
+        <meta 
+          name="keywords" 
+          content="kent moving services, moving companies kent wa, professional movers kent, east hill moving, kent valley movers"
+        />
+        <link rel="canonical" href="https://liftnhaul.com/locations/king-county/kent" />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
@@ -40,7 +45,7 @@ const Kent = () => {
           <div>
             <img
               src="/lovable-uploads/9d482628-c117-42b0-8948-8596e4b18d60.png"
-              alt="Professional movers loading a moving truck"
+              alt="Professional LiftNHaul movers carefully loading customer belongings into a moving truck in Kent, WA"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg opacity-90"
             />
           </div>
