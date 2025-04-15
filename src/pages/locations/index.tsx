@@ -29,17 +29,22 @@ const Locations = () => {
   return (
     <>
       <Helmet>
-        <title>Service Locations | Moving Services in Western Washington | LiftNHaul</title>
+        <title>Moving Services Near Me | Professional Movers in Western Washington | LiftNHaul</title>
         <meta 
           name="description" 
-          content="LiftNHaul provides professional moving services across Western Washington. Explore our service locations in Pierce, King, and Thurston counties." 
+          content="Looking for moving companies near me? LiftNHaul provides professional and affordable moving services across Western Washington including Tacoma, Seattle, and Olympia." 
+        />
+        <meta
+          name="keywords"
+          content="moving company near me, tacoma moving company, pierce county movers, seattle area moving company, bellevue residential movers, olympia moving services"
         />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 mt-24">
-        <h1 className="text-4xl font-bold text-primary mb-8">Our Service Locations</h1>
+        <h1 className="text-4xl font-bold text-primary mb-4">Our Service Locations</h1>
+        <h2 className="text-2xl mb-8">Best Movers in Tacoma & Western Washington</h2>
         <p className="text-lg text-gray-700 mb-8">
-          Providing professional moving services across Western Washington's most populous counties.
+          LiftNHaul offers professional moving services throughout Western Washington's most populous counties. Whether you need local moving services in Tacoma, residential moving services in Seattle, or affordable movers in Olympia, we've got you covered.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -26,10 +26,14 @@ const PierceCounty = () => {
   return (
     <>
       <Helmet>
-        <title>Pierce County Moving Services | Professional Movers | LiftNHaul</title>
+        <title>Pierce County Movers | Professional Moving Services | LiftNHaul</title>
         <meta 
           name="description" 
-          content="Expert moving services throughout Pierce County, WA. Serving Tacoma, Puyallup, Lakewood, and surrounding areas with professional moving solutions." 
+          content="Professional movers in Pierce County, WA. Serving Tacoma, Puyallup, Lakewood with affordable local moving services, residential moving, and commercial solutions." 
+        />
+        <meta 
+          name="keywords" 
+          content="pierce county movers, tacoma moving company, puyallup moving services, lakewood movers, residential moving services, professional movers pierce county" 
         />
       </Helmet>
       
@@ -38,9 +42,9 @@ const PierceCounty = () => {
           <Link to="/locations" className="text-primary hover:underline mb-4 inline-flex items-center">
             &larr; Back to All Locations
           </Link>
-          <h1 className="text-4xl font-bold text-primary mt-4">Moving Services in Pierce County</h1>
+          <h1 className="text-4xl font-bold text-primary mt-4">Professional Movers in Pierce County</h1>
           <p className="text-lg text-gray-700 mt-4 mb-8">
-            As Pierce County's premier moving company, LiftNHaul provides comprehensive moving services throughout the area. Our deep understanding of the local region enables us to deliver efficient and reliable moving solutions.
+            As one of the top moving companies in Pierce County, LiftNHaul provides comprehensive moving services throughout the area. Our team of professional movers offers affordable, reliable solutions for residential moving services, commercial relocations, and more.
           </p>
         </div>
 
@@ -58,14 +62,14 @@ const PierceCounty = () => {
               Pierce County is the second-most populous county in Washington state, home to over 900,000 residents. The county seat is Tacoma, a vibrant city with a rich history and stunning views of Commencement Bay and Mount Rainier.
             </p>
             <p className="mb-4">
-              From urban neighborhoods to rural communities, Pierce County offers diverse living options. Our team has extensive experience moving families and businesses throughout the entire county.
+              From urban neighborhoods to rural communities, Pierce County offers diverse living options. Our team of professional movers has extensive experience moving families and businesses throughout the entire county.
             </p>
-            <h3 className="text-xl font-semibold mt-6 mb-3">Why Choose Us for Your Pierce County Move?</h3>
+            <h3 className="text-xl font-semibold mt-6 mb-3">Why Choose Our Pierce County Moving Services?</h3>
             <ul className="space-y-2">
               <li>Deep knowledge of Pierce County neighborhoods and communities</li>
-              <li>Familiarity with local building requirements and regulations</li>
-              <li>Efficient routes that save you time and money</li>
-              <li>Full-service options tailored to your specific needs</li>
+              <li>Experienced Tacoma moving company with local expertise</li>
+              <li>Affordable movers with transparent pricing</li>
+              <li>Full-service residential moving options tailored to your specific needs</li>
             </ul>
           </div>
         </div>
@@ -89,7 +93,7 @@ const PierceCounty = () => {
 
         <div className="bg-primary/5 p-6 rounded-lg border border-primary/20 mb-8">
           <h2 className="text-2xl font-semibold text-primary mb-4">Request a Free Pierce County Moving Quote</h2>
-          <p className="mb-4">Ready to plan your Pierce County move? Contact us today for a free, no-obligation quote.</p>
+          <p className="mb-4">Ready to plan your move with professional movers in Pierce County? Contact us today for a free, no-obligation quote.</p>
           <Link to="/contact">
             <Button className="bg-primary hover:bg-primary/90">Get a Free Quote</Button>
           </Link>
