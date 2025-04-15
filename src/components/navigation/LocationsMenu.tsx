@@ -35,13 +35,21 @@ const LocationsMenu = () => {
         { name: "Lacey", path: "/locations/thurston-county/lacey" },
       ]
     },
+    {
+      name: "Kitsap County",
+      path: "/locations/kitsap-county",
+      cities: [
+        { name: "Bremerton", path: "/locations/kitsap-county/bremerton" },
+        { name: "Port Orchard", path: "/locations/kitsap-county/port-orchard" },
+      ]
+    },
   ];
 
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger>Locations</NavigationMenuTrigger>
       <NavigationMenuContent>
-        <div className="grid w-[600px] grid-cols-3 gap-3 p-4">
+        <div className="grid w-[800px] grid-cols-4 gap-3 p-4">
           {counties.map((county) => (
             <div key={county.name} className="space-y-2">
               <NavigationMenuLink asChild>

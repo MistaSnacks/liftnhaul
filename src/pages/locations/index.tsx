@@ -36,6 +36,15 @@ const Locations = () => {
         { name: "Lacey", path: "/locations/thurston-county/lacey" }
       ]
     },
+    {
+      name: "Kitsap County",
+      path: "/locations/kitsap-county",
+      description: "Bremerton, Port Orchard, and surrounding areas",
+      cities: [
+        { name: "Bremerton", path: "/locations/kitsap-county/bremerton" },
+        { name: "Port Orchard", path: "/locations/kitsap-county/port-orchard" }
+      ]
+    },
   ];
 
   const services = [
@@ -67,7 +76,7 @@ const Locations = () => {
           LiftNHaul offers professional moving services throughout Western Washington's most populous counties. Whether you need <Link to="/services/local-moving" className="text-primary hover:underline">local moving services in Tacoma</Link>, <Link to="/services/long-distance-moving" className="text-primary hover:underline">long-distance moving</Link> across Washington state, or <Link to="/services/apartment-moving" className="text-primary hover:underline">apartment moving services</Link>, we've got you covered.
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {counties.map((county) => (
             <Link key={county.name} to={county.path}>
               <Card className="hover:shadow-lg transition-shadow h-full">
