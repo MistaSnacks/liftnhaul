@@ -52,7 +52,10 @@ const ServiceAreas = () => {
       name: "Kitsap County",
       path: "/resources/service-areas/kitsap-county",
       description: "Serving Bremerton, Port Orchard, Poulsbo, and surrounding areas",
-      cities: [],
+      cities: [
+        { name: "Bremerton", path: "/locations/kitsap-county/bremerton" },
+        { name: "Port Orchard", path: "/locations/kitsap-county/port-orchard" }
+      ],
       services: [
         { name: "Packing Services", path: "/services/packing-services" },
         { name: "Apartment Moving", path: "/services/apartment-moving" }
