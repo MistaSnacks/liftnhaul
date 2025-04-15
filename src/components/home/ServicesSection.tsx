@@ -1,3 +1,4 @@
+
 import { Truck, Box, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -33,6 +34,13 @@ const ServicesSection = () => {
     }
   ];
 
+  const locations = [
+    { name: "Tacoma", path: "/locations/pierce-county/tacoma" },
+    { name: "Seattle", path: "/locations/king-county/seattle" },
+    { name: "Olympia", path: "/locations/thurston-county/olympia" },
+    { name: "Bellevue", path: "/locations/king-county/bellevue" }
+  ];
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,6 +73,23 @@ const ServicesSection = () => {
               <p className="text-gray-600">{service.description}</p>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-gray-700 mb-4">
+            Our professional movers serve all major locations in Western Washington:
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {locations.map((location, index) => (
+              <Link 
+                key={index}
+                to={location.path}
+                className="inline-flex bg-gray-100 text-gray-800 hover:bg-primary/10 px-3 py-1 rounded-full text-sm transition-colors"
+              >
+                {location.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

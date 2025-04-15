@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,22 +8,37 @@ const ServiceAreasSection = () => {
     {
       name: "Pierce County",
       description: "Tacoma, Puyallup, Lakewood",
-      path: "/resources/service-areas/pierce-county"
+      path: "/resources/service-areas/pierce-county",
+      cities: [
+        { name: "Tacoma", path: "/locations/pierce-county/tacoma" },
+        { name: "Puyallup", path: "/locations/pierce-county/puyallup" },
+        { name: "Lakewood", path: "/locations/pierce-county/lakewood" }
+      ]
     },
     {
       name: "King County",
       description: "Seattle, Bellevue, Kent",
-      path: "/resources/service-areas/king-county"
+      path: "/resources/service-areas/king-county",
+      cities: [
+        { name: "Seattle", path: "/locations/king-county/seattle" },
+        { name: "Bellevue", path: "/locations/king-county/bellevue" },
+        { name: "Kent", path: "/locations/king-county/kent" }
+      ]
     },
     {
       name: "Thurston County",
       description: "Olympia, Lacey, Tumwater",
-      path: "/resources/service-areas/thurston-county"
+      path: "/resources/service-areas/thurston-county",
+      cities: [
+        { name: "Olympia", path: "/locations/thurston-county/olympia" },
+        { name: "Lacey", path: "/locations/thurston-county/lacey" }
+      ]
     },
     {
       name: "Kitsap County",
       description: "Bremerton, Port Orchard, Poulsbo",
-      path: "/resources/service-areas/kitsap-county"
+      path: "/resources/service-areas/kitsap-county",
+      cities: []
     }
   ];
 
@@ -56,10 +72,27 @@ const ServiceAreasSection = () => {
               <h3 className="text-xl font-semibold mb-2">{area.name}</h3>
               <p className="text-gray-200 mb-4">{area.description}</p>
               <Link to={area.path}>
-                <Button variant="secondary" className="w-full">
+                <Button variant="secondary" className="w-full mb-3">
                   Learn More
                 </Button>
               </Link>
+              
+              {area.cities.length > 0 && (
+                <div className="mt-4 pt-3 border-t border-white/20">
+                  <p className="text-sm font-medium mb-2">Popular Cities:</p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {area.cities.map((city) => (
+                      <Link 
+                        key={city.name}
+                        to={city.path} 
+                        className="text-xs bg-white/20 px-2 py-1 rounded hover:bg-white/30 transition-colors"
+                      >
+                        {city.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
