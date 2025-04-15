@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import ResourcesMenu from "./navigation/ResourcesMenu";
 import BlogMenu from "./navigation/BlogMenu";
-import LocationsMenu from "./navigation/LocationsMenu";
 import MobileMenu from "./navigation/MobileMenu";
 
 const Navbar = () => {
@@ -87,7 +86,6 @@ const Navbar = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <ResourcesMenu />
-                <LocationsMenu />
                 <BlogMenu />
               </NavigationMenuList>
             </NavigationMenu>

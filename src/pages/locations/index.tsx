@@ -53,11 +53,11 @@ const Locations = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">Our service areas include:</p>
-                  <ul className="list-disc pl-5 space-y-1">
+                  <div className="space-y-1">
                     {county.cities.map(city => (
-                      <li key={city}>{city}</li>
+                      <p key={city}>{city}</p>
                     ))}
-                  </ul>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
