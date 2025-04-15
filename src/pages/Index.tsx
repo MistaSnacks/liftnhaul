@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
@@ -10,7 +9,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>LiftNHaul Moving Services - Professional Movers in Tacoma</title>
+        <title>LiftNHaul Movers - Professional Moving Services in Tacoma</title>
         <meta 
           name="description" 
           content="Professional moving services in Tacoma, WA. Local & long-distance moving, packing services, and apartment relocation experts serving Pierce County and beyond." 
