@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenuContent,
@@ -23,6 +24,11 @@ const ResourcesMenu = () => {
       path: "/resources/service-areas",
       description: "Areas we serve in Western Washington",
     },
+    {
+      title: "Locations",
+      path: "/locations",
+      description: "Find our service locations by county and city",
+    }
   ];
 
   return (
