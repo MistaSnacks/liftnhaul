@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { reviews } from "@/data/reviews";
-import { format } from "date-fns";
 
 const TestimonialsSection = () => {
   const isMobile = useIsMobile();
@@ -40,7 +39,7 @@ const TestimonialsSection = () => {
                     <div className="mb-2 md:mb-4">
                       <h3 className="font-semibold text-gray-900">{review.name}</h3>
                       <p className="text-xs md:text-sm text-gray-600">
-                        {format(new Date(review.time), 'MMMM dd, yyyy')}
+                        {review.time}
                       </p>
                     </div>
                     <div className="flex mb-2 md:mb-3">
