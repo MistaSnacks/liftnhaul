@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const SocialLinks = () => {
@@ -17,7 +18,9 @@ const SocialLinks = () => {
           <Instagram className="h-6 w-6" />
         </a>
         <a 
-          href="#" 
+          href="https://www.linkedin.com/company/liftnhaul/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
           className="text-gray-400 hover:text-white transition-colors"
         >
           <Linkedin className="h-6 w-6" />
@@ -28,3 +31,4 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
+
