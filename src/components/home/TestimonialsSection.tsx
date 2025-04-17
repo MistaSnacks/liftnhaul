@@ -9,6 +9,9 @@ import {
 } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { reviews } from "@/data/reviews";
+import { useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const TestimonialsSection = () => {
   const isMobile = useIsMobile();
@@ -30,12 +33,19 @@ const TestimonialsSection = () => {
               loop: true,
               dragFree: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              }),
+            ]}
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent>
               {reviews.map((review) => (
                 <CarouselItem key={review.id} className="pl-4 sm:pl-6 md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+                  <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full border-2 border-[#ffd700]">
                     <div className="mb-2 md:mb-4">
                       <h3 className="font-semibold text-gray-900">{review.name}</h3>
                       <p className="text-xs md:text-sm text-gray-600">
@@ -70,3 +80,4 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
+
